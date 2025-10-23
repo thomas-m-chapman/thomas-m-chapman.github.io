@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Tom Chapman
 
 ## Technical Writer | Knowledge Management Strategist | Team Leader
