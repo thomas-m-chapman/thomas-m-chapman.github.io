@@ -3,7 +3,7 @@ layout: default
 ---
 # Tom Chapman
 
-### Technical Writer | Knowledge Management Strategist | Team Leader
+### Technical Writing & Knowledge Management Leader
 
 Welcome to my portfolio. I’m currently exploring new opportunities in Technical Writing and Knowledge Management. If you’re looking for someone who blends strategic thinking with execution—let’s connect. I’m passionate about delivering content that helps people get things done.
 
