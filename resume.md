@@ -1,10 +1,12 @@
 # Thomas M. Chapman
-### Technical Writing & Knowledge Management Leader
-| Snoqualmie, WA | (425) 681-6032 | [thomasmchapman@hotmail.com](thomasmchapman@hotmail.com)  | [My LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)
----
+### Technical Writing & Knowledge Management Leader <br>
+Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&nbsp;&nbsp;     | &nbsp;&nbsp;&nbsp; [Email me](thomasmchapman@hotmail.com) &nbsp;&nbsp;&nbsp;      | &nbsp;&nbsp;&nbsp; [View my LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)  <br>
+
+<hr></hr>
 
 ## Profile summary
-Strategic content leader with 20+ years of experience driving scalable documentation and knowledge programs across Engineering, IT, Product, and Support teams. Proven success in evolving systems and workfl ows to increase compliance, operational effi ciency, and user engagement. 
+Strategic content leader with 20+ years of experience driving scalable documentation and knowledge programs across Engineering, IT, Product, and Support teams. Proven success in evolving systems and workfl ows to increase compliance, operational effi ciency, and user engagement. <br>
+
 My collaborative leadership style, combined with deep expertise in content strategy, structured authoring, and information management, empowers teams and aligns cross-functional stakeholders. Adept at optimizing content ecosystems to meet the needs of internal and external customers alike, delivering high-value content that helps people get things done.
 
 **Key strengths:**
@@ -15,10 +17,17 @@ My collaborative leadership style, combined with deep expertise in content strat
 - Extensive experience in content strategy, technical writing, and content management best practices.
 
 ## Core skills
-| Strategic planning          | Content strategy    | Knowledge management
-| Personnel/team management   | Information architecture  | Developmental editing
-| Agile/Scrum methodologies  | Information development  | Copyediting
-| Lean/KCS methodologies | Technical writing  | Project management
+- Personnel/team management
+- Strategic planning
+- Project management, PM/PO
+- Agile/Scrum methodologies
+- Lean/KCS methodologies
+- Knowledge management  
+- Technical writing
+- Content strategy
+- Information architecture
+- Information development   
+- Copyediting, Developmental editing, Proofing
 
 ## Tools & Technologies
 **KM & Collaboration**
@@ -39,9 +48,10 @@ My collaborative leadership style, combined with deep expertise in content strat
 - Google Docs, Microsoft Office
 
 ## Professional experience
-**Senior Manager, Knowledge Management**
-*BECU, Tukwila, WA* 
-*January 2017 – September 2025*
+### Senior Manager, Knowledge Management - BECU <br>
+
+*Tukwila, WA* <br>
+*January 2017 – September 2025* <br>
 
 - Established the strategic direction of Knowledge Management by collaborating regularly with leadership and stakeholders to align strategy with business objectives.
 - Partnered with Engineering leadership and cross-functional user groups to create AI solutions designed to increase fi ndability and relevance of KB content.
@@ -50,14 +60,18 @@ My collaborative leadership style, combined with deep expertise in content strat
 - Led and coached a team of 12 knowledge management professionals, inspiring the team to excellence by fostering a culture of innovation, collaboration, and continuous improvement.
 - Devised curricula to aid our SME Community in drafting meaningful, targeted, usable knowledge assets.
 - Operationalized end-to-end processes for publishing ADA-compliant member-facing documentation, ensuring alignment with the Americans with Disabilities Act and accessibility best practices.
-- Served as product owner (PO) of BECU’s knowledge base to design and deliver enhancements that improved time to publish (TTP), time to fi nd (TTF), time to resolution (TTR), and overall user satisfaction. Key accomplishments:
-- - Time to Publish (TTP): Improved TTP by 60% by implementing a Distributed Publishing program.
-- - Knowledge Validation Rate (KVR): Improved KVR from 67% to 98% annually.
-- - Capability maturity: Enhanced from CMMI Level 1 to CMMI Level 3 by optimizing KM workfl ows.
+- Served as product owner (PO) of BECU’s knowledge base to design and deliver enhancements that improved time to publish (TTP), time to find (TTF), time to resolution (TTR), and overall user satisfaction. <br>
 
-**Manager, Knowledge Management**
-*Dell EMC, Isilon Global Services, Seattle, WA* 
-*April 2012 – November 2016*
+  Key accomplishments: <br>
+    - Time to Publish (TTP): Improved TTP by 60% by implementing a Distributed Publishing program.
+    - Knowledge Validation Rate (KVR): Improved KVR from 67% to 98% annually.
+    - Capability maturity: Enhanced from CMMI Level 1 to CMMI Level 3 by optimizing KM workfl ows.
+
+---  
+
+### Manager, Knowledge Management - Dell EMC, Isilon Storage Division  <br>
+*Seattle, WA*  <br>
+*April 2012 – November 2016* <br>
 
 - Led Isilon’s KM strategy to enhance customer self-service and reduce calls to Support.
 - Fostered a “customers-fi rst” culture, emphasizing teamwork, quality, and customer advocacy.
@@ -65,76 +79,73 @@ My collaborative leadership style, combined with deep expertise in content strat
 - Facilitated three knowledge base migrations (RightNow, Primus, Salesforce Knowledge).
 - Collaborated with Technical Support to design and develop troubleshooting guides that reduced Time to Resolve (TTR) by 44%.
 
-**Lead Technical Writer, Knowledge Management**
-*EMC, Isilon Global Services, Seattle, WA* 
-*March 2011 – April 2012*
+---  
+
+### Lead Technical Writer, Knowledge Management - Dell EMC, Isilon Storage Division  <br>
+*Seattle, WA* <br>
+*March 2011 – April 2012* <br>
 
 - Spearheaded the launch of Isilon’s fi rst customer-facing knowledge base to enable customer self-service and support.
 - Established KM best practices for capturing, developing, and publishing technical support content.
 - Integrated Knowledge-Centered Service (KCS) methodologies into KM and Support processes.
 
-**Manager, Technical Communications**
-*Consona CRM, Kirkland, WA* 
-*September 2005 – March 2011*
+---  
 
+### Manager, Technical Communications - Consona CRM  <br>
+*Kirkland, WA* <br>
+*September 2005 – March 2011* <br>
+
+(Consona acquired Onyx Software in 2025) <br>
 - Led globally distributed documentation teams across the U.S., India, and Belarus.
 - Established the Consona Documentation Center of Excellence, promoting best practices in information development and increasing overall documentation quality.
 - Built and grew the Bengaluru, India, writing team from the ground up.
 
-**Senior Technical Writer**
-*ADIC, Redmond, WA* 
-*March 2005 – September 2005*
+---  
+
+### Senior Technical Writer - ADIC  <br>
+*Redmond, WA*  <br>
+*March 2005 – September 2005* <br>
 
 - Created OEM content for hardware and software product manuals produced for SAN administrators.
 - Coordinated translation activities.
 
-**Marketing Writer & Technical Editor**
-*Sierra Systems, Bellevue, WA* 
-*July 2004 – February 2005*
+---  
+
+### Marketing Writer & Technical Editor - Sierra Systems  <br>
+*Bellevue, WA*  <br>
+*July 2004 – February 2005* <br>
 
 - Edited contract proposals, user manuals, and marketing collateral to increase effectiveness.
 
-**Documentation Lead – Senior Technical Writer**
-*Onyx Software, Bellevue, WA* 
-*January 1998 – July 2004*
+---  
+
+### Documentation Lead – Senior Technical Writer - Onyx Software  <br>
+*Bellevue, WA*  <br>
+*January 1998 – July 2004* <br>
 
 - Led an 8-person team in technical documentation efforts throughout the SDLC.
 - Pioneered a structured-authoring project that increased user satisfaction by 65%.
 - Recognized as a “leader and driver” for contributions beyond the role of a technical writer.
 
-**Technical Writer**
-*Northwest Education Loan Association, Seattle, WA* 
-*January 1997 – January 1998*
+---  
+
+### Technical Writer - Northwest Education Loan Association  <br>
+*Seattle, WA*  <br>
+*January 1997 – January 1998* <br>
 
 - Developed user guides for administrators of a student loan software application.
 
-## Education & Certifications
-| **Texas A&M University** | M.A., English | December 1996
-| **Seattle University** |  B.A., English and Communication Studies | June 1990
+---  
 
-### Certifications
-| **Lean Six Sigma Green Belt** |  SSGI March  | 2016
-| **MadCap Advanced Developer for Flare**  | MadCap Software |  March 2010
-| **Technical Communications Manager** |  STC  | June 2009
+## Education 
+**Texas A&M University**  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; M.A., English  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; December 1996  
+**Seattle University**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; B.A., English  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; June 1990  
 
+---  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Certifications
+**Lean Six Sigma Green Belt** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; SSGI  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; March 2016  
+**MadCap Advanced Developer for Flare** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; MadCap Software &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; March 2010  
+**Technical Communications Manager** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; STC &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; June 2009  
 
 
