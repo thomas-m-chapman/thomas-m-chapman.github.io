@@ -1,9 +1,9 @@
-#Thomas M. Chapman
-###Technical Writing & Knowledge Management Leader
-Snoqualmie, WA | (425) 681-6032 | [thomasmchapman@hotmail.com](thomasmchapman@hotmail.com)  | [My LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)
+# Thomas M. Chapman
+### Technical Writing & Knowledge Management Leader
+| Snoqualmie, WA | (425) 681-6032 | [thomasmchapman@hotmail.com](thomasmchapman@hotmail.com)  | [My LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)
 ---
 
-##Profile summary
+## Profile summary
 Strategic content leader with 20+ years of experience driving scalable documentation and knowledge programs across Engineering, IT, Product, and Support teams. Proven success in evolving systems and workfl ows to increase compliance, operational effi ciency, and user engagement. 
 My collaborative leadership style, combined with deep expertise in content strategy, structured authoring, and information management, empowers teams and aligns cross-functional stakeholders. Adept at optimizing content ecosystems to meet the needs of internal and external customers alike, delivering high-value content that helps people get things done.
 
@@ -14,13 +14,13 @@ My collaborative leadership style, combined with deep expertise in content strat
 - Skilled in measuring and optimizing the impact of ID and KM programs through data-driven analysis and continuous improvement.
 - Extensive experience in content strategy, technical writing, and content management best practices.
 
-##Core skills
+## Core skills
 | Strategic planning          | Content strategy    | Knowledge management
 | Personnel/team management   | Information architecture  | Developmental editing
 | Agile/Scrum methodologies  | Information development  | Copyediting
 | Lean/KCS methodologies | Technical writing  | Project management
 
-##Tools & Technologies
+## Tools & Technologies
 **KM & Collaboration**
 - Knowledge-Centered Service (KCS), Oracle RightNow, Salesforce Knowledge, ServiceNow
 - Atlassian Confluence, Atlassian Jira
@@ -38,7 +38,7 @@ My collaborative leadership style, combined with deep expertise in content strat
 - MadCap Central, MadCap Flare
 - Google Docs, Microsoft Office
 
-##Professional experience
+## Professional experience
 **Senior Manager, Knowledge Management**
 *BECU, Tukwila, WA* 
 *January 2017 – September 2025*
@@ -108,11 +108,11 @@ My collaborative leadership style, combined with deep expertise in content strat
 
 - Developed user guides for administrators of a student loan software application.
 
-##Education & Certifications
+## Education & Certifications
 | **Texas A&M University** | M.A., English | December 1996
 | **Seattle University** |  B.A., English and Communication Studies | June 1990
 
-###Certifications
+### Certifications
 | **Lean Six Sigma Green Belt** |  SSGI March  | 2016
 | **MadCap Advanced Developer for Flare**  | MadCap Software |  March 2010
 | **Technical Communications Manager** |  STC  | June 2009
