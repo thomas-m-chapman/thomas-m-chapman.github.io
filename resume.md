@@ -2,7 +2,7 @@
 ### Technical Writing & Knowledge Management Leader <br>
 Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&nbsp;&nbsp;     | &nbsp;&nbsp;&nbsp; [Email me](thomasmchapman@hotmail.com) &nbsp;&nbsp;&nbsp;      | &nbsp;&nbsp;&nbsp; [View my LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)  <br>
 
-<hr></hr>
+<hr/>
 
 ## Profile summary
 Strategic content leader with 20+ years of experience driving scalable documentation and knowledge programs across Engineering, IT, Product, and Support teams. Proven success in evolving systems and workflows to increase compliance, operational efficiency, and user engagement. <br>
@@ -24,10 +24,11 @@ My collaborative leadership style, combined with my expertise in content strateg
 - Lean/KCS methodologies
 - Knowledge management  
 - Technical writing
-- Content strategy
 - Information architecture
 - Information development   
 - Copyediting, Developmental editing, Proofing
+- Content strategy
+- Change management
 
 ## Tools & Technologies
 **KM & Collaboration**
@@ -48,7 +49,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 - Google Docs, Microsoft Office
 
 ## Professional experience
-### Senior Manager, Knowledge Management - BECU <br>
+### Senior Manager, Knowledge Management | BECU <br>
 
 *Tukwila, WA* <br>
 *January 2017 – September 2025* <br>
@@ -69,7 +70,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Manager, Knowledge Management - Dell EMC, Isilon Storage Division  <br>
+### Manager, Knowledge Management | Dell EMC, Isilon Storage Division  <br>
 *Seattle, WA*  <br>
 *April 2012 – November 2016* <br>
 
@@ -81,7 +82,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Lead Technical Writer, Knowledge Management - Dell EMC, Isilon Storage Division  <br>
+### Lead Technical Writer, Knowledge Management | Dell EMC, Isilon Storage Division  <br>
 *Seattle, WA* <br>
 *March 2011 – April 2012* <br>
 
@@ -91,7 +92,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Manager, Technical Communications - Consona CRM  <br>
+### Manager, Technical Communications | Consona CRM  <br>
 *Kirkland, WA* <br>
 *September 2005 – March 2011* <br>
 
@@ -102,7 +103,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Senior Technical Writer - ADIC  <br>
+### Senior Technical Writer | ADIC  <br>
 *Redmond, WA*  <br>
 *March 2005 – September 2005* <br>
 
@@ -111,7 +112,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Marketing Writer & Technical Editor - Sierra Systems  <br>
+### Marketing Writer & Technical Editor | Sierra Systems  <br>
 *Bellevue, WA*  <br>
 *July 2004 – February 2005* <br>
 
@@ -119,7 +120,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Documentation Lead – Senior Technical Writer - Onyx Software  <br>
+### Documentation Lead – Senior Technical Writer | Onyx Software  <br>
 *Bellevue, WA*  <br>
 *January 1998 – July 2004* <br>
 
@@ -129,7 +130,7 @@ My collaborative leadership style, combined with my expertise in content strateg
 
 ---  
 
-### Technical Writer - Northwest Education Loan Association  <br>
+### Technical Writer | Northwest Education Loan Association  <br>
 *Seattle, WA*  <br>
 *January 1997 – January 1998* <br>
 
@@ -141,7 +142,6 @@ My collaborative leadership style, combined with my expertise in content strateg
 **Texas A&M University**  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; M.A., English  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; December 1996  
 **Seattle University**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; B.A., English  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; June 1990  
 
----  
 
 ## Certifications
 **Lean Six Sigma Green Belt** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; SSGI  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; March 2016  
