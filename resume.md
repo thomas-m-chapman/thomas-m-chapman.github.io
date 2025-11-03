@@ -2,7 +2,7 @@
 ### Technical Writing & Knowledge Management Leader <br>
 Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&nbsp;&nbsp;     | &nbsp;&nbsp;&nbsp; [Email me](thomasmchapman@hotmail.com) &nbsp;&nbsp;&nbsp;      | &nbsp;&nbsp;&nbsp; [View my LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)  <br>
 
-<hr/>
+<hr>
 
 ## Profile summary
 Strategic content leader with 20+ years of experience driving scalable documentation and knowledge programs across Engineering, IT, Product, and Support teams. Proven success in evolving systems and workflows to increase compliance, operational efficiency, and user engagement. <br>
