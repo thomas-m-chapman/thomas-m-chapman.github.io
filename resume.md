@@ -1,11 +1,11 @@
 # Thomas M. Chapman
-### Knowledge Strategy & Transformation Leader | AI/ML & CX Advocate <br>
+### Content Manager & Transformation Leader | AI/ML & CX Advocate <br>
 Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&nbsp;&nbsp;     | &nbsp;&nbsp;&nbsp; [Email me](thomasmchapman@hotmail.com) &nbsp;&nbsp;&nbsp;      | &nbsp;&nbsp;&nbsp; [View my LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)  <br>
 
 <hr>
 
 ## Profile summary
-Knowledge Management leader with 20+ years of experience driving enterprise knowledge strategy, content transformation, and customer experience initiatives. Proven success in evolving systems and workflows to improve enterprise-wide efficiency, compliance, and engagement. Skilled in structured authoring, content strategy, and change management, with experience piloting AI/ML solutions to enhance knowledge findability and readiness for intelligent delivery. Collaborative leader who builds high‑performing teams and aligns cross‑functional stakeholders around scalable, future‑focused knowledge ecosystems. <br>
+Technical Writing and Knowledge Management leader with 20+ years of experience driving enterprise knowledge strategy, content transformation, and customer experience initiatives. Proven success in evolving systems and workflows to improve enterprise-wide efficiency, compliance, and engagement. Skilled in structured authoring, content strategy, and change management, with experience piloting AI/ML solutions to enhance knowledge findability and readiness for intelligent delivery. Collaborative leader who builds high‑performing teams and aligns cross‑functional stakeholders around scalable, future‑focused knowledge ecosystems. <br>
 
 Adept at optimizing content to meet the needs of internal and external customers alike, delivering high-value content that helps people get things done.
 
@@ -24,7 +24,7 @@ Adept at optimizing content to meet the needs of internal and external customers
 - Microsoft ADO/Git/GitHub/Office/Project/SharePoint/Teams
 - Mural
 - Oracle RightNow
-- Plainview LeanKit
+- Planview LeanKit
 - RSA Archer
 - Salesforce Knowledge/Slack
 - ServiceNow
@@ -126,6 +126,7 @@ Adept at optimizing content to meet the needs of internal and external customers
 
 
 ## Certifications
+**Certified Knowledge Manager (CKM)** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; KM Institute (KMI) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; January 2026  
 **Lean Six Sigma Yellow Belt** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; SSGI  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; March 2016  
 **MadCap Advanced Developer for Flare** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; MadCap Software &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; March 2010  
 **Technical Communications Manager** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; STC &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; June 2009  
