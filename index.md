@@ -3,7 +3,7 @@ layout: default
 ---
 # Tom Chapman
 
-### Knowledge Strategy & Transformation Leader | AI/ML & CX Advocate
+### Content Manager & Transformation Leader | AI/ML & CX Advocate
 
 Welcome to my portfolio. 
 
