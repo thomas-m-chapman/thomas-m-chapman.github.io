@@ -83,7 +83,7 @@ Adept at optimizing content to meet the needs of internal and external customers
 *Kirkland, WA* <br>
 *September 2005 – March 2011* <br>
 
-(Consona acquired Onyx Software in 2025) <br>
+(Consona acquired Onyx Software in 2005) <br>
 - Led globally distributed documentation teams and established the Consona Documentation Center of Excellence. 
 
 ---  
@@ -121,7 +121,7 @@ Adept at optimizing content to meet the needs of internal and external customers
 ---  
 
 ## Education 
-**Texas A&M University**  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; M.A., English  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; September 1994 - December 1996  
+**Texas A&M University**  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; M.A., English  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; September 1994 - December 1996  
 **Seattle University**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; B.A., English  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; September 1986 - June 1990  
 
 
