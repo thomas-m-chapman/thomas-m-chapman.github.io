@@ -5,16 +5,16 @@ Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&
 <hr>
 
 ## Profile summary
-Technical Writing and Knowledge Management leader with 20+ years of experience driving enterprise knowledge strategy, content transformation, and customer experience initiatives. Proven success in evolving systems and workflows to improve enterprise-wide efficiency, compliance, and engagement. Skilled in structured authoring, content strategy, and change management, with experience piloting AI/ML solutions to enhance knowledge findability and readiness for intelligent delivery. Collaborative leader who builds high‑performing teams and aligns cross‑functional stakeholders around scalable, future‑focused knowledge ecosystems. <br>
+Technical Writing and Knowledge Management leader with 20+ years of experience driving enterprise knowledge strategy, content transformation, and customer experience initiatives. Proven success in evolving systems and workflows to improve enterprise-wide efficiency, compliance, and engagement. Skilled in structured authoring, content strategy, and change management, with experience piloting AI/ML solutions to improve content access and accuracy. Builds high-performing teams and scalable knowledge ecosystems that deliver measurable business results. <br>
 
 Adept at optimizing content to meet the needs of internal and external customers alike, delivering high-value content that helps people get things done.
 
 ## Recent highlights
 - **Implemented system and content improvements** that increased customer satisfaction (CSAT) of BECU’s knowledge base by 25%.
-- **Reduced Time to Publish (TTP) by 60%** by implementing a distributed publishing program, accelerating the availability of critical knowledge assets.
+- **Reduced Time to Publish (TTP) by 60%** by implementing a distributed publishing program.
 - **Improved quarterly Knowledge Validation Rate (KVR)** from 67% to 98%.
-- **Elevated KM maturity from CMMI Level 1 to Level 3** by introducing workflow optimizations and qualitative controls.
-- **Partnered with Engineering leadership to pilot BECU’s first AI solution**, improving knowledge findability and relevance and positioning the KM program for intelligent delivery.
+- **Elevated KM maturity from CMMI Level 1 to Level 3** by introducing workflow optimizations and quality controls.
+- **Partnered with Engineering leadership to pilot BECU’s first AI solution**, improving knowledge accuracy and relevance and positioning the KM program for future AI integrations.
 
 ## Tools & Technologies
 **Applications & Platforms**
