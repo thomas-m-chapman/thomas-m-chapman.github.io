@@ -55,7 +55,7 @@ Adept at optimizing content to meet the needs of internal and external customers
 *January 2017 – September 2025* <br>
 
 - Established the strategic direction of KM, collaborating regularly with executive leadership to align strategy with key business objectives.
-- Partnered with Engineering and cross-functional user groups to pilot AI solutions that improved knowledge findability and relevance.
+- Partnered with Engineering and cross-functional user groups to pilot AI solutions that improved knowledge discoverability and relevance.
 - Transformed a nascent KM function into a multifaceted program focused on new product development, corporate governance and compliance, and operational excellence.
 - Led a 12-person KM team and a 300-person SME community, fostering a culture of innovation, collaboration, and continuous improvement. 
 
