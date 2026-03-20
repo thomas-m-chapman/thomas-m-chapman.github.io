@@ -1,5 +1,5 @@
 # Distributed Publishing: A Knowledge Management Case Study
-#### How a collaborative process redesign transformed knowledge sharing
+
 
 ## Executive Summary
 
