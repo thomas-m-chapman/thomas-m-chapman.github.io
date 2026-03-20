@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Distributed Publishing: A Knowledge Management Case Study
 
 
