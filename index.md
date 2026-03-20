@@ -15,7 +15,8 @@ Whether building scalable content ecosystems, optimizing knowledge bases, or coa
 
 ### 🔍 What You'll Find Here
 - [My Resume](resume.md) — Markdown-based, ATS-optimized, and recruiter-friendly
-- Writing Samples (coming soon)
+- [Distributed Publishing](Distributed-Publishing.md) - A knowledge management case study
+- Additional writing samples (coming soon)
 
 ### 📫 Connect with Me
 - [Visit me on LinkedIn](https://www.linkedin.com/in/thomasmchapman/)
