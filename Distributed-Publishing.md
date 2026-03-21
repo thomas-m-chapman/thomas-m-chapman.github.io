@@ -75,7 +75,7 @@ We deployed Distributed Publishing in three consecutive waves (one for each stak
 
 The results of the Distributed Publishing initiative demonstrated a sustainable, repeatable process for publishing accurate, consistent, compliant knowledge in a timely manner. The collaboration with cross-functional stakeholders, particularly the inclusion of those who were skeptical about the initiative, ensured that we addressed identified risks in both our governance design and the Advanced SME training. 
 
-Key results:
+**Key results:**
   -	Time-to-publish (TTP) decreased from up to 60 days to 7 days — an 88% reduction 
   -	Compliance escalations fell from 3 per week to 0
   -	The publishing backlog was reduced from 300 requests to a manageable ~25 
