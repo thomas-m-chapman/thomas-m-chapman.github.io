@@ -3,7 +3,7 @@ layout: default
 ---
 # Tom Chapman
 
-### Certified Knowledge Manager | Technical Writing Manager | Content PM | Family Guy
+### Content Manager & Transformation Leader | AI/ML & CX Advocate 
 
 Welcome to my portfolio. 
 
