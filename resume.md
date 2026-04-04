@@ -161,10 +161,10 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 ---
 
 ## Certifications
-**Certified Knowledge Manager (CKM)** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; KM Institute (KMI) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; January 2026  
-**Lean Six Sigma Yellow Belt** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; SSGI  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; March 2016  
-**MadCap Advanced Developer for Flare** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; MadCap Software &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; September 2010  
-**Technical Communications Manager** &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; STC &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; December 2009  
+**Certified Knowledge Manager (CKM)** - KM Institute (KMI), January 2026  
+**Lean Six Sigma Yellow Belt** - SSGI, March 2016  
+**MadCap Advanced Developer for Flare** - MadCap Software, September 2010  
+**Technical Communications Manager** - STC, December 2009  
 
 ---
 
