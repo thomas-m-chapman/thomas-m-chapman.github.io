@@ -169,12 +169,12 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 ---
 
 ## Honors & Awards
-**BECU Excellence: Agile Leadership**&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; November 2023&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Nominated for excellence in serving as Agile Product Owner in the implementation of a new knowledge platform. 
+**BECU Excellence: Agile Leadership** (November 2023): Nominated for excellence in serving as Agile Product Owner in the implementation of a new knowledge platform. 
 
-**EMC Customer Experience Award**&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; August 2016&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Awarded for leading collaborative troubleshooting guide efforts aimed at reducing TTR. 
+**EMC Customer Experience Award** (August 2016): Awarded for leading collaborative troubleshooting guide efforts aimed at reducing TTR. 
 
-**EMC Excellence Award: Isilon Security Response Team**&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; June 2015&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Awarded for significant contributions to the Security Response Team's success in managing and responding to security vulnerabilities. 
+**EMC Excellence Award: Isilon Security Response Team**(June 2015): Awarded for significant contributions to the Security Response Team's success in managing and responding to security vulnerabilities. 
 
-**EMC Excellence Award: Global Services**&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; April 2013&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Awarded for going "above and beyond" in enabling customer self-help. 
+**EMC Excellence Award: Global Services** (April 2013): Awarded for going "above and beyond" in enabling customer self-help. 
 
-**Onyx Leadership Recognition**&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; July 2013&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Honored for being a “leader and driver” who contributes beyond the role of a technical writer. 
+**Onyx Leadership Recognition** (July 2013): Honored for being a “leader and driver” who contributes beyond the role of a technical writer. 
