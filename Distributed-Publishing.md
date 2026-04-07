@@ -3,6 +3,7 @@ layout: default
 ---
 # Distributed Publishing: A Knowledge Management Case Study
 
+---
 
 ## Executive Summary
 
@@ -14,19 +15,20 @@ The results were immediate and measurable: The backlog diminished from 300 to ~2
 
 The most significant impact was cultural. Distributed Publishing gave SMEs a stronger sense of independence and trust, and increased their sense of ownership, motivation, and engagement in the knowledge-sharing mission. Distributed Publishing continues to be an integral component of KM at BECU today.
 
+---
 
 ## Situation
 
-When I joined BECU as Senior Manager of Knowledge Management, the small, five-person KM team was being overrun with publishing requests. The organization had recently adopted a new corporate governance program and was implementing several new software systems to address outstanding technical debt. These changes created a demand for new and updated knowledge was greater than the team could support.
+When I joined BECU as Senior Manager of Knowledge Management, the small, five-person KM team was being overrun with publishing requests. The organization had recently adopted a new corporate governance program and was implementing several new software systems to address outstanding technical debt. These changes created a demand for new and updated knowledge that was far greater than the team could support.
 
-As a precursor to the Distributed Publishing initiative, I’d led the KM team through several smaller initiatives aimed at standardizing and streamlining internal KM processes, and I’d hired four contractors to help reduce the backlog. Although these measures helped, it became clear that incremental fixes weren't enough. What was needed was a fundamentally different model for publishing knowledge.
+As a precursor to the Distributed Publishing initiative, I’d led the KM team through several smaller initiatives aimed at standardizing and streamlining internal KM processes, and I’d hired four contractors to help reduce the backlog. Although these measures helped, it became clear that incremental fixes weren't enough, and that hiring additional help wasn't a viable long-term option. What we needed was a fundamentally different model for publishing knowledge.
 
 
 ## Challenge
 
-The challenge was both procedural and cultural. In many ways, the cultural ones were harder to solve.
+The challenge in implementing a new model was both procedural and cultural. In many ways, the cultural challenges were harder to solve.
 
-**Procedurally,** the publishing process had become a bottleneck. The standard workflow required SMEs to submit drafts of knowledge articles to the KM team, who would then review them for governance and compliance, lightly edit them for style and usability, and publish them to the knowledge base. When organizational change had occurred more gradually, this was a reasonable model. But as demand accelerated, the publishing queue grew faster than the team could clear it: the backlog reached 300 requests, average TTP climbed to nearly 60 days, and compliance escalations — errors caused by outdated or inaccurate articles — had become a recurring problem.
+**Procedurally,** the publishing process had become a bottleneck. The standard workflow required SMEs to submit drafts of knowledge articles to the KM team, who would then review them for governance and compliance, lightly edit them for style and usability, and publish them to the knowledge base. When organizational change had occurred gradually, this was a reasonable model. But as demand accelerated, the publishing queue grew faster than the team could clear it: the backlog reached 300 requests, average TTP climbed to nearly 60 days, and compliance escalations — errors caused by outdated or inaccurate articles — had become a recurring problem.
 
 **Culturally,** the challenge was more complex. Many teams at BECU operated in functional silos, and many were resistant to taking on work they considered someone else’s job. Asking SMEs to take on more responsibility for publishing, even with training and support, risked being perceived as KM offloading its duties onto others. Some SMEs, on the other hand, were eager to take on the responsibility for publishing, but they were largely unaware of the governance responsibilities inherent in the work. The KM team, too, expressed concern, particularly about whether governance would hold and whether the overall quality of the KB would degrade when publishing was no longer centralized. These were legitimate concerns that helped shape the fundamental design of the initiative.
 
