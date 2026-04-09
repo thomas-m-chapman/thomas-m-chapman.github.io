@@ -47,7 +47,6 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ## Professional experience
 ### Senior Manager, Knowledge Management | BECU <br>
-
 *Tukwila, WA* <br>
 *January 2017 – September 2025* <br>
 
@@ -58,7 +57,7 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ---  
 
-### Manager, Knowledge Management | Dell EMC, Isilon Storage Division  <br>
+### Manager, Knowledge Management | Dell EMC, Isilon Storage Division <br>
 *Seattle, WA*  <br>
 *April 2012 – November 2016* <br>
 
@@ -69,7 +68,7 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ---  
 
-### Senior Technical Writer | Dell EMC, Isilon Storage Division  <br>
+### Senior Technical Writer | Dell EMC, Isilon Storage Division <br>
 *Seattle, WA* <br>
 *March 2011 – April 2012* <br>
 
@@ -79,11 +78,11 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ---  
 
-### Technical Writing Manager | Consona CRM  <br>
+### Technical Writing Manager | Aptean <br>
 *Kirkland, WA* <br>
 *August 2006 – March 2011* <br>
 
-(Consona acquired Onyx Software in 2005) <br>
+(Aptean, formerly known as Consona, acquired Onyx Software in August 2006.) <br>
 - Managed globally distributed content-development teams for 4 distinct product lines.
 - Established the Documentation Center of Excellence, whose mission was to standardize content-development processes, increase quality, and promote best practices in information development across Consona.
 - Built and managed a 24-person globally distributed team across the U.S., Belarus, China, and India.
@@ -94,11 +93,11 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 *Bellevue, WA* <br>
 *September 2005 - August 2006* <br>
 
-- Managed a team of 8 local technical writers and programmer writers before Onyx Software was acquired by Consona in 2006.
+- Managed a team of 8 local technical writers and programmer writers before Onyx Software was acquired by Aptean (formerly known as Consona) in 2006.
 
 ---  
 
-### Senior Technical Writer | ADIC  <br>
+### Senior Technical Writer | ADIC <br>
 *Redmond, WA*  <br>
 *March 2005 – September 2005* <br>
 
@@ -106,7 +105,7 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ---  
 
-### Marketing Writer & Technical Editor | Sierra Systems  <br>
+### Marketing Writer & Technical Editor | Sierra Systems <br>
 *Bellevue, WA*  <br>
 *July 2004 – February 2005* <br>
 
@@ -114,7 +113,7 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ---  
 
-### Documentation Lead – Senior Technical Writer | Onyx Software  <br>
+### Documentation Lead – Senior Technical Writer | Onyx Software <br>
 *Bellevue, WA*  <br>
 *January 1998 – July 2004* <br>
 
@@ -125,7 +124,7 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 
 ---  
 
-### Technical Writer | Northwest Education Loan Association  <br>
+### Technical Writer | Northwest Education Loan Association <br>
 *Seattle, WA*  <br>
 *January 1997 – January 1998* <br>
 
