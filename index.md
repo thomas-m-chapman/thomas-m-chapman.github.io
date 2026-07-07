@@ -17,6 +17,7 @@ My primary areas of focus include Knowledge-Centered Service (KCS), AI-assisted 
 
 ### 🔍 What You'll Find Here
 - [My Resume](resume.md) — Markdown-based, ATS-optimized, and recruiter-friendly
+- [Samples from BECU](becu-samples.md) — Samples of my writing from BECU
 - [Distributed Publishing](Distributed-Publishing.md) — A knowledge management case study
 - Additional writing samples (coming soon)
 
