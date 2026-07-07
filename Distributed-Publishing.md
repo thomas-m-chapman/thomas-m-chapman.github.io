@@ -7,7 +7,7 @@ layout: default
 
 ## Executive Summary
 
-At BECU, the Knowledge Management (KM) team was being overwhelmed by publishing requests. The backlog had grown to approximately 300, the average time-to-publish (TTP) had climbed to two months, compliance escalations were becoming a recurring problem, and SME satisfaction was in decline.
+BECU's Knowledge Management (KM) team was being overwhelmed by publishing requests. The backlog of requests had grown to approximately 300, the average time-to-publish (TTP) had climbed to two months, compliance escalations were becoming a recurring problem, and SME satisfaction was in decline.
 
 To address these issues, I designed and led an initiative called Distributed Publishing. The objective was to enable a select group of manager-approved, KM-trained subject matter experts — called Advanced SMEs — to publish content directly to the knowledge base without KM intervention. 
 
