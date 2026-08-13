@@ -19,6 +19,9 @@ My primary areas of focus include Knowledge-Centered Service (KCS), AI-assisted 
 - [My Resume](resume.md) — Markdown-based, ATS-optimized, and recruiter-friendly
 - [Samples from BECU](becu-samples.md) — Samples of my writing from BECU
 - [Distributed Publishing](Distributed-Publishing.md) — A knowledge management case study
+- [From Data to Meaning: Ontology Practice](Ontology-Practice.md) - Self-guided practice building ontologies
+  - [Ontology Practice 1: Knowledge Management](KM-Ontology.md)
+  - [Ontology Practice 2: Wuthering Heights](WH-Ontology.md)
 - Additional writing samples (coming soon)
 
 ### 📫 Connect with Me
