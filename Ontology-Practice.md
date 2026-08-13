@@ -3,12 +3,16 @@ layout: default
 ---
 
 # From Data to Meaning: Ontology Practice
-[Background](#Background) <br>
-[Approach](#Approach) <br>
-[General learnings](#General-learnings) <br>
-[Explore the ontologies](#Explore) <br>
-[Acknowledgements](#Acknowledgements) <br>
+## Contents
+- [Introduction](#Introduction) <br>
+- [Background](#Background) <br>
+- [Approach](#Approach) <br>
+- [General learnings](#General-learnings) <br>
+- [Explore the ontologies](#Explore) <br>
+- [Acknowledgements](#Acknowledgements) <br>
 
+<a name="Introduction"></a> 
+## Introduction
 I created this piece—and the two practice ontologies that accompany it—in response to the monumental shift that AI has brought to the domain of content operations. Like many in my field, I have years of experience building and maintaining controlled vocabularies and taxonomies, but I’ve never created an ontology before. So, I decided to create one. 
 
 In fact, I created two. 
