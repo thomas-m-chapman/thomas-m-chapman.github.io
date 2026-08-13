@@ -42,9 +42,12 @@ For the Wuthering Heights ontology, I extended the exercise by re-creating in Da
 The following screenshots illustrate some of the work I did in Databricks.
 
 The following image shows the CharacterAttributes table, which captures many of the data properties that I modeled against each character in the novel, along with a corresponding set of annotations. 
-  (Insert image 1)
+&nbsp;![View of the CharacterAttributes table in Databricks showing a SQL query and columns for character data properties and annotations](images/Intro-WH-CharacterAttributes-table-databricks.png)
+
+
 The following image shows the CharacterFamily table, a simple table defining each character’s unique ID, a foreign key to the Family table, and a corresponding set of annotations.
-  (Insert image 2)
+&nbsp;![View of the CharacterFamily table in Databricks showing a SQL query, annotations, and foreign keys to the Family table](images/Intro-WH-CharacterFamily-table-databricks.png)
+
 
 Modeling this data in both Databricks and Protégé helped me understand a fundamental difference between databases and ontologies. A database organizes data into two-dimensional tables and establishes only implicit relationships between them. The meaning of those relationships must be interpreted by a human. In an ontology, on the other hand, meaning is encoded in the model itself. Relationships are defined explicitly as graph “edges” that describe the meaning of that relationship, the context in which it applies (via domain and range), and how the relationship functions (via functional, symmetric, transitive, and other such properties). Because this context is built into the ontology itself, a reasoner, including AI, can derive meaning with semantic consistency. In short, databases store data, whereas ontologies model meaning.
 
@@ -96,8 +99,10 @@ To view the full ontology in WebVOWL:
 4.	Browse your device for the ontology that you downloaded in Step 1.
 5.	Click **Upload** if the selected ontology doesn’t open automatically.
 6.	Use the **Filter** and **Options** menus to modify the ontology elements that you want to visualize. For instance, select the following filters to view the ontology in full.
-   (Insert image 3)
-7.	Zoom in and out to explore the details.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot of filter options in WebVOWL](images/Intro-WebVOWL-filters.png)
+  	
+8.	Zoom in and out to explore the details.
 
 ## Acknowledgements
 I’d like to thank [Jessica Talisman](https://jessicatalisman.substack.com/p/the-ontology-pipeline) for introducing me to the Ontology Pipeline and the role that each component of the pipeline plays in improving the trustworthiness of AI output.
