@@ -1,0 +1,1506 @@
+@prefix : <http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix Knowledge-Management: <http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#> .
+@base <http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management/> .
+
+<http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management> rdf:type owl:Ontology ;
+                                                                            rdfs:comment "A domain ontology for Knowledge Management defining knowledge asset types, lifecycle stages, audience types, KM processes, KM roles, content types, adjacent disciplines, and retention policy." ;
+                                                                            rdfs:label "Knowledge Management Ontology" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#hasAudienceType
+Knowledge-Management:hasAudienceType rdf:type owl:ObjectProperty ;
+                                     rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                     rdfs:range Knowledge-Management:AudienceType ;
+                                     rdfs:comment "Relates a KnowledgeAsset to its intended AudienceType." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#hasContentType
+Knowledge-Management:hasContentType rdf:type owl:ObjectProperty ;
+                                    rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                    rdfs:range Knowledge-Management:ContentType .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#hasLifecycleStage
+Knowledge-Management:hasLifecycleStage rdf:type owl:ObjectProperty ,
+                                                owl:FunctionalProperty ;
+                                       rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                       rdfs:range Knowledge-Management:LifecycleStage ;
+                                       rdfs:comment "Relates a KnowledgeAsset to its current LifecycleStage." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#hasRetentionPolicy
+Knowledge-Management:hasRetentionPolicy rdf:type owl:ObjectProperty ,
+                                                 owl:FunctionalProperty ;
+                                        rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                        rdfs:range Knowledge-Management:RetentionPolicy ;
+                                        rdfs:comment "Relates a KnowledgeAsset to its governing RetentionPolicy." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#hasTargetAudience
+Knowledge-Management:hasTargetAudience rdf:type owl:ObjectProperty ;
+                                       rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                       rdfs:range Knowledge-Management:AudienceRelationship ;
+                                       rdfs:comment "Relates a KnowledgeAsset to its intended RelationshipAudience (Public, Partner, Member, Staff)." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#intersectsWith
+Knowledge-Management:intersectsWith rdf:type owl:ObjectProperty ,
+                                             owl:ReflexiveProperty ;
+                                    rdfs:domain Knowledge-Management:AdjacentDiscipline ,
+                                                owl:Thing ;
+                                    rdfs:range owl:Thing .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ownedBy
+Knowledge-Management:ownedBy rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                             rdfs:range Knowledge-Management:KnowledgeContentOwner ;
+                             rdfs:comment "Relates a KnowledgeAsset to its designated KnowledgeContentOwner." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#precedes
+Knowledge-Management:precedes rdf:type owl:ObjectProperty ,
+                                       owl:TransitiveProperty ;
+                              rdfs:domain Knowledge-Management:LifecycleStage ;
+                              rdfs:range Knowledge-Management:LifecycleStage ;
+                              rdfs:comment "General ordering relationship between lifecycle stages. Transitive: if A precedes B and B precedes C, then A precedes C. Inferred from the transitionsTo sub-property chain." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#transitionsTo
+Knowledge-Management:transitionsTo rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf Knowledge-Management:precedes ;
+                                   rdfs:domain Knowledge-Management:LifecycleStage ;
+                                   rdfs:range Knowledge-Management:LifecycleStage ;
+                                   rdfs:comment "An explicit permitted transition between two lifecycle stages. Non-transitive. Sub-property of precedes; every asserted transition implies a precedes relationship." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#validatedBy
+Knowledge-Management:validatedBy rdf:type owl:ObjectProperty ;
+                                 rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                 rdfs:range Knowledge-Management:KnowledgeSME ;
+                                 rdfs:comment "Relates a KnowledgeAsset to the KnowledgeSME responsible for validating its accuracy." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#dispositionActivity
+Knowledge-Management:dispositionActivity rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain Knowledge-Management:RetentionPolicy ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "Action taken when the retention period ends. Controlled values: Delete, Review, PreservePermanently." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#hasGovernanceBody
+Knowledge-Management:hasGovernanceBody rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                       rdfs:range xsd:boolean ;
+                                       rdfs:comment "Indicates whether a formal, named body (board, committee, or other designated authority) holds explicit oversight responsibility over a knowledge asset. Typically defined as a complement to the isGoverned property. Typically set to False for assets governed by KM workflows only." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#isGoverned
+Knowledge-Management:isGoverned rdf:type owl:DatatypeProperty ;
+                                rdfs:domain Knowledge-Management:KnowledgeAsset ;
+                                rdfs:range xsd:boolean ;
+                                rdfs:comment "Indicates whether a Knowledge Asset is subject to formal authority governance, meaning its content, approval, and/or lifecycle decisions require explicit authorization from a designated body beyond standard KM workflow. True for assets where unauthorized changes could trigger a compliance, legal, or policy violation." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#retentionPeriod
+Knowledge-Management:retentionPeriod rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain Knowledge-Management:RetentionPolicy ;
+                                     rdfs:range xsd:integer ;
+                                     rdfs:comment "Duration of the retention period expressed as an integer. Use in conjunction with retentionUnit." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#retentionType
+Knowledge-Management:retentionType rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain Knowledge-Management:RetentionPolicy ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Basis for the retention requirement. Controlled values: Legal, Compliance, Operations." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#retentionUnit
+Knowledge-Management:retentionUnit rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain Knowledge-Management:RetentionPolicy ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Unit of measurement for retentionPeriod. Controlled values: Years, Months." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Acknowledgement
+Knowledge-Management:Acknowledgement rdf:type owl:Class ;
+                                     rdfs:subClassOf Knowledge-Management:LegalDocument ;
+                                     rdfs:comment "An Acknowledgement is a legal document in which a party confirms awareness, receipt, or understanding of a specific policy, obligation, or communication. It serves primarily as an evidentiary record rather than a binding commitment to action, and is distinguished from Authorization by its confirmatory rather than permissive function." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#AdjacentDiscipline
+Knowledge-Management:AdjacentDiscipline rdf:type owl:Class ;
+                                        rdfs:comment "Adjacent Discipline is a class that represents professional disciplines with meaningful overlap with Knowledge Management, sharing methods, artifacts, and/or organizational scope." ;
+                                        rdfs:label "Adjacent Discipline" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Affidavit
+Knowledge-Management:Affidavit rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:LegalDocument ;
+                               rdfs:comment "An Affidavit is a legal document that captures sworn written statement of facts, made under oath and under penalty of perjury, that the statements are true to the best of his or her knowledge." ;
+                               rdfs:label "Affidavit" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Agreement
+Knowledge-Management:Agreement rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:LegalDocument ;
+                               rdfs:comment "An Agreement is a legal document that contains an expression (as a settlement, covenant, or contract) of the intent or willingness of two or more parties to bind at least one of those parties to defined terms. Broader in form than a Contract, an Agreement may or may not carry full legal enforceability." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#AllStaff
+Knowledge-Management:AllStaff rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:AudienceSegment ;
+                              rdfs:comment "All Staff, which includes all employees and contractors, is an audience segment that provides access to knowledge assets with organization-wide applicability or mandatory awareness requirements." ;
+                              rdfs:label "All Staff" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Analytics
+Knowledge-Management:Analytics rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:Reporting ;
+                               owl:disjointWith Knowledge-Management:Metrics ;
+                               rdfs:comment "The reporting activity of examining knowledge management data to identify patterns, trends, and insights that inform strategic and operational decisions." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Approve
+Knowledge-Management:Approve rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:Governance ;
+                             rdfs:comment "The governance activity of formally authorizing a knowledge asset for publication or use following successful review, signifying that the asset meets organizational standards." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Archive
+Knowledge-Management:Archive rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:Governance ;
+                             rdfs:comment "The governance activity of transitioning a knowledge asset from active use to preserved storage in accordance with a retention policy, removing it from general user access." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ArtificialIntelligence
+Knowledge-Management:ArtificialIntelligence rdf:type owl:Class ;
+                                            rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:Governance
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:KnowledgeOrganization
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:Reporting
+                                                            ] ;
+                                            rdfs:comment "The discipline that specializes in developing agents that perform tasks requiring human-like reasoning, pattern recognition, or language understanding to automate knowledge management workflows." ;
+                                            rdfs:label "Artificial Intelligence" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Assign
+Knowledge-Management:Assign rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:FeedbackManagement ;
+                            rdfs:comment "The feedback management activity of routing validated feedback to the responsible owner or subject matter expert for resolution." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#AudienceRelationship
+Knowledge-Management:AudienceRelationship rdf:type owl:Class ;
+                                          rdfs:subClassOf Knowledge-Management:AudienceType ;
+                                          rdfs:comment "Audience types defined by the individual's formal relationship to the organization: Public, Partner, Member, Staff. Forms a privilege hierarchy in which each level inherits access from the level above." ;
+                                          rdfs:label "Audience Relationship" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#AudienceSegment
+Knowledge-Management:AudienceSegment rdf:type owl:Class ;
+                                     rdfs:subClassOf Knowledge-Management:AudienceType ;
+                                     rdfs:comment "Audience types defined by organizational scope rather than relationship type. Examples include: All Staff, Business Unit, Working Group, and Product Users." ;
+                                     rdfs:label "Audience Segment" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#AudienceType
+Knowledge-Management:AudienceType rdf:type owl:Class ;
+                                  rdfs:comment "The superclass for all audience classifications. Subclasses include AudienceRelationship (defined by organizational relationship), AudienceSegment (defined by organizational scope), and RoleAudience (defined by technical function)." ;
+                                  rdfs:label "Audience Type" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Audit
+Knowledge-Management:Audit rdf:type owl:Class ;
+                           rdfs:subClassOf Knowledge-Management:Governance ;
+                           rdfs:comment "The governance activity of systematically examining knowledge assets or processes against defined standards, policies, or compliance requirements to identify gaps or violations." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Authorization
+Knowledge-Management:Authorization rdf:type owl:Class ;
+                                   rdfs:subClassOf Knowledge-Management:LegalDocument ;
+                                   rdfs:comment "An Authorization is a legal docoument that grants explicit permission for a defined purpose to a specified party. It is distinguished from Acknowledgement by its permissive rather than confirmatory function, and is typically scoped by role, time period, or resource type." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#BusinessProcessManagement
+Knowledge-Management:BusinessProcessManagement rdf:type owl:Class ;
+                                               rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty Knowledge-Management:intersectsWith ;
+                                                                 owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty Knowledge-Management:intersectsWith ;
+                                                                 owl:someValuesFrom Knowledge-Management:Enablement
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty Knowledge-Management:intersectsWith ;
+                                                                 owl:someValuesFrom Knowledge-Management:Governance
+                                                               ] ;
+                                               rdfs:comment "The discipline that specializes in modeling, optimizing, and governing organizational processes to improve performance and consistency." ;
+                                               rdfs:label "Business Process Management" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#BusinessUnit
+Knowledge-Management:BusinessUnit rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:AudienceSegment ;
+                                  rdfs:comment "A Business Unit, which typically consists of multiple divisions or work groups, is an audience segment that provides access to knowledge assets relevant to that BU's specific operations, responsibilities, or domain." ;
+                                  rdfs:label "Business Unit" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Capture
+Knowledge-Management:Capture rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:ContentDevelopment ;
+                             rdfs:comment "The content development activity of gathering tacit and explicit knowledge from subject matter experts, existing sources, or organizational experience for transformation into a structured asset." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ChangeManagement
+Knowledge-Management:ChangeManagement rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty Knowledge-Management:intersectsWith ;
+                                                        owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty Knowledge-Management:intersectsWith ;
+                                                        owl:someValuesFrom Knowledge-Management:Enablement
+                                                      ] ;
+                                      rdfs:comment "The discipline that specializes in guiding individuals through transitions by managing the human side of change." ;
+                                      rdfs:label "Change Management" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ChiefKnowledgeOfficer
+Knowledge-Management:ChiefKnowledgeOfficer rdf:type owl:Class ;
+                                           rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                           rdfs:comment "A Chief Knowledge Officer, or CKO, is an executive who manages knowledge assets, facilitates knowledge flow, and promotes organizational learning. This role focuses on leveraging knowledge to improve operational efficiency, decision-making, and innovation." ;
+                                           rdfs:label "Chief Knowledge Officer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Classify
+Knowledge-Management:Classify rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:KnowledgeOrganization ;
+                              rdfs:comment "The knowledge organization activity of assigning a knowledge asset to one or more defined categories, types, or taxonomy nodes to facilitate discoverability and navigation." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Coach
+Knowledge-Management:Coach rdf:type owl:Class ;
+                           rdfs:subClassOf Knowledge-Management:Enablement ;
+                           rdfs:comment "The enablement activity of developing practitioner knowledge and capability through individualized or small-group guidance, ideally applied at the point of need." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#CommitteeCharter
+Knowledge-Management:CommitteeCharter rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:GovernanceDocument ;
+                                      rdfs:comment "A Committee Charter is a governance document that defines the purpose, responsibilities, and procedures of a board committee." ;
+                                      rdfs:label "Committee Charter" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Communicate
+Knowledge-Management:Communicate rdf:type owl:Class ;
+                                 rdfs:subClassOf Knowledge-Management:Enablement ;
+                                 rdfs:comment "The enablement activity of disseminating knowledge, decisions, or organizational updates to defined audiences to ensure awareness and shared understanding." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#CommunicationsTemplate
+Knowledge-Management:CommunicationsTemplate rdf:type owl:Class ;
+                                            rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                            rdfs:comment "A Communications Template is a user-customizable document that users populate with relevant data and subsequently send to customers, vendors, or internal staff. Using this template ensures that information is communicated in a consistent and professional format." ;
+                                            rdfs:label "Communications Template" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#CommunityDiscussion
+Knowledge-Management:CommunityDiscussion rdf:type owl:Class ;
+                                         rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                         rdfs:comment "A Community Discussion captures the important perspectives and decisions among practitioners within a community of practice or knowledge network. A Community Discussion is distinguished from formal documentation by its organic, conversational nature. Its value lies in the diversity of viewpoints and expertise surfaced through dialog." ;
+                                         rdfs:label "Community Discussion" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Conceptual
+Knowledge-Management:Conceptual rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:ContentType ;
+                                rdfs:comment "Conceptual content conveys a theoretical understanding of what something is and how it works in a given context. Its purpose is to facilitate understanding by providing an intuitive mental model." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentDevelopment
+Knowledge-Management:ContentDevelopment rdf:type owl:Class ;
+                                        rdfs:subClassOf Knowledge-Management:KnowledgeProcess ;
+                                        rdfs:comment "The class of activities encompassing the planning, creation, organization, refinement, and release of knowledge assets within a managed content lifecycle." ;
+                                        rdfs:label "Content Development" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType
+Knowledge-Management:ContentType rdf:type owl:Class ;
+                                 rdfs:comment "Content Type is a class that organizes knowledge by its cognitive purpose or function, such as: Conceptual, Declarative, Experiential, Procedural, Reference, or Troubleshooting." ;
+                                 rdfs:label "Content Type" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Contract
+Knowledge-Management:Contract rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:Agreement ;
+                              rdfs:comment "A legally binding agreement between two or more parties that establishes enforceable obligations, terms, and remedies. Distinguished from Agreement by its formal enforceability: typically requires offer, acceptance, consideration, and mutual intent to be bound." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Contractor
+Knowledge-Management:Contractor rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:Staff ;
+                                rdfs:comment "Contractors, though considered Staff, are typically restricted from accessing information intended for employees. Scope of access may be further restricted based on engagement type." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Create
+Knowledge-Management:Create rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:ContentDevelopment ;
+                            rdfs:comment "The content development activity of authoring original content from captured knowledge, producing a draft knowledge asset suitable for review, test, and refinement." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Curate
+Knowledge-Management:Curate rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:Governance ;
+                            rdfs:comment "The governance activity of continuously assessing and improving the knowledge base as a whole by identifying gaps, removing redundancy, and otherwise ensuring that assets remain coherent and current." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#DataGovernance
+Knowledge-Management:DataGovernance rdf:type owl:Class ;
+                                    rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty Knowledge-Management:intersectsWith ;
+                                                      owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty Knowledge-Management:intersectsWith ;
+                                                      owl:someValuesFrom Knowledge-Management:KnowledgeOrganization
+                                                    ] ;
+                                    rdfs:comment "The discipline that specializes in establishing policies, standards, and accountability for the quality, integrity, and use of organizational data." ;
+                                    rdfs:label "Data Governance" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#DecisionGuide
+Knowledge-Management:DecisionGuide rdf:type owl:Class ;
+                                   rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                   rdfs:comment "A Decision Guide provides decision logic to help users select the most optimal course of action. It codifies expert judgment in navigable format, typically with branching logic and weighted criteria." ;
+                                   rdfs:label "Decision Guide" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Declarative
+Knowledge-Management:Declarative rdf:type owl:Class ;
+                                 rdfs:subClassOf Knowledge-Management:ContentType ;
+                                 rdfs:comment "Declarative content conveys facts, rules, and principles as assertations of truth. Its purpose is to provide succinct guidance or direction. For example: \"Employees must submit expense reports within 30 days of purchase.\"" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Define
+Knowledge-Management:Define rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:KnowledgeOrganization ;
+                            rdfs:comment "The knowledge organization activity of establishing the authoritative meaning of terms, concepts, and asset types within the knowledge management system, providing the semantic foundation for consistent classification and communication." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Developer
+Knowledge-Management:Developer rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:ProductUsers ;
+                               rdfs:comment "Developers build, extend, enhance, and integrate software products." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Edit
+Knowledge-Management:Edit rdf:type owl:Class ;
+                          rdfs:subClassOf Knowledge-Management:ContentDevelopment ;
+                          rdfs:comment "The content development activity of reviewing and refining content for accuracy, clarity, consistency, and alignment with organizational standards prior to publication." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Employee
+Knowledge-Management:Employee rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:Staff ;
+                              rdfs:comment "Employees have access to nearly all available knowledge assets, other than those intended for managers, executives, and restricted audiences." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Enablement
+Knowledge-Management:Enablement rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:KnowledgeProcess ;
+                                rdfs:comment "The class of activities encompassing the orientation, development, communication, and knowledge transfer functions that build practitioner capability and ensure knowledge meets the needs of those who need it." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#EndUser
+Knowledge-Management:EndUser rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:ProductUsers ;
+                             rdfs:comment "End Users are primary users of a hardware or software product and the audience for which the product was designed and built." ;
+                             rdfs:label "End User" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Enforce
+Knowledge-Management:Enforce rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:Governance ;
+                             rdfs:comment "The governance activity of ensuring adherence to knowledge management policies, standards, and governance decisions across contributors, owners, and organizational units." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#EnterpriseGlossary
+Knowledge-Management:EnterpriseGlossary rdf:type owl:Class ;
+                                        rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                        rdfs:comment "An Enterprise Glossary defines authoritative definition of terms, concepts, and acronyms within an organization, and serves as a semantic anchor for knowledge consistency. Glossary entries are curated, versioned, and linked to the documented contexts in which they apply." ;
+                                        rdfs:label "Enterprise Glossary" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Executive
+Knowledge-Management:Executive rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:Staff ;
+                               rdfs:comment "Executives can typically access all available knowledge assets, although their access may be refined to focus on strategic, governance-level content that enables them to make sound business decisions." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Experiential
+Knowledge-Management:Experiential rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:ContentType ;
+                                  rdfs:comment "Experiential content conveys knowledge gained through personal experience. Its purpose is to provide information that can be gained only through direct participation. Examples include Lessons Learned and Case Studies." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#FAQ
+Knowledge-Management:FAQ rdf:type owl:Class ;
+                         rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                         rdfs:comment "An FAQ, or Frequently Asked Questions document, contains a curated set of answers to a range of actual or anticipated questions." ;
+                         rdfs:label "Frequently Asked Questions" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#FeedbackManagement
+Knowledge-Management:FeedbackManagement rdf:type owl:Class ;
+                                        rdfs:subClassOf Knowledge-Management:KnowledgeProcess ;
+                                        rdfs:comment "The class of activities encompassing the intake, routing, and resolution of user feedback on knowledge assets to support continuous improvement." ;
+                                        rdfs:label "Feedback Management" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#FillableForm
+Knowledge-Management:FillableForm rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                  rdfs:comment "A Fillable Form is a document that contains blank spaces that are populated by users and submitted to an organization for processing." ;
+                                  rdfs:label "Fillable Form" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#FunctionalExample
+Knowledge-Management:FunctionalExample rdf:type owl:Class ;
+                                       rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                       rdfs:comment "A Functional Example is a document that serves as a sample of a completed knowledge artifact, such as a fillable form. Its purpose is instructional, illustrating how a particular activity or document might appear in its completed state." ;
+                                       rdfs:label "Functional Example" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Governance
+Knowledge-Management:Governance rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:KnowledgeProcess ;
+                                rdfs:comment "The class of activities encompassing the oversight, authorization, quality assurance, and policy enforcement functions that ensure knowledge assets remain accurate, compliant, and aligned with organizational standards." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#GovernanceDocument
+Knowledge-Management:GovernanceDocument rdf:type owl:Class ;
+                                        rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                        rdfs:comment "A Governance Document is a clss of Knowledge Asset that consists of documents that define, authorize, or constrain organizational behavior. Examples include: Policy, Standard, Guideline, CommitteeCharter, and ProgramCharter." ;
+                                        rdfs:label "Governance Document" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Guideline
+Knowledge-Management:Guideline rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:GovernanceDocument ;
+                               rdfs:comment "A Governance Guideline enumerates the requirements of safe and sound operational imperatives, risk management and risk tolerances, regulatory interpretations or guidance, and other operational or legal requirements. A guideline generally supports and implements a Governance Policy or Governance Standard but may also stand alone. Typically, a Governance Guideline conveys exceptions as an integral part of the Guideline and incorporates a documented exception process specifying approval authority and the process for all exceptions, along with controls or compensating factors to manage the risks associated with such exceptions." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#InformationArchitecture
+Knowledge-Management:InformationArchitecture rdf:type owl:Class ;
+                                             rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty Knowledge-Management:intersectsWith ;
+                                                               owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty Knowledge-Management:intersectsWith ;
+                                                               owl:someValuesFrom Knowledge-Management:KnowledgeOrganization
+                                                             ] ;
+                                             rdfs:comment "The discipline that specializes in structuring, tagging, and organizing information to support findability and usability." ;
+                                             rdfs:label "Information Architecture" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#JobAid
+Knowledge-Management:JobAid rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                            rdfs:comment "A Job Aid is an instructional tool that typically complements one or more other instructional materials. Job aids may be physical or electronic and may be published in a wide variety of output formats, depending on user need." ;
+                            rdfs:label "Job Aid" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeAnalyst
+Knowledge-Management:KnowledgeAnalyst rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                      rdfs:comment "A Knowledge Analyst collects and analyzes metrics to gauge the effectiveness of  knowledge. Examples include customer satification (CSAT), knowledge validation rate (KVR), findability, and more." ;
+                                      rdfs:label "Knowledge Analyst" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeArchitect
+Knowledge-Management:KnowledgeArchitect rdf:type owl:Class ;
+                                        rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                        rdfs:comment "A Knowledge Architect designs and builds knowledge assets to meet distinct user needs (human and AI agent). This role ensures the coherence of both the delivered knowledge asset and the individual components that comprise that asset." ;
+                                        rdfs:label "Knowledge Architect" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeArticle
+Knowledge-Management:KnowledgeArticle rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                      rdfs:comment "A Knowledge Article  — the foundational artifact type of a knowledge base  — provides conceptual, procedural, reference, or troubleshooting information specific to various sets of users and situations." ;
+                                      rdfs:label "Knowledge Article" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeAsset
+Knowledge-Management:KnowledgeAsset rdf:type owl:Class ;
+                                    rdfs:comment "Knowledge Asset is a class that represents the artifact in which knowledge is packaged and delivered. Knowledge Asset is distinct from Content Type, a class that represents the epistemic nature of the knowledge captured within the artifact. For example, a Job Aid is a knowledge asset whose content type is typically Reference." ;
+                                    rdfs:label "Knowledge Asset" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeChampion
+Knowledge-Management:KnowledgeChampion rdf:type owl:Class ;
+                                       rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                       rdfs:comment "A Knowledge Champion advocates for the value of knowledge in operational workflows, promoting the creation of new knowledge and the use, reuse, and revision of existing knowledge." ;
+                                       rdfs:label "Knowledge Champion" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeCoach
+Knowledge-Management:KnowledgeCoach rdf:type owl:Class ;
+                                    rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                    rdfs:comment "A Knowledge Coach teaches others how to use the knowledge system (or knowledge base) and its contents effectively." ;
+                                    rdfs:label "Knowledge Coach" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeCommunicationsLead
+Knowledge-Management:KnowledgeCommunicationsLead rdf:type owl:Class ;
+                                                 rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                                 rdfs:comment "A Knowledge Communications Lead shares meaningful updates about the knowledge system and its contents. This role focuses on both the message and the medium to ensure that communications are received and heard." ;
+                                                 rdfs:label "Knowledge Communications Lead" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeComplianceAdministrator
+Knowledge-Management:KnowledgeComplianceAdministrator rdf:type owl:Class ;
+                                                      rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                                      rdfs:comment "A Knowledge Compliance Administrator validates the ccompliance requirements of a knowledge asset prior to its publication." ;
+                                                      rdfs:label "Knowledge Compliance Administrator" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeContentOwner
+Knowledge-Management:KnowledgeContentOwner rdf:type owl:Class ;
+                                           rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                           rdfs:comment "A Knowledge Content Owner is accountable for the accuracy and currency of knowledge within a defined domain or practice." ;
+                                           rdfs:label "Knowledge Content Owner" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeCurator
+Knowledge-Management:KnowledgeCurator rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                      rdfs:comment "A Knowledge Curator is responsible for organizing, tagging, and maintaining the taxonomy of knowledge throughout its lifecycle. This role focuses on the currency of published knowledge and removes from publication knowledge considered ROT (irrelevant, obsolete, or trivial)." ;
+                                      rdfs:label "Knowledge Curator" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeEditor
+Knowledge-Management:KnowledgeEditor rdf:type owl:Class ;
+                                     rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                     rdfs:comment "A Knowledge Editor reviews and improves content for quality, standards, and usability." ;
+                                     rdfs:label "Knowledge Editor" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeManager
+Knowledge-Management:KnowledgeManager rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                      rdfs:comment "A Knowledge Manager manages knowledge assets throughout their lifecycle, from inception through archival. This role focuses on ensuring knowledge meets the needs of its users." ;
+                                      rdfs:label "Knowledge Manager" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeOrganization
+Knowledge-Management:KnowledgeOrganization rdf:type owl:Class ;
+                                           rdfs:subClassOf Knowledge-Management:KnowledgeProcess ;
+                                           rdfs:comment "The class of activities encompassing the categorization, definition, and structural arrangement of knowledge assets to support findability, consistency, and coherent knowledge architecture." ;
+                                           rdfs:label "Knowledge Organization" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeProcess
+Knowledge-Management:KnowledgeProcess rdf:type owl:Class ;
+                                      rdfs:comment "The superclass for all managed KM activities. Subclasses represent distinct process domains: ContentDevelopment, FeedbackManagement, Governance, KnowledgeOrganization, Enablement, and Reporting." ;
+                                      rdfs:label "Knowledge Process" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeRole
+Knowledge-Management:KnowledgeRole rdf:type owl:Class ;
+                                   rdfs:comment "Defines the established set of roles within a KM program. Roles are defined according to their primary responsibility in the creation, governance, curation, or communication of a Knowledge Asset." ;
+                                   rdfs:label "Knowledge Role" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeSME
+Knowledge-Management:KnowledgeSME rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                  rdfs:comment "A Knowledge SME creates and maintains knowledge specific to their domain of expertise." ;
+                                  rdfs:label "Knowledge SME" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeSystemsEngineer
+Knowledge-Management:KnowledgeSystemsEngineer rdf:type owl:Class ;
+                                              rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                              rdfs:comment "A Knowledge Systems Engineer architects, designs, and evolves the infrastructure of a knowledge system to ensure that the system meets user needs. This role focuses on the overall orchestration of the system and its ability to store, protect, and deliver knowledge effectively." ;
+                                              rdfs:label "Knowledge Systems Engineer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeTransfer
+Knowledge-Management:KnowledgeTransfer rdf:type owl:Class ;
+                                       rdfs:subClassOf Knowledge-Management:Enablement ;
+                                       rdfs:comment "The enablement activity of deliberately sharing critical knowledge from one user group to another, typically in response to role transitions, retirements, or organizational change." ;
+                                       rdfs:label "Knowledge Transfer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KnowledgeWriter
+Knowledge-Management:KnowledgeWriter rdf:type owl:Class ;
+                                     rdfs:subClassOf Knowledge-Management:KnowledgeRole ;
+                                     rdfs:comment "A Knowledge Writer creates new knowledge to fill identified knowledge gaps. This role frequently collaborates with Knowledge SMEs and one or more Knowledge Content Owners." ;
+                                     rdfs:label "Knowledge Writer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#LearningAndDevelopment
+Knowledge-Management:LearningAndDevelopment rdf:type owl:Class ;
+                                            rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:Enablement
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty Knowledge-Management:intersectsWith ;
+                                                              owl:someValuesFrom Knowledge-Management:KnowledgeOrganization
+                                                            ] ;
+                                            rdfs:comment "The discipline that specializes in designing and delivering structured learning experiences that build individual and organizational capability." ;
+                                            rdfs:label "Learning and Development" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#LegalDocument
+Knowledge-Management:LegalDocument rdf:type owl:Class ;
+                                   rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                   rdfs:comment "A legal document is a class of Knowledge Asset consisting of documents that carry formal legal, evidentiary, or compliance weight. Legal documents are distinguished from other asset types by the presence of signatories, parties, effective dates, and enforceability characteristics." ;
+                                   rdfs:label "Legal Document" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#LessonsLearned
+Knowledge-Management:LessonsLearned rdf:type owl:Class ;
+                                    rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                    rdfs:comment "A Lessons Learned document is a retrospective knowledge artifact that captures insights, outcomes, and recommendations from team members who recently completed a project or initiative. It documents both what succeeded and what failed, with the explicit intent of improving future practice." ;
+                                    rdfs:label "Lessons Learned" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#LifecycleStage
+Knowledge-Management:LifecycleStage rdf:type owl:Class ;
+                                    rdfs:comment "Defines the agreed-upon lifecycle states for a given Knowledge Asset. Valid values include: Draft, InReview, Approved, Published, Deprecated, Expired, and Archived. Stages are modeled as named individuals with \"transitionsTo\" and \"precedes\" relationships." ;
+                                    rdfs:label "Lifecycle Stage" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#MeetingNotes
+Knowledge-Management:MeetingNotes rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                  rdfs:comment "A Meeting Notes document records key discussion topics, decisions, and action items from a meeting of two or more people." ;
+                                  rdfs:label "Meeting Notes" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Member
+Knowledge-Management:Member rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:Partner ;
+                            rdfs:comment "The Member audience includes individuals who hold a formal membership relationship with the organization and are its primary customers. Members have broad access to knowledge assets in support of the organization's service obligations. Content is tailored to member needs, rights, and the terms of the membership relationship." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Metrics
+Knowledge-Management:Metrics rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:Reporting ;
+                             rdfs:comment "The reporting activity of defining, collecting, and tracking quantitative measures of knowledge management performance against established targets or benchmarks." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Onboard
+Knowledge-Management:Onboard rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:Enablement ;
+                             rdfs:comment "The enablement activity of orienting users to the knowledge, systems, processes, and cultural context required to become effective in their new role." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#OnboardingGuide
+Knowledge-Management:OnboardingGuide rdf:type owl:Class ;
+                                     rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                     rdfs:comment "An Onboarding Guide is designed to orient people who are new to a role, team, system, or process. The value of an Onboarding Guide is time-bound, as it prpovides the foundational knowledge necessary for its target audience to become adept in their new role." ;
+                                     rdfs:label "Onboarding Guide" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#OrganizationalDevelopment
+Knowledge-Management:OrganizationalDevelopment rdf:type owl:Class ;
+                                               rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty Knowledge-Management:intersectsWith ;
+                                                                 owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty Knowledge-Management:intersectsWith ;
+                                                                 owl:someValuesFrom Knowledge-Management:Enablement
+                                                               ] ;
+                                               rdfs:comment "The discipline that specializes in improving organizational effectiveness through culture, structure, and people-centered interventions." ;
+                                               rdfs:label "Organizational Development" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Organize
+Knowledge-Management:Organize rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:KnowledgeOrganization ;
+                              rdfs:comment "The knowledge organization activity of arranging knowledge assets into coherent structures — hierarchies, collections, or relationship networks — to reflect domain logic and facilitate discoverability, navigation, and user comprehension." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Partner
+Knowledge-Management:Partner rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:Public ;
+                             rdfs:comment "The Partner audience encompasses extternal entities and individuals that have a contractual relationship with the organization. Partners have slightly broader access to knowledge assets than the Public, though usually narrower access than Members." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#PeopleManager
+Knowledge-Management:PeopleManager rdf:type owl:Class ;
+                                   rdfs:subClassOf Knowledge-Management:Staff ;
+                                   rdfs:comment "People Managers have slightly broader access to knowledge assets than Supervisors, including assets intended for personnel managers." ;
+                                   rdfs:label "People Manager" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Playbook
+Knowledge-Management:Playbook rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                              rdfs:comment "A Playbook is a document that codifies the recommended approach, tactics, and decision logic for a given situation. A Playbook typically provides more context and guidance than a Runbook, and allows for the user to adapt to varying conditions rather than follow a fixed set of steps." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Policy
+Knowledge-Management:Policy rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:GovernanceDocument ;
+                            rdfs:comment "A Governance Policy is a mandatory directive that establishes what must be done and why. As such, a Governance Policy outlines fundamental business rules that direct the management of risk, return, and compliance with applicable federal and state laws and regulations. Policies are the business rules under which the organization must operate, providing high-level instruction, requirements, and objectives with which employees and business units are expected to comply." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Procedural
+Knowledge-Management:Procedural rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:ContentType ;
+                                rdfs:comment "Procedural content conveys how to do something. Its purpose is to provide detailed instructions for accomplishing a task." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ProcessFlow
+Knowledge-Management:ProcessFlow rdf:type owl:Class ;
+                                 rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                 rdfs:comment "A Process Flow is a diagram that conveys the sequence, logic, and roles involved in a functional process. Its primary purpose is to illustrate how work moves rather than how to perform individual tasks." ;
+                                 rdfs:label "Process Flow" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ProductUsers
+Knowledge-Management:ProductUsers rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:AudienceSegment ;
+                                  rdfs:comment "Product Users is an audience segment that provides access to knowledge assets relevant to a specific hardware or software product." ;
+                                  rdfs:label "Product Users" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ProgramCharter
+Knowledge-Management:ProgramCharter rdf:type owl:Class ;
+                                    rdfs:subClassOf Knowledge-Management:GovernanceDocument ;
+                                    rdfs:comment "A Program Charter is a governance document that defines the purpose, responsibilities, and procedures of a program or initiative. Functions as an authoritative reference for organizational alignment and accountability." ;
+                                    rdfs:label "Program Charter" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ProjectManagement
+Knowledge-Management:ProjectManagement rdf:type owl:Class ;
+                                       rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty Knowledge-Management:intersectsWith ;
+                                                         owl:someValuesFrom Knowledge-Management:FeedbackManagement
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty Knowledge-Management:intersectsWith ;
+                                                         owl:someValuesFrom Knowledge-Management:Governance
+                                                       ] ;
+                                       rdfs:comment "The discipline that specializes in planning, executing, monitoring, and delivering defined bodies of work within scope, time, and resource constraints." ;
+                                       rdfs:label "Project Management" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Public
+Knowledge-Management:Public rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:AudienceRelationship ;
+                            rdfs:comment "The Public audience has no established relationship with the organization. The Public has access only to knowledge assets intended for external use." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Publish
+Knowledge-Management:Publish rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:ContentDevelopment ;
+                             rdfs:comment "The content development activity of releasing a completed knowledge asset to its intended audience and making it available within the knowledge management system." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Reference
+Knowledge-Management:Reference rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:ContentType ;
+                               rdfs:comment "Reference content conveys information with little supporting contextual information. Its pupose is to provide easy access to information that often cannot be retained in memory." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Reporting
+Knowledge-Management:Reporting rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:KnowledgeProcess ;
+                               rdfs:comment "The class of activities encompassing the measurement, analysis, and communication of knowledge management performance data to support decision-making and continuous improvement." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Resolve
+Knowledge-Management:Resolve rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:FeedbackManagement ;
+                             rdfs:comment "The feedback management activity of acting on assigned feedback by updating, retiring, or explicitly accepting the knowledge asset as-is, and closing the feedback loop." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#RetentionPolicy
+Knowledge-Management:RetentionPolicy rdf:type owl:Class ;
+                                     rdfs:comment "Defines the retention requirements for a Knowledge Asset, including duration, basis, and disposition action at end of retention period. Properties include: retentionPeriod (integer), retentionUnit (Years/Months), retentionType (Legal/Compliance/Operations), and dispositionActivity (Delete/Review/PreservePermanently)." ;
+                                     rdfs:label "Retention Policy" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Review
+Knowledge-Management:Review rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:Governance ;
+                            rdfs:comment "The governance activity of assessing a knowledge asset against quality, accuracy, and relevance criteria to determine whether it should be approved, revised, or retired." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Runbook
+Knowledge-Management:Runbook rdf:type owl:Class ;
+                             rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                             rdfs:comment "A Runbook is a document that captures explicit, step-by-step instructions for executing a defined task. Distinguished from a Playbook by its prescriptive nature, a Runbook assumes conditions are sufficiently predictable. Deviation from its guidance is discouraged." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Staff
+Knowledge-Management:Staff rdf:type owl:Class ;
+                           rdfs:subClassOf Knowledge-Management:Member ;
+                           rdfs:comment "The Staff audience includes individuals who are employed by the organization. Staff typicall enjoys access to all, or most all, knowledge assets that support operational functions. The scope of access is further determined by Staff Type." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Standard
+Knowledge-Management:Standard rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:GovernanceDocument ;
+                              rdfs:comment "A Governance Standard enumerates the requirements of applicable federal and state laws and regulations, regulatory interpretations or guidance, safe and sound operational imperatives and risk tolerances, and other critical operational controls or legal requirements. A Governance  Standard generally supports and implements a Governance Policy but may also stand alone. Typically, a Governance Standard does not permit exceptions." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Strategize
+Knowledge-Management:Strategize rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:ContentDevelopment ;
+                                rdfs:comment "The content development activity of defining the purpose, scope, audience, and governance approach for a knowledge asset or content initiative before creation begins." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Structure
+Knowledge-Management:Structure rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:ContentDevelopment ;
+                               rdfs:comment "The content development activity of organizing and formatting content to optimize findability, navigability, and reuse." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Supervisor
+Knowledge-Management:Supervisor rdf:type owl:Class ;
+                                rdfs:subClassOf Knowledge-Management:Staff ;
+                                rdfs:comment "Supervisors have slightly broader access to knowledge assets than regular employees, including assets intended for leadership." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#SystemAdministrator
+Knowledge-Management:SystemAdministrator rdf:type owl:Class ;
+                                         rdfs:subClassOf Knowledge-Management:ProductUsers ;
+                                         rdfs:comment "System Administrators are responsible for configuring, maintaining, and managing the operational integrity of a software product." ;
+                                         rdfs:label "System Administrator" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#TechnicalWriting
+Knowledge-Management:TechnicalWriting rdf:type owl:Class ;
+                                      rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty Knowledge-Management:intersectsWith ;
+                                                        owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty Knowledge-Management:intersectsWith ;
+                                                        owl:someValuesFrom Knowledge-Management:Enablement
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty Knowledge-Management:intersectsWith ;
+                                                        owl:someValuesFrom Knowledge-Management:FeedbackManagement
+                                                      ] ;
+                                      rdfs:comment "The discipline that specializes in producing clear, accurate, and usable documentation for technical and non-technical audiences." ;
+                                      rdfs:label "Technical Writing" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Template
+Knowledge-Management:Template rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                              rdfs:comment "A Template is a reusable, highly structured meta-artifact that users populate to produce a new knowledge artifact consistently. A template encodes organizational standards into a reproducible form." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#TrainingModule
+Knowledge-Management:TrainingModule rdf:type owl:Class ;
+                                    rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                                    rdfs:comment "A Training Module is a document designed to develop user competency through structured learning content, typically combining explanation, demonstration, and assessment." ;
+                                    rdfs:label "Training Module" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Triage
+Knowledge-Management:Triage rdf:type owl:Class ;
+                            rdfs:subClassOf Knowledge-Management:FeedbackManagement ;
+                            rdfs:comment "The feedback management activity of evaluating incoming feedback to determine its validity, priority, and appropriate disposition." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Troubleshooting
+Knowledge-Management:Troubleshooting rdf:type owl:Class ;
+                                     rdfs:subClassOf Knowledge-Management:ContentType ;
+                                     rdfs:comment "Troubleshooting content conveys methods for diagnosing and resolving technical problems. Its purpose is to provide detailed instructions for fixing known problems." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#UserExperience
+Knowledge-Management:UserExperience rdf:type owl:Class ;
+                                    rdfs:subClassOf Knowledge-Management:AdjacentDiscipline ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty Knowledge-Management:intersectsWith ;
+                                                      owl:someValuesFrom Knowledge-Management:ContentDevelopment
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty Knowledge-Management:intersectsWith ;
+                                                      owl:someValuesFrom Knowledge-Management:Enablement
+                                                    ] ;
+                                    rdfs:comment "The discipline that specializes in designing user interfaces that are usable, accessible, and pleasing to their intended audiences." ;
+                                    rdfs:label "User Experience" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#UserGuide
+Knowledge-Management:UserGuide rdf:type owl:Class ;
+                               rdfs:subClassOf Knowledge-Management:KnowledgeAsset ;
+                               rdfs:comment "A User Guide is an organized collection of conceptual, reference, and procedural information designed to help people use a particular product, service, or software application." ;
+                               rdfs:label "User Guide" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Validate
+Knowledge-Management:Validate rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:Governance ;
+                              rdfs:comment "The governance activity of confirming that a knowledge asset is factually accurate and technically correct, typically through subject matter expert verification." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Warranty
+Knowledge-Management:Warranty rdf:type owl:Class ;
+                              rdfs:subClassOf Knowledge-Management:LegalDocument ;
+                              rdfs:comment "A Warranty is an assurance, promise, or guarantee by one party that a particular statement of fact is true and may be relied upon by the other party." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#WorkingGroup
+Knowledge-Management:WorkingGroup rdf:type owl:Class ;
+                                  rdfs:subClassOf Knowledge-Management:AudienceSegment ;
+                                  rdfs:comment "A Working Group, which typically consists of cross-functional staff from one or more BUs, is an audience segment that provides access to knowledge assets relevant to that group's work projects and initiatives." ;
+                                  rdfs:label "Working Group" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Approved
+Knowledge-Management:Approved rdf:type owl:NamedIndividual ,
+                                       Knowledge-Management:LifecycleStage ;
+                              Knowledge-Management:transitionsTo Knowledge-Management:Published ;
+                              rdfs:comment "The lifecycle stage in which a knowledge asset has passed review and been formally authorized for use, but not yet made available to its intended audience." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Archived
+Knowledge-Management:Archived rdf:type owl:NamedIndividual ,
+                                       Knowledge-Management:LifecycleStage ;
+                              rdfs:comment "The terminal lifecycle stage in which a knowledge asset is retained for historical, compliance, or reference purposes but removed from active practitioner access. Content is preserved but not maintained." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Audience-Member
+Knowledge-Management:Audience-Member rdf:type owl:NamedIndividual ,
+                                              Knowledge-Management:Member .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Audience-Partner
+Knowledge-Management:Audience-Partner rdf:type owl:NamedIndividual ,
+                                               Knowledge-Management:Partner .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Audience-Public
+Knowledge-Management:Audience-Public rdf:type owl:NamedIndividual ,
+                                              Knowledge-Management:Public .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Audience-Staff
+Knowledge-Management:Audience-Staff rdf:type owl:NamedIndividual ,
+                                             Knowledge-Management:Staff .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType-Conceptual
+Knowledge-Management:ContentType-Conceptual rdf:type owl:NamedIndividual ,
+                                                     Knowledge-Management:Conceptual .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType-Declarative
+Knowledge-Management:ContentType-Declarative rdf:type owl:NamedIndividual ,
+                                                      Knowledge-Management:Declarative .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType-Experiential
+Knowledge-Management:ContentType-Experiential rdf:type owl:NamedIndividual ,
+                                                       Knowledge-Management:Experiential .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType-Procedural
+Knowledge-Management:ContentType-Procedural rdf:type owl:NamedIndividual ,
+                                                     Knowledge-Management:Procedural .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType-Reference
+Knowledge-Management:ContentType-Reference rdf:type owl:NamedIndividual ,
+                                                    Knowledge-Management:Reference .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#ContentType-Troubleshooting
+Knowledge-Management:ContentType-Troubleshooting rdf:type owl:NamedIndividual ,
+                                                          Knowledge-Management:Troubleshooting .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Deprecated
+Knowledge-Management:Deprecated rdf:type owl:NamedIndividual ,
+                                         Knowledge-Management:LifecycleStage ;
+                                Knowledge-Management:transitionsTo Knowledge-Management:Archived ;
+                                rdfs:comment "The lifecycle stage in which a knowledge asset has been superseded or is no longer recommended for use, but remains accessible pending full retirement. Trigger: EditorialDecision." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Draft
+Knowledge-Management:Draft rdf:type owl:NamedIndividual ,
+                                    Knowledge-Management:LifecycleStage ;
+                           Knowledge-Management:transitionsTo Knowledge-Management:InReview ;
+                           rdfs:comment "The initial lifecycle stage in which a knowledge asset is being actively created or revised. Content is incomplete, unvalidated, and not yet available for general practitioner use." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Expired
+Knowledge-Management:Expired rdf:type owl:NamedIndividual ,
+                                      Knowledge-Management:LifecycleStage ;
+                             Knowledge-Management:transitionsTo Knowledge-Management:Archived ;
+                             rdfs:comment "The lifecycle stage in which a knowledge asset has passed its defined validity period and is no longer considered current or authoritative. Trigger: TemporalCondition." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#InReview
+Knowledge-Management:InReview rdf:type owl:NamedIndividual ,
+                                       Knowledge-Management:LifecycleStage ;
+                              Knowledge-Management:transitionsTo Knowledge-Management:Approved ,
+                                                                 Knowledge-Management:Draft ;
+                              rdfs:comment "The lifecycle stage in which a knowledge asset has been submitted for evaluation against quality, accuracy, or compliance standards." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource Knowledge-Management:InReview ;
+   owl:annotatedProperty Knowledge-Management:transitionsTo ;
+   owl:annotatedTarget Knowledge-Management:Draft ;
+   rdfs:comment "Lifecycle stage reverts to Draft if content is not Approved during the InReview stage."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-CT-001-LetterTemplate-RemainingLoanBalance
+Knowledge-Management:KA-CT-001-LetterTemplate-RemainingLoanBalance rdf:type owl:NamedIndividual ,
+                                                                            Knowledge-Management:CommunicationsTemplate ;
+                                                                   Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                                   Knowledge-Management:hasContentType Knowledge-Management:ContentType-Reference ;
+                                                                   Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                                   Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Legal-6Year ;
+                                                                   Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                                                   Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                                                   rdfs:label "Letter Template: Remaining Loan Balance" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-EG-003-EnterpriseGlossaryOfProductsAndServices
+Knowledge-Management:KA-EG-003-EnterpriseGlossaryOfProductsAndServices rdf:type owl:NamedIndividual ,
+                                                                                Knowledge-Management:EnterpriseGlossary ;
+                                                                       Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                                       Knowledge-Management:hasContentType Knowledge-Management:ContentType-Reference ;
+                                                                       Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                                       Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-PermanentPreservation ;
+                                                                       Knowledge-Management:hasGovernanceBody "true"^^xsd:boolean ;
+                                                                       Knowledge-Management:isGoverned "true"^^xsd:boolean ;
+                                                                       rdfs:label "Enterprise Glossary of Products and Services" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-FAQ-004-ApplyingForHomeLoan
+Knowledge-Management:KA-FAQ-004-ApplyingForHomeLoan rdf:type owl:NamedIndividual ,
+                                                             Knowledge-Management:FAQ ;
+                                                    Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Member ;
+                                                    Knowledge-Management:hasContentType Knowledge-Management:ContentType-Reference ;
+                                                    Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                    Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Compliance-7Year ;
+                                                    Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                                    Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                                    rdfs:label "FAQ: Applying for a Home Loan" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-FE-006-CreditCardApplication-Completed
+Knowledge-Management:KA-FE-006-CreditCardApplication-Completed rdf:type owl:NamedIndividual ,
+                                                                        Knowledge-Management:FunctionalExample ;
+                                                               Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                               Knowledge-Management:hasContentType Knowledge-Management:ContentType-Experiential ;
+                                                               Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                               Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Compliance-7Year ;
+                                                               Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                                               Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                                               rdfs:label "Functional Example: Completed Credit Card Application" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-FF-005-CreditCardApplication
+Knowledge-Management:KA-FF-005-CreditCardApplication rdf:type owl:NamedIndividual ,
+                                                              Knowledge-Management:FillableForm ;
+                                                     Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Public ;
+                                                     Knowledge-Management:hasContentType Knowledge-Management:ContentType-Procedural ;
+                                                     Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                     Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Legal-6Year ;
+                                                     Knowledge-Management:hasGovernanceBody "true"^^xsd:boolean ;
+                                                     Knowledge-Management:isGoverned "true"^^xsd:boolean ;
+                                                     rdfs:label "Fillable Form: Credit Card Application" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-G-012-KMGovernanceGuideline
+Knowledge-Management:KA-G-012-KMGovernanceGuideline rdf:type owl:NamedIndividual ,
+                                                             Knowledge-Management:Guideline ;
+                                                    Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                    Knowledge-Management:hasContentType Knowledge-Management:ContentType-Declarative ;
+                                                    Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                    Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Operational-3Year ;
+                                                    Knowledge-Management:hasGovernanceBody "true"^^xsd:boolean ;
+                                                    Knowledge-Management:isGoverned "true"^^xsd:boolean ;
+                                                    rdfs:label "Governance Guideline: Knowledge Management Governance Guideline" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-JA-007-LoanTypes
+Knowledge-Management:KA-JA-007-LoanTypes rdf:type owl:NamedIndividual ,
+                                                  Knowledge-Management:JobAid ;
+                                         Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                         Knowledge-Management:hasContentType Knowledge-Management:ContentType-Reference ;
+                                         Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                         Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Operational-3Year ;
+                                         Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                         Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                         rdfs:label "Job Aid: Loan Types" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-KBA-008-PasswordResetProcedure
+Knowledge-Management:KA-KBA-008-PasswordResetProcedure rdf:type owl:NamedIndividual ,
+                                                                Knowledge-Management:KnowledgeArticle ;
+                                                       Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                       Knowledge-Management:hasContentType Knowledge-Management:ContentType-Procedural ;
+                                                       Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                       Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Operational-3Year ;
+                                                       Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                                       Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                                       rdfs:label "Knowledge Base Article: Password Reset Procedure" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-LD-009-Agreement-MemberAccountAgreement
+Knowledge-Management:KA-LD-009-Agreement-MemberAccountAgreement rdf:type owl:NamedIndividual ,
+                                                                         Knowledge-Management:Agreement ;
+                                                                Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Member ;
+                                                                Knowledge-Management:hasContentType Knowledge-Management:ContentType-Declarative ;
+                                                                Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                                Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Legal-6Year ;
+                                                                Knowledge-Management:hasGovernanceBody "true"^^xsd:boolean ;
+                                                                Knowledge-Management:isGoverned "true"^^xsd:boolean ;
+                                                                rdfs:label "Legal Document: Member Account Agreement" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-P-010-KMGovernancePolicy
+Knowledge-Management:KA-P-010-KMGovernancePolicy rdf:type owl:NamedIndividual ,
+                                                          Knowledge-Management:Policy ;
+                                                 Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                 Knowledge-Management:hasContentType Knowledge-Management:ContentType-Declarative ;
+                                                 Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                 Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-PermanentPreservation ;
+                                                 Knowledge-Management:hasGovernanceBody "true"^^xsd:boolean ;
+                                                 Knowledge-Management:isGoverned "true"^^xsd:boolean ;
+                                                 rdfs:label "Governance Policy: Knowledge Management Governance Policy" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-S-011-KMGovernanceStandard
+Knowledge-Management:KA-S-011-KMGovernanceStandard rdf:type owl:NamedIndividual ,
+                                                            Knowledge-Management:Standard ;
+                                                   Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                   Knowledge-Management:hasContentType Knowledge-Management:ContentType-Declarative ;
+                                                   Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                   Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Compliance-7Year ;
+                                                   Knowledge-Management:hasGovernanceBody "true"^^xsd:boolean ;
+                                                   Knowledge-Management:isGoverned "true"^^xsd:boolean ;
+                                                   rdfs:label "Governance Standard: Knowledge Management Governance Standard" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-T-002-KA-ConceptualOverview
+Knowledge-Management:KA-T-002-KA-ConceptualOverview rdf:type owl:NamedIndividual ,
+                                                             Knowledge-Management:Template ;
+                                                    Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Staff ;
+                                                    Knowledge-Management:hasContentType Knowledge-Management:ContentType-Conceptual ;
+                                                    Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                                    Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Operational-3Year ;
+                                                    Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                                    Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                                    rdfs:label "Template: KA Conceptual Overview" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#KA-UG-013-OnlineBanking
+Knowledge-Management:KA-UG-013-OnlineBanking rdf:type owl:NamedIndividual ,
+                                                      Knowledge-Management:UserGuide ;
+                                             Knowledge-Management:hasAudienceType Knowledge-Management:Audience-Member ;
+                                             Knowledge-Management:hasContentType Knowledge-Management:ContentType-Procedural ;
+                                             Knowledge-Management:hasLifecycleStage Knowledge-Management:Published ;
+                                             Knowledge-Management:hasRetentionPolicy Knowledge-Management:RP-Operational-3Year ;
+                                             Knowledge-Management:hasGovernanceBody "false"^^xsd:boolean ;
+                                             Knowledge-Management:isGoverned "false"^^xsd:boolean ;
+                                             rdfs:label "User Guide: Online Banking" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Published
+Knowledge-Management:Published rdf:type owl:NamedIndividual ,
+                                        Knowledge-Management:LifecycleStage ;
+                               Knowledge-Management:transitionsTo Knowledge-Management:Deprecated ,
+                                                                  Knowledge-Management:Expired ;
+                               rdfs:comment "The lifecycle stage in which a knowledge asset is actively available to its intended audience and considered authoritative for its defined scope." .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#RP-Compliance-7Year
+Knowledge-Management:RP-Compliance-7Year rdf:type owl:NamedIndividual ,
+                                                  Knowledge-Management:RetentionPolicy ;
+                                         Knowledge-Management:dispositionActivity "Review" ;
+                                         Knowledge-Management:retentionPeriod 7 ;
+                                         Knowledge-Management:retentionType "Compliance" ;
+                                         Knowledge-Management:retentionUnit "Years" ;
+                                         rdfs:comment "The compliance retention policy is applied to documents that must be retained beyond the standard legal period for regulatory or audit obligations." ;
+                                         rdfs:label "Compliance 7-Year Retention" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#RP-Legal-6Year
+Knowledge-Management:RP-Legal-6Year rdf:type owl:NamedIndividual ,
+                                             Knowledge-Management:RetentionPolicy ;
+                                    Knowledge-Management:dispositionActivity "Review" ;
+                                    Knowledge-Management:retentionPeriod 6 ;
+                                    Knowledge-Management:retentionType "Legal" ;
+                                    Knowledge-Management:retentionUnit "Years" ;
+                                    rdfs:comment "The legal retention policy is applied to member-facing financial documents, legal agreements, and regulated communications. Reflects the organization's accepted legal retention requirement." ;
+                                    rdfs:label "Legal 6-Year Retention" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#RP-Operational-3Year
+Knowledge-Management:RP-Operational-3Year rdf:type owl:NamedIndividual ,
+                                                   Knowledge-Management:RetentionPolicy ;
+                                          Knowledge-Management:dispositionActivity "Review" ;
+                                          Knowledge-Management:retentionPeriod 3 ;
+                                          Knowledge-Management:retentionType "Operations" ;
+                                          Knowledge-Management:retentionUnit "Years" ;
+                                          rdfs:comment "The operational retention policy is applied to procedural, reference, and other such assets that capture and define current operating best practices. The retention period of three years supports audits and process continuity, and protects against the accumulation of outdated content." ;
+                                          rdfs:label "Operational 3-Year Retention" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#RP-PermanentPreservation
+Knowledge-Management:RP-PermanentPreservation rdf:type owl:NamedIndividual ,
+                                                       Knowledge-Management:RetentionPolicy ;
+                                              Knowledge-Management:dispositionActivity "PreservePermanently" ;
+                                              Knowledge-Management:retentionPeriod 9999 ;
+                                              Knowledge-Management:retentionType "Operations" ;
+                                              Knowledge-Management:retentionUnit "Years" ;
+                                              rdfs:comment "The permanent preservation policy is applied to foundational assets that either define an organizational or document institutional history, such as governance documents (policies, standards, guidelines, etc.) and the Enterprise Glossary. There is no expiration date, as content is never deleted. In this ontology, the retention period is set to the sentinel value 9999 to indicate permanent preservation." ;
+                                              rdfs:label "Permanent Preservation" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#RP-ShortTerm-1Year
+Knowledge-Management:RP-ShortTerm-1Year rdf:type owl:NamedIndividual ,
+                                                 Knowledge-Management:RetentionPolicy ;
+                                        Knowledge-Management:dispositionActivity "Review" ;
+                                        Knowledge-Management:retentionPeriod 1 ;
+                                        Knowledge-Management:retentionType "Operations" ;
+                                        Knowledge-Management:retentionUnit "Years" ;
+                                        rdfs:comment "The short-term retention policy is applied to ephemeral content that are useful in the short term but have limited long-term value. Examples include meeting notes, draft documents, and informal communications." ;
+                                        rdfs:label "Short-Term 1-Year Retention" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Segment-AllStaff
+Knowledge-Management:Segment-AllStaff rdf:type owl:NamedIndividual ,
+                                               Knowledge-Management:AllStaff .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Segment-BusinessUnit
+Knowledge-Management:Segment-BusinessUnit rdf:type owl:NamedIndividual ,
+                                                   Knowledge-Management:BusinessUnit .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Segment-ProductUsers
+Knowledge-Management:Segment-ProductUsers rdf:type owl:NamedIndividual ,
+                                                   Knowledge-Management:ProductUsers .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/02/Knowledge-Management#Segment-WorkingGroup
+Knowledge-Management:Segment-WorkingGroup rdf:type owl:NamedIndividual ,
+                                                   Knowledge-Management:WorkingGroup .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Acknowledgement
+                Knowledge-Management:Affidavit
+                Knowledge-Management:Authorization
+                Knowledge-Management:Contract
+                Knowledge-Management:Warranty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:AllStaff
+                Knowledge-Management:BusinessUnit
+                Knowledge-Management:ProductUsers
+                Knowledge-Management:WorkingGroup
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Approve
+                Knowledge-Management:Archive
+                Knowledge-Management:Audit
+                Knowledge-Management:Curate
+                Knowledge-Management:Enforce
+                Knowledge-Management:Review
+                Knowledge-Management:Validate
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:ArtificialIntelligence
+                Knowledge-Management:BusinessProcessManagement
+                Knowledge-Management:ChangeManagement
+                Knowledge-Management:DataGovernance
+                Knowledge-Management:InformationArchitecture
+                Knowledge-Management:LearningAndDevelopment
+                Knowledge-Management:OrganizationalDevelopment
+                Knowledge-Management:ProjectManagement
+                Knowledge-Management:TechnicalWriting
+                Knowledge-Management:UserExperience
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Assign
+                Knowledge-Management:Resolve
+                Knowledge-Management:Triage
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Capture
+                Knowledge-Management:Create
+                Knowledge-Management:Edit
+                Knowledge-Management:Publish
+                Knowledge-Management:Strategize
+                Knowledge-Management:Structure
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Classify
+                Knowledge-Management:Define
+                Knowledge-Management:Organize
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Coach
+                Knowledge-Management:Communicate
+                Knowledge-Management:KnowledgeTransfer
+                Knowledge-Management:Onboard
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:CommitteeCharter
+                Knowledge-Management:CommunicationsTemplate
+                Knowledge-Management:CommunityDiscussion
+                Knowledge-Management:DecisionGuide
+                Knowledge-Management:EnterpriseGlossary
+                Knowledge-Management:FAQ
+                Knowledge-Management:FillableForm
+                Knowledge-Management:FunctionalExample
+                Knowledge-Management:Guideline
+                Knowledge-Management:JobAid
+                Knowledge-Management:KnowledgeArticle
+                Knowledge-Management:LegalDocument
+                Knowledge-Management:LessonsLearned
+                Knowledge-Management:MeetingNotes
+                Knowledge-Management:OnboardingGuide
+                Knowledge-Management:Playbook
+                Knowledge-Management:Policy
+                Knowledge-Management:ProcessFlow
+                Knowledge-Management:ProgramCharter
+                Knowledge-Management:Runbook
+                Knowledge-Management:Standard
+                Knowledge-Management:Template
+                Knowledge-Management:TrainingModule
+                Knowledge-Management:UserGuide
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Conceptual
+                Knowledge-Management:Declarative
+                Knowledge-Management:Experiential
+                Knowledge-Management:Procedural
+                Knowledge-Management:Reference
+                Knowledge-Management:Troubleshooting
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:ContentDevelopment
+                Knowledge-Management:Enablement
+                Knowledge-Management:FeedbackManagement
+                Knowledge-Management:Governance
+                Knowledge-Management:KnowledgeOrganization
+                Knowledge-Management:Reporting
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Contractor
+                Knowledge-Management:Employee
+                Knowledge-Management:Executive
+                Knowledge-Management:PeopleManager
+                Knowledge-Management:Supervisor
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( Knowledge-Management:Developer
+                Knowledge-Management:EndUser
+                Knowledge-Management:SystemAdministrator
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

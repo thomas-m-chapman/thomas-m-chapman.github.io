@@ -1,0 +1,1048 @@
+@prefix : <http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/> .
+
+<http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/belongsToFamily
+:belongsToFamily rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Character ;
+                 rdfs:range :Family .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/belongsToGeneration
+:belongsToGeneration rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Character ;
+                     rdfs:range :Generation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasDaughter
+:hasDaughter rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isDaughterOf ;
+             rdfs:domain :Character ;
+             rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasFather
+:hasFather rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isFatherOf ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasLocationType
+:hasLocationType rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Location ;
+                 rdfs:range :LocationType .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasMother
+:hasMother rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isMotherOf ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasOccupation
+:hasOccupation rdf:type owl:ObjectProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Occupation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasPrimaryResidence
+:hasPrimaryResidence rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Character ;
+                     rdfs:range :Location .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasSocialClass
+:hasSocialClass rdf:type owl:ObjectProperty ;
+                rdfs:domain :Character ;
+                rdfs:range :SocialClass .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasSon
+:hasSon rdf:type owl:ObjectProperty ;
+        owl:inverseOf :isSonOf ;
+        rdfs:domain :Character ;
+        rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasSpouse
+:hasSpouse rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/isDaughterOf
+:isDaughterOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/isFatherOf
+:isFatherOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/isMotherOf
+:isMotherOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/isSonOf
+:isSonOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasAlternateName
+:hasAlternateName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Character ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasBirthDate
+:hasBirthDate rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Character ;
+              rdfs:range xsd:gYear .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasCharacterSubclass
+:hasCharacterSubclass rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Character ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasDeathDate
+:hasDeathDate rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Character ;
+              rdfs:range xsd:gYear .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasSexAssignedAtBirth
+:hasSexAssignedAtBirth rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :Character ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/hasWeddingDate
+:hasWeddingDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Character ;
+                rdfs:range xsd:gYear .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/isGentleman
+:isGentleman rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Character ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/survivesToEnd
+:survivesToEnd rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Character ;
+               rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Character
+:Character rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Family
+:Family rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Generation
+:Generation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Location
+:Location rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/LocationType
+:LocationType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Occupation
+:Occupation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/SocialClass
+:SocialClass rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/ThePassionGeneration
+:ThePassionGeneration rdf:type owl:Class ;
+                      rdfs:subClassOf :Generation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/ThePatriarchsGeneration
+:ThePatriarchsGeneration rdf:type owl:Class ;
+                         rdfs:subClassOf :Generation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/TheSurvivingGeneration
+:TheSurvivingGeneration rdf:type owl:Class ;
+                        rdfs:subClassOf :Generation .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Catherine_Earnshaw
+:Catherine_Earnshaw rdf:type owl:NamedIndividual ,
+                             :Character ;
+                    owl:sameAs :Catherine_Linton ;
+                    :belongsToFamily :Earnshaw_Family ,
+                                     :Linton_Family ;
+                    :belongsToGeneration :ThePassionGeneration ;
+                    :hasDaughter :Cathy_Linton ;
+                    :hasPrimaryResidence :Wuthering_Heights ;
+                    :hasSocialClass :YeomanFarmer ;
+                    :hasSpouse :Edgar_Linton ;
+                    :hasAlternateName "Catherine Linton" ;
+                    :hasBirthDate "1765"^^xsd:gYear ;
+                    :hasDeathDate "1784"^^xsd:gYear ;
+                    :hasWeddingDate "1783"^^xsd:gYear ;
+                    :isGentleman "false"^^xsd:boolean ;
+                    :survivesToEnd "false"^^xsd:boolean ;
+                    rdfs:comment "Catherine Earnshaw becomes Catherine Linton after marrying Edgar." ;
+                    rdfs:label "Catherine Earnshaw" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Earnshaw_Family ;
+   rdfs:comment "Catherine is born into the Earnshaw family."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Linton_Family ;
+   rdfs:comment "Catherine, born an Earnshaw, marries into the Linton family when she is 18."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Wuthering_Heights ;
+   rdfs:comment "Catherine is born and raised at Wuthering Heights but moves to Thrushcross Grange after marrying Edgar. Primary residence assigned as Wuthering Heights to reflect her origins."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :hasAlternateName ;
+   owl:annotatedTarget "Catherine Linton" ;
+   rdfs:comment "Catherine Earnshaw becomes Catherine Linton after marrying Edgar."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Catherine_Linton
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource :Catherine_Earnshaw ;
+  owl:annotatedProperty :belongsToFamily ;
+  owl:annotatedTarget :Earnshaw_Family ;
+  rdfs:comment "Catherine is born into the Earnshaw family."
+] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Linton_Family ;
+   rdfs:comment "Catherine, born an Earnshaw, marries into the Linton family when she is 18."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Wuthering_Heights ;
+   rdfs:comment "Catherine is born and raised at Wuthering Heights but moves to Thrushcross Grange after marrying Edgar. Primary residence assigned as Wuthering Heights to reflect her origins."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Catherine_Earnshaw ;
+   owl:annotatedProperty :hasAlternateName ;
+   owl:annotatedTarget "Catherine Linton" ;
+   rdfs:comment "Catherine Earnshaw becomes Catherine Linton after marrying Edgar."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Catherine_Linton
+:Catherine_Linton rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  rdfs:comment "Catherine Earnshaw becomes Catherine Linton after marrying Edgar." ;
+                  rdfs:label "Catherine Linton" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Cathy_Linton
+:Cathy_Linton rdf:type owl:NamedIndividual ,
+                       :Character ;
+              :belongsToFamily :Earnshaw_Family ,
+                               :Linton_Family ;
+              :belongsToGeneration :TheSurvivingGeneration ;
+              :hasFather :Edgar_Linton ;
+              :hasMother :Catherine_Earnshaw ;
+              :hasPrimaryResidence :Thrushcross_Grange ;
+              :hasSocialClass :MinorGentry ;
+              :hasSpouse :Hareton_Earnshaw ,
+                         :Linton_Heathcliff ;
+              :hasAlternateName "Catherine" ;
+              :hasBirthDate "1784"^^xsd:gYear ;
+              :hasSexAssignedAtBirth "female" ;
+              :hasWeddingDate "1803"^^xsd:gYear ;
+              :isGentleman "false"^^xsd:boolean ;
+              :survivesToEnd "true"^^xsd:boolean ;
+              rdfs:comment "Cathy is the only surviving Linton when the novel ends." ;
+              rdfs:label "Cathy Linton" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Cathy_Linton ;
+   owl:annotatedProperty :belongsToGeneration ;
+   owl:annotatedTarget :TheSurvivingGeneration ;
+   rdfs:comment "Cathy, representing the union of the Earnshaw and Linton families, is one of only two surviving family members at the close of the novel."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Cathy_Linton ;
+   owl:annotatedProperty :hasSpouse ;
+   owl:annotatedTarget :Linton_Heathcliff ;
+   rdfs:comment "Cathy is married to Linton at Heathcliff's insistence, wed in 1801, until he dies later that year."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Cathy_Linton ;
+   owl:annotatedProperty :hasAlternateName ;
+   owl:annotatedTarget "Catherine" ;
+   rdfs:comment "Cathy's birth name is Catherine. She is known throughout the novel as Cathy and briefly as Mrs. Linton Heathcliff."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Earnshaw_Family
+:Earnshaw_Family rdf:type owl:NamedIndividual ,
+                          :Family ;
+                 rdfs:label "Earnshaw Family" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Edgar_Linton
+:Edgar_Linton rdf:type owl:NamedIndividual ,
+                       :Character ;
+              :belongsToFamily :Linton_Family ;
+              :belongsToGeneration :ThePassionGeneration ;
+              :hasDaughter :Cathy_Linton ;
+              :hasFather :Mr_Linton ;
+              :hasMother :Mrs_Linton ;
+              :hasOccupation :Landowner ;
+              :hasPrimaryResidence :Thrushcross_Grange ;
+              :hasSocialClass :MinorGentry ;
+              :hasSpouse :Catherine_Earnshaw ;
+              :hasBirthDate "1762"^^xsd:gYear ;
+              :hasDeathDate "1801"^^xsd:gYear ;
+              :hasSexAssignedAtBirth "male" ;
+              :hasWeddingDate "1783"^^xsd:gYear ;
+              :isGentleman "true"^^xsd:boolean ;
+              :survivesToEnd "false"^^xsd:boolean ;
+              rdfs:label "Edgar Linton" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Edgar_Linton ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Landowner ;
+   rdfs:comment "Edgar Linton owns Thrushcross Grange until his death in 1801."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Edgar_Linton ;
+   owl:annotatedProperty :isGentleman ;
+   owl:annotatedTarget "true"^^xsd:boolean ;
+   rdfs:comment "Edgar is a gentleman by birth and station."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/FamilyLawyer
+:FamilyLawyer rdf:type owl:NamedIndividual ,
+                       :Occupation ;
+              rdfs:label "Family Lawyer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Frances
+:Frances rdf:type owl:NamedIndividual ,
+                  :Character ;
+         :belongsToFamily :Earnshaw_Family ;
+         :belongsToGeneration :ThePassionGeneration ;
+         :hasPrimaryResidence :Wuthering_Heights ;
+         :hasSocialClass :YeomanFarmer ;
+         :hasSon :Hareton_Earnshaw ;
+         :hasSpouse :Hindley_Earnshaw ;
+         :hasBirthDate "1760"^^xsd:gYear ;
+         :hasDeathDate "1778"^^xsd:gYear ;
+         :hasSexAssignedAtBirth "female" ;
+         :hasWeddingDate "1777"^^xsd:gYear ;
+         :isGentleman "false"^^xsd:boolean ;
+         :survivesToEnd "false"^^xsd:boolean ;
+         rdfs:comment "Frances's maiden name is not mentioned in the novel." ;
+         rdfs:label "Frances" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Frances ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Earnshaw_Family ;
+   rdfs:comment "Frances, whose lineage is unknown, marries Hindley and becomes part of the Earnshaw family."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Frances ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :YeomanFarmer ;
+   rdfs:comment "Frances gains Yeoman Farmer status upon her marriage to Hindley if not already so by birth."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Gimmerton
+:Gimmerton rdf:type owl:NamedIndividual ,
+                    :Location ;
+           :hasLocationType :Village ;
+           rdfs:label "Gimmerton" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Hareton_Earnshaw
+:Hareton_Earnshaw rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  :belongsToFamily :Earnshaw_Family ;
+                  :belongsToGeneration :TheSurvivingGeneration ;
+                  :hasFather :Hindley_Earnshaw ;
+                  :hasMother :Frances ;
+                  :hasOccupation :Landowner ;
+                  :hasPrimaryResidence :Wuthering_Heights ;
+                  :hasSocialClass :YeomanFarmer ;
+                  :hasSpouse :Cathy_Linton ;
+                  :hasBirthDate "1778"^^xsd:gYear ;
+                  :hasSexAssignedAtBirth "male" ;
+                  :hasWeddingDate "1803"^^xsd:gYear ;
+                  :isGentleman "false"^^xsd:boolean ;
+                  :survivesToEnd "true"^^xsd:boolean ;
+                  rdfs:comment "Hareton is the only surviving Earnshaw when the novel ends." ;
+                  rdfs:label "Hareton Earnshaw" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Hareton_Earnshaw ;
+   owl:annotatedProperty :belongsToGeneration ;
+   owl:annotatedTarget :TheSurvivingGeneration ;
+   rdfs:comment "Hareton is the only surviving Earnshaw when the novel ends."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Hareton_Earnshaw ;
+   owl:annotatedProperty :hasFather ;
+   owl:annotatedTarget :Hindley_Earnshaw ;
+   rdfs:comment "Hareton's father is Hindley. After Hindley dies, Heathcliff becomes the guardian of Hareton. Thus begins Heathcliff's infiltration of the family."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Hareton_Earnshaw ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Landowner ;
+   rdfs:comment "Hareton, the rightful heir to Wuthering Heights, has claim to his inheritance at the novel's end following the demise of Heathcliff."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Heathcliff
+:Heathcliff rdf:type owl:NamedIndividual ,
+                     :Character ;
+            :belongsToFamily :Heathcliff_Family ,
+                             :Linton_Family ;
+            :belongsToGeneration :ThePassionGeneration ;
+            :hasOccupation :Landowner ;
+            :hasPrimaryResidence :Wuthering_Heights ;
+            :hasSocialClass :Outsider ;
+            :hasSon :Linton_Heathcliff ;
+            :hasSpouse :Isabella_Linton ;
+            :hasCharacterSubclass "Orphan" ;
+            :hasDeathDate "1802"^^xsd:gYear ;
+            :hasSexAssignedAtBirth "male" ;
+            :hasWeddingDate "1784"^^xsd:gYear ;
+            :isGentleman "true"^^xsd:boolean ;
+            :survivesToEnd "false"^^xsd:boolean ;
+            rdfs:comment "Heathcliff is referenced by only one name throughout the novel: Heathcliff. It's not clear if this is his first name or his last. Heathcliff is introduced to us as an orphan, an outsider to the two families. Later in the novel, as he matures to a young adult, he leaves the area for several months and returns, as he himself asserts, a gentleman. His background, like his demeanor, is mysterious." ;
+            rdfs:label "Heathcliff" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Heathcliff ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Heathcliff_Family ;
+   rdfs:comment "Heathcliff is the sole member of his family until his son Linton is born. The novel provides no insight into his lineage, which only emphasizes his status as an outsider."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Heathcliff ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Linton_Family ;
+   rdfs:comment "Heathcliff becomes part of the Linton family upon his marriage to Isabella."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Heathcliff ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Landowner ;
+   rdfs:comment "Heathcliff acquires ownership of both Wuthering Heights and Thrushcross Grange through manipulation and inheritance."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Heathcliff ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Wuthering_Heights ;
+   rdfs:comment "Heathcliff is brought by Mr. Earnshaw to Wuthering Heights as a child and is later degraded to servant status by Hindley. After a brief departure as a young man, Heathcliff returns to acquire ownership of the estate. Wuthering Heights remains his primary residence throughout."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Heathcliff ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :Outsider ;
+   rdfs:comment "Heathcliff arrives to the scene an outsider with an unclear social status. Later, as a mature young man, Heathcliff returns to the scene an apparent gentleman. The novel's deliberate ambiguity about his status is captured in both the isGentleman data property and the formal SocialClass assertion."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Heathcliff_Family
+:Heathcliff_Family rdf:type owl:NamedIndividual ,
+                            :Family ;
+                   rdfs:label "Heathcliff Family" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Hindley_Earnshaw
+:Hindley_Earnshaw rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  :belongsToFamily :Earnshaw_Family ;
+                  :belongsToGeneration :ThePassionGeneration ;
+                  :hasOccupation :Landowner ;
+                  :hasPrimaryResidence :Wuthering_Heights ;
+                  :hasSocialClass :YeomanFarmer ;
+                  :hasSon :Hareton_Earnshaw ;
+                  :hasSpouse :Frances ;
+                  :hasBirthDate "1757"^^xsd:gYear ;
+                  :hasDeathDate "1784"^^xsd:gYear ;
+                  :hasSexAssignedAtBirth "male" ;
+                  :hasWeddingDate "1777"^^xsd:gYear ;
+                  :isGentleman "false"^^xsd:boolean ;
+                  :survivesToEnd "false"^^xsd:boolean ;
+                  rdfs:comment "Hindley's health and social standing deteriorate rapidly following Frances's death, accelerating his loss of Wuthering Heights to Heathcliff." ;
+                  rdfs:label "Hindley Earnshaw" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Hindley_Earnshaw ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Landowner ;
+   rdfs:comment "Hindley inherits Wuthering Heights upon his father's death but loses it to Heathcliff through debt and dissolution."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Isabella_Linton
+:Isabella_Linton rdf:type owl:NamedIndividual ,
+                          :Character ;
+                 :belongsToFamily :Heathcliff_Family ,
+                                  :Linton_Family ;
+                 :belongsToGeneration :ThePassionGeneration ;
+                 :hasFather :Mr_Linton ;
+                 :hasMother :Mrs_Linton ;
+                 :hasPrimaryResidence :Thrushcross_Grange ;
+                 :hasSocialClass :MinorGentry ;
+                 :hasSon :Linton_Heathcliff ;
+                 :hasSpouse :Heathcliff ;
+                 :hasBirthDate "1765"^^xsd:gYear ;
+                 :hasDeathDate "1797"^^xsd:gYear ;
+                 :hasSexAssignedAtBirth "female" ;
+                 :hasWeddingDate "1784"^^xsd:gYear ;
+                 :isGentleman "false"^^xsd:boolean ;
+                 :survivesToEnd "false"^^xsd:boolean ;
+                 rdfs:comment "Isabella runs away from Heathcliff to raise their son, Linton, free from the darkness of Heathcliff and the shadows he casts on Wuthering Heights. Her departure severs her connection to the Earnshaw household entirely." ;
+                 rdfs:label "Isabella Linton" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Isabella_Linton ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Heathcliff_Family ;
+   rdfs:comment "Isabella marries Heathcliff, becoming a member of the Heathcliff family."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Isabella_Linton ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Linton_Family ;
+   rdfs:comment "Isabella is born into the Linton family."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Isabella_Linton ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Thrushcross_Grange ;
+   rdfs:comment "Isabella is born at Thrushcross Grange, moves to Wuthering Heights after marrying Heathcliff, and flees from the area with their son, Linton, to escape the mecurial Heathcliff. Primary residence assigned as Thrushcross Grange to reflect her origins."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Joseph
+:Joseph rdf:type owl:NamedIndividual ,
+                 :Character ;
+        :hasOccupation :Servant ;
+        :hasPrimaryResidence :Wuthering_Heights ;
+        :hasSocialClass :Laborer ;
+        :hasSexAssignedAtBirth "male" ;
+        :isGentleman "false"^^xsd:boolean ;
+        :survivesToEnd "true"^^xsd:boolean ;
+        rdfs:comment "Joseph's last name is not mentioned in the novel." ;
+        rdfs:label "Joseph" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Joseph ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Servant ;
+   rdfs:comment "Joseph serves as a farmhand and manservant at Wuthering Heights."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Joseph ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :Laborer ;
+   rdfs:comment "Joseph is the Earnshaws' farmhand."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Laborer
+:Laborer rdf:type owl:NamedIndividual ,
+                  :SocialClass ;
+         rdfs:label "Laborer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Landowner
+:Landowner rdf:type owl:NamedIndividual ,
+                    :Occupation ;
+           rdfs:label "Landowner" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Linton_Family
+:Linton_Family rdf:type owl:NamedIndividual ,
+                        :Family ;
+               rdfs:label "Linton Family" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Linton_Heathcliff
+:Linton_Heathcliff rdf:type owl:NamedIndividual ,
+                            :Character ;
+                   :belongsToFamily :Heathcliff_Family ,
+                                    :Linton_Family ;
+                   :belongsToGeneration :TheSurvivingGeneration ;
+                   :hasFather :Heathcliff ;
+                   :hasMother :Isabella_Linton ;
+                   :hasPrimaryResidence :Wuthering_Heights ;
+                   :hasSocialClass :MinorGentry ,
+                                   :Outsider ;
+                   :hasSpouse :Cathy_Linton ;
+                   :hasBirthDate "1784"^^xsd:gYear ;
+                   :hasDeathDate "1801"^^xsd:gYear ;
+                   :hasSexAssignedAtBirth "male" ;
+                   :hasWeddingDate "1801"^^xsd:gYear ;
+                   :isGentleman "false"^^xsd:boolean ;
+                   :survivesToEnd "false"^^xsd:boolean ;
+                   rdfs:comment "Linton marries Cathy but is soon consumed by his own sickness and dies later that year, fulfilling Heathcliff's manipulation to transfer the Linton inheritance to himself through Cathy." ;
+                   rdfs:label "Linton Heathcliff" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Linton_Heathcliff ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Heathcliff_Family ;
+   rdfs:comment "Linton is born a Heathcliff but carries Linton blood through his mother, Isabella. His marriage to Cathy, engineered by Heathcliff, serves to transfer the Linton inheritance to Heathcliff, dispossessing the Linton family line."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Linton_Heathcliff ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Wuthering_Heights ;
+   rdfs:comment "Linton's primary residence is Wuthering Heights, though he is raised elsewhere by his mother, Isabella, following her escape from Heathcliff. Following Isabella's death, Heathcliff returns Linton to Wuthering Heights, where he remains until he dies."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Linton_Heathcliff ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :MinorGentry ;
+   rdfs:comment "Linton, born into both the Linton and Heathcliff families, has claim to Minor Gentry status through his mother, Isabella."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Linton_Heathcliff ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :Outsider ;
+   rdfs:comment "Linton, raised at Wuthering Heights under Heathcliff's shadow, occupies the ambiguous outsider position of his father despite his Linton heritage."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Linton_Heathcliff ;
+   owl:annotatedProperty :hasSpouse ;
+   owl:annotatedTarget :Cathy_Linton ;
+   rdfs:comment "Linton marries Cathy but is soon consumed by his own sickness and dies later that year, fulfilling Heathcliff's manipulation to transfer the Linton inheritance to himself through Cathy."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Lockwood
+:Lockwood rdf:type owl:NamedIndividual ,
+                   :Character ;
+          :hasPrimaryResidence :Thrushcross_Grange ;
+          :hasSocialClass :MinorGentry ;
+          :hasCharacterSubclass "Narrator" ;
+          :hasSexAssignedAtBirth "male" ;
+          :isGentleman "true"^^xsd:boolean ;
+          :survivesToEnd "true"^^xsd:boolean ;
+          rdfs:label "Lockwood" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Lockwood ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Thrushcross_Grange ;
+   rdfs:comment "Lockwood visits Thrushcross Grange as a tenant when the novel begins. His residence is temporary and he eventually returns to London."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Lockwood ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :MinorGentry ;
+   rdfs:comment "Lockwood, a southern gentleman visiting the north, is Minor Gentry by social class. His outsider quality is geographic and temperamental, not social."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Lockwood ;
+   owl:annotatedProperty :isGentleman ;
+   owl:annotatedTarget "true"^^xsd:boolean ;
+   rdfs:comment "Lockwood is, by his own account, a gentleman."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/MinorGentry
+:MinorGentry rdf:type owl:NamedIndividual ,
+                      :SocialClass ;
+             rdfs:label "Minor Gentry" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Mr_Earnshaw
+:Mr_Earnshaw rdf:type owl:NamedIndividual ,
+                      :Character ;
+             :belongsToFamily :Earnshaw_Family ;
+             :belongsToGeneration :ThePatriarchsGeneration ;
+             :hasDaughter :Catherine_Earnshaw ;
+             :hasOccupation :Landowner ;
+             :hasPrimaryResidence :Wuthering_Heights ;
+             :hasSocialClass :YeomanFarmer ;
+             :hasSon :Hindley_Earnshaw ;
+             :hasSpouse :Mrs_Earnshaw ;
+             :hasDeathDate "1777"^^xsd:gYear ;
+             :hasSexAssignedAtBirth "male" ;
+             :isGentleman "false"^^xsd:boolean ;
+             :survivesToEnd "false"^^xsd:boolean ;
+             rdfs:comment "Mr. Earnshaw is a yeoman farmer, not a gentleman in the 19th century sense despite owning land. His first name is not mentioned in the novel." ;
+             rdfs:label "Mr. Earnshaw" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Mr_Earnshaw ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Earnshaw_Family ;
+   rdfs:comment "Mr. Earnshaw is the patriarch of the Earnshaw family."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Mr_Green
+:Mr_Green rdf:type owl:NamedIndividual ,
+                   :Character ;
+          :hasOccupation :FamilyLawyer ;
+          :hasPrimaryResidence :Thrushcross_Grange ;
+          :hasSocialClass :MinorGentry ;
+          :hasSexAssignedAtBirth "male" ;
+          :isGentleman "false"^^xsd:boolean ;
+          :survivesToEnd "true"^^xsd:boolean ;
+          rdfs:comment "Mr. Green's first name is not mentioned in the novel. He is the family lawyer, a professional and not a gentleman of independent means." ;
+          rdfs:label "Mr. Green" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Mr_Green ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :FamilyLawyer ;
+   rdfs:comment "Mr. Green, the Lintons' family lawyer, later in the novel acts in Heathcliff's interests. This betrayal, apparently orchestrated by Heathcliff, facilitates Heathcliff's acquisition of the Linton estate."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Mr_Green ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :MinorGentry ;
+   rdfs:comment "Mr. Green is a professional lawyer, a middle-class social position between Minor Gentry and Laborer. For convenience, assigned MinorGentry as the more appropriate classification of the two."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Mr_Linton
+:Mr_Linton rdf:type owl:NamedIndividual ,
+                    :Character ;
+           :belongsToFamily :Linton_Family ;
+           :belongsToGeneration :ThePatriarchsGeneration ;
+           :hasDaughter :Isabella_Linton ;
+           :hasPrimaryResidence :Thrushcross_Grange ;
+           :hasSocialClass :MinorGentry ;
+           :hasSon :Edgar_Linton ;
+           :hasSpouse :Mrs_Linton ;
+           :hasDeathDate "1780"^^xsd:gYear ;
+           :hasSexAssignedAtBirth "male" ;
+           :isGentleman "true"^^xsd:boolean ;
+           :survivesToEnd "false"^^xsd:boolean ;
+           rdfs:comment "Mr. Linton's first name is not mentioned in the novel." ;
+           rdfs:label "Mr. Linton" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Mr_Linton ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Linton_Family ;
+   rdfs:comment "Mr. Linton is the patriarch of the Linton family."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Mrs_Earnshaw
+:Mrs_Earnshaw rdf:type owl:NamedIndividual ,
+                       :Character ;
+              :belongsToFamily :Earnshaw_Family ;
+              :belongsToGeneration :ThePatriarchsGeneration ;
+              :hasDaughter :Catherine_Earnshaw ;
+              :hasPrimaryResidence :Wuthering_Heights ;
+              :hasSocialClass :YeomanFarmer ;
+              :hasSon :Hindley_Earnshaw ;
+              :hasSpouse :Mr_Earnshaw ;
+              :hasDeathDate "1773"^^xsd:gYear ;
+              :hasSexAssignedAtBirth "female" ;
+              :isGentleman "false"^^xsd:boolean ;
+              :survivesToEnd "false"^^xsd:boolean ;
+              rdfs:comment "Mrs. Earnshaw's first name is not mentioned in the novel." ;
+              rdfs:label "Mrs. Earnshaw" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Mrs_Linton
+:Mrs_Linton rdf:type owl:NamedIndividual ,
+                     :Character ;
+            :belongsToFamily :Linton_Family ;
+            :belongsToGeneration :ThePatriarchsGeneration ;
+            :hasDaughter :Isabella_Linton ;
+            :hasPrimaryResidence :Thrushcross_Grange ;
+            :hasSocialClass :MinorGentry ;
+            :hasSon :Edgar_Linton ;
+            :hasSpouse :Mr_Linton ;
+            :hasDeathDate "1780"^^xsd:gYear ;
+            :hasSexAssignedAtBirth "female" ;
+            :isGentleman "false"^^xsd:boolean ;
+            :survivesToEnd "false"^^xsd:boolean ;
+            rdfs:comment "Mrs. Linton's first name is not mentioned in the novel." ;
+            rdfs:label "Mrs. Linton" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Mrs_Linton ;
+   owl:annotatedProperty :belongsToFamily ;
+   owl:annotatedTarget :Linton_Family ;
+   rdfs:comment "Mrs. Linton is the matriarch of the Linton family."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/NaturalLandscape
+:NaturalLandscape rdf:type owl:NamedIndividual ,
+                           :LocationType ;
+                  rdfs:label "Natural Landscape" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Nelly_Dean
+:Nelly_Dean rdf:type owl:NamedIndividual ,
+                     :Character ;
+            :hasOccupation :Servant ;
+            :hasPrimaryResidence :Thrushcross_Grange ;
+            :hasSocialClass :Laborer ;
+            :hasAlternateName "Ellen" ;
+            :hasCharacterSubclass "Narrator" ;
+            :hasSexAssignedAtBirth "female" ;
+            :isGentleman "false"^^xsd:boolean ;
+            :survivesToEnd "true"^^xsd:boolean ;
+            rdfs:label "Nelly Dean" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Nelly_Dean ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Servant ;
+   rdfs:comment "Nelly Dean serves as housekeeper to the Earnshaws and later to the Lintons."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Nelly_Dean ;
+   owl:annotatedProperty :hasPrimaryResidence ;
+   owl:annotatedTarget :Thrushcross_Grange ;
+   rdfs:comment "Nelly served at both Wuthering Heights and Thrushcross Grange throughout the novel. See hasOccupation for context."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Nelly_Dean ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :Laborer ;
+   rdfs:comment "Nelly Dean is the Linton's family servant."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Nelly_Dean ;
+   owl:annotatedProperty :hasAlternateName ;
+   owl:annotatedTarget "Ellen" ;
+   rdfs:comment "Nelly's birth name is Ellen."
+ ] .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Outsider
+:Outsider rdf:type owl:NamedIndividual ,
+                   :SocialClass ;
+          rdfs:label "Outsider" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Peniston_Crag
+:Peniston_Crag rdf:type owl:NamedIndividual ,
+                        :Location ;
+               :hasLocationType :NaturalLandscape ;
+               rdfs:label "Peniston Crag" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Residence
+:Residence rdf:type owl:NamedIndividual ,
+                    :LocationType ;
+           rdfs:label "Residence" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Servant
+:Servant rdf:type owl:NamedIndividual ,
+                  :Occupation ;
+         rdfs:label "Servant" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/ThePassionGeneration
+:ThePassionGeneration rdf:type owl:NamedIndividual ,
+                               :Generation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/ThePatriarchsGeneration
+:ThePatriarchsGeneration rdf:type owl:NamedIndividual ,
+                                  :Generation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/TheSurvivingGeneration
+:TheSurvivingGeneration rdf:type owl:NamedIndividual ,
+                                 :Generation .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/The_Moors
+:The_Moors rdf:type owl:NamedIndividual ,
+                    :Location ;
+           :hasLocationType :NaturalLandscape ;
+           rdfs:label "The Moors" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Thrushcross_Grange
+:Thrushcross_Grange rdf:type owl:NamedIndividual ,
+                             :Location ;
+                    :hasLocationType :Residence ;
+                    rdfs:label "Thrushcross Grange" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Village
+:Village rdf:type owl:NamedIndividual ,
+                  :LocationType ;
+         rdfs:label "Village" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Wuthering_Heights
+:Wuthering_Heights rdf:type owl:NamedIndividual ,
+                            :Location ;
+                   :hasLocationType :Residence ;
+                   rdfs:label "Wuthering Heights" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/YeomanFarmer
+:YeomanFarmer rdf:type owl:NamedIndividual ,
+                       :SocialClass ;
+              rdfs:label "Yeoman Farmer" .
+
+
+###  http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/Zillah
+:Zillah rdf:type owl:NamedIndividual ,
+                 :Character ;
+        :hasOccupation :Servant ;
+        :hasPrimaryResidence :Wuthering_Heights ;
+        :hasSocialClass :Laborer ;
+        :hasSexAssignedAtBirth "female" ;
+        :isGentleman "false"^^xsd:boolean ;
+        :survivesToEnd "true"^^xsd:boolean ;
+        rdfs:comment "Zillah's last name is not mentioned in the novel." ;
+        rdfs:label "Zillah" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Zillah ;
+   owl:annotatedProperty :hasOccupation ;
+   owl:annotatedTarget :Servant ;
+   rdfs:comment "Zillah serves as housekeeper at Wuthering Heights under Heathcliff."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Zillah ;
+   owl:annotatedProperty :hasSocialClass ;
+   owl:annotatedTarget :Laborer ;
+   rdfs:comment "Zillah is the housekeeper at Wuthering Heights."
+ ] .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:ThePassionGeneration rdfs:comment "The Passion generation is comprised of the progeny of the Patriarchs generation — Hindley, Catherine, Edgar, and Isabella — and the orphan Heathcliff. This generation sows the seeds of the novel's central conflicts of passion, retribution, and social disruption." ;
+                      rdfs:label "The Passion Generation" .
+
+
+:ThePatriarchsGeneration rdfs:comment "The Patriarchs generation is the founding generation of the novel's two principal families, the Earnshaws and the Lintons. These families, which establish the social world into which Heathcliff arrives, are characterized by stability and order — a generation put to the test as the novel's conflicts emerge." ;
+                         rdfs:label "The Patriarchs Generation" .
+
+
+:TheSurvivingGeneration rdfs:comment "The Surviving generation is comprised of the children of the Passion generation: Hareton Earnshaw, Cathy Linton, and Linton Heathcliff. Only Hareton and Cathy survive to the novel's end. Their wedding restores harmony to the Earnshaw and Linton familes. Heathcliff's vengeance expires upon the death of Linton." ;
+                        rdfs:label "The Surviving Generation" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ThePassionGeneration
+                :ThePatriarchsGeneration
+                :TheSurvivingGeneration
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
