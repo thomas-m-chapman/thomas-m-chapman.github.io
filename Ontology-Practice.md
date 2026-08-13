@@ -64,7 +64,7 @@ Modeling this data in both Databricks and Protégé helped me understand a funda
 
 <a name="General-learnings"></a> 
 ## General learnings
-In addition to scratching the surface of the ontology landscape in OWL, SKOS, and RDF, I also learned my way around both Protégé and Databricks, discovered WebVOWL and SPARQL Playground, and tried my hand at writing a dozen or so SQL and SPARQL queries. 
+In addition to scratching the surface of the ontology landscape in OWL, SKOS, and RDF, I also learned my way around both [Protégé](https://protege.stanford.edu/) and [Databricks](https://www.databricks.com/), discovered [WebVOWL](https://service.tib.eu/webvowl/) and [SPARQL Playground](https://atomgraph.github.io/SPARQL-Playground/), and tried my hand at writing a dozen or so SQL and SPARQL queries. 
 
 When creating my first ontology, two of the most enlightening realizations were the following:
   -	**Power of triples:** Defining relationships as RDF triples—subject, predicate, object—forced me to define each relationship carefully and precisely. I frequently reminded myself of the key distinction between object properties and data properties. Making those distinctions for every relationship in the ontology sharpened my thinking about what was being modeled and why.
