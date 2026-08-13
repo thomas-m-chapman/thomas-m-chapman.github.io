@@ -106,7 +106,7 @@ To view the full ontology in Protégé:
 
 ### WebVOWL
 To view the full ontology in WebVOWL: 
-1.	Download the ontology that you want to view: KM-ontology or Wuthering-Heights-ontology.
+1.	Download the ontology that you want to view: [KM ontology](Knowledge-Management-ontology.ttl) or [Wuthering Heights ontology](Wuthering-Heights-ontology.ttl).
 2.	Navigate to [WebVOWL](https://service.tib.eu/webvowl/).
 3.	From the menu located at the bottom of the WebVOWL window, hover your cursor over **Ontology** and click **Select ontology file**.
 4.	Browse your device for the ontology that you downloaded in Step 1.
