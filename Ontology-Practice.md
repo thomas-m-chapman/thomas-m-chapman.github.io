@@ -77,7 +77,7 @@ Creating a second ontology revealed how little I internalized when creating the 
 
   - The **standard naming convention** for entities in an ontology is CamelCase. 
 
-  - Names of classes should be **singular, not plural**. My instinct was to make them plural because classes serve as containers (for example, because the Character class contains multiple characters, it seems appropriate to name the class Characters. Classes should instead be named in singular form, because in OWL/SKOS a class is an abstract thing that individuals (in this case, characters) are instances of. Similarly, names of individuals should be singular, as well, as they should be treated as specific instances, not abstract types.
+  - Names of classes should be **singular, not plural**. My instinct was to make them plural because classes serve as containers (for example, because the Character class contains multiple characters, it seems appropriate to name the class Characters). Classes should instead be named in singular form, because in OWL/SKOS a class is an abstract thing that individuals (in this case, characters) are instances of. Similarly, names of individuals should be singular, as well, as they should be treated as specific instances, not abstract types.
 
   - I had a difficult time, at first, understanding the difference between an **object property** and a **data property**. With practice, I learned that the relationship should be defined as an object property when connecting two individuals (such as *hasSpouse* or *belongsToFamily*). The relationship should be defined as a data property when connecting an individual to a literal value (for example, *hasBirthDate* or *isGentleman*).
 
