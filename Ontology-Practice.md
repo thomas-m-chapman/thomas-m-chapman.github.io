@@ -23,7 +23,8 @@ While I was in the middle of that exercise, I realized that a novel I was readin
 
 Completing these exercises gave me hands-on experience with the skills this tectonic shift requires: formally modeling entities and their relationships, making deliberate decisions about ambiguous or overlapping categories, and validating queries against a knowledge model. I'm now better equipped to help an organization elicit the tacit knowledge that lives in its content and in the heads of SMEs, and build it into the structured, machine-readable foundation that AI needs to produce trustworthy answers.
 
-<a name="Background"></a> ## Background
+<a name="Background"></a> 
+## Background
 At the time of this writing, content professionals continue to search for an answer to a key question: *How do we give AI systems the content they need to produce answers that are true, accurate, and trustworthy?* 
 
 The answer has evolved considerably over the past several years. I see the evolution in three stages:
