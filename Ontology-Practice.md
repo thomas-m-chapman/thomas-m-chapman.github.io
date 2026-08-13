@@ -3,6 +3,12 @@ layout: default
 ---
 
 # From Data to Meaning: Ontology Practice
+[Background](#Background) <br>
+[Approach](#Approach) <br>
+[General learnings](#General-learnings) <br>
+[Explore the ontologies](#Explore) <br>
+[Acknowledgements](#Acknowledgements) <br>
+
 I created this piece—and the two practice ontologies that accompany it—in response to the monumental shift that AI has brought to the domain of content operations. Like many in my field, I have years of experience building and maintaining controlled vocabularies and taxonomies, but I’ve never created an ontology before. So, I decided to create one. 
 
 In fact, I created two. 
@@ -13,7 +19,7 @@ While I was in the middle of that exercise, I realized that a novel I was readin
 
 Completing these exercises gave me hands-on experience with the skills this tectonic shift requires: formally modeling entities and their relationships, making deliberate decisions about ambiguous or overlapping categories, and validating queries against a knowledge model. I'm now better equipped to help an organization elicit the tacit knowledge that lives in its content and in the heads of SMEs, and build it into the structured, machine-readable foundation that AI needs to produce trustworthy answers.
 
-## Background
+<a name="Background"></a> ## Background
 At the time of this writing, content professionals continue to search for an answer to a key question: *How do we give AI systems the content they need to produce answers that are true, accurate, and trustworthy?* 
 
 The answer has evolved considerably over the past several years. I see the evolution in three stages:
@@ -28,6 +34,7 @@ The answer has evolved considerably over the past several years. I see the evolu
 
 I wanted to learn more about this toolchain, and understanding how to create an ontology—which serves as a blueprint for knowledge graphs—seemed like a logical first step.
 
+<a name="Approach"></a> 
 ## Approach
 Before I could start building my first ontology, I needed to acquaint myself with some common vocabulary, particularly the basics of the Web Ontology Language (OWL), the Simple Knowledge Organization System (SKOS), and the Resource Description Framework (RDF). I didn’t dig deep, just enough to get going. 
 
@@ -51,6 +58,7 @@ The following image shows the CharacterFamily table, a simple table defining eac
 
 Modeling this data in both Databricks and Protégé helped me understand a fundamental difference between databases and ontologies. A database organizes data into two-dimensional tables and establishes only implicit relationships between them. The meaning of those relationships must be interpreted by a human. In an ontology, on the other hand, meaning is encoded in the model itself. Relationships are defined explicitly as graph “edges” that describe the meaning of that relationship, the context in which it applies (via domain and range), and how the relationship functions (via functional, symmetric, transitive, and other such properties). Because this context is built into the ontology itself, a reasoner, including AI, can derive meaning with semantic consistency. In short, databases store data, whereas ontologies model meaning.
 
+<a name="General-learnings"></a> 
 ## General learnings
 In addition to scratching the surface of the ontology landscape in OWL, SKOS, and RDF, I also learned my way around both Protégé and Databricks, discovered WebVOWL and SPARQL Playground, and tried my hand at writing a dozen or so SQL and SPARQL queries. 
 
@@ -84,6 +92,7 @@ Creating a second ontology revealed how little I internalized when creating the 
     - **Symmetric properties** are assigned to properties whose assertions are valid when inversed. For example, in the Wuthering Heights ontology, the property *hasSpouse* is symmetric, because it’s always accurate to say that, for example, if Isabella *hasSpouse* Heathcliff, the inverse must also be true: Heathcliff *hasSpouse* Isabella.
     - **Asymmetric properties** are assigned to properties whose inverse can never be true. For example, in the Wuthering Heights ontology, while it’s true to say that Isabella *hasMother* Mrs. Linton, it’s not true to say that the inverse is true: Mrs. Linton’s mother cannot be Isabella.
 
+<a name="Explore"></a> 
 ## Explore the ontologies
 ### Protégé 
 To view the full ontology in Protégé: 
@@ -104,6 +113,7 @@ To view the full ontology in WebVOWL:
   	
 8.	Zoom in and out to explore the details.
 
+<a name="Acknowledgements"></a>
 ## Acknowledgements
 I’d like to thank [Jessica Talisman](https://jessicatalisman.substack.com/p/the-ontology-pipeline) for introducing me to the Ontology Pipeline and the role that each component of the pipeline plays in improving the trustworthiness of AI output.
 
