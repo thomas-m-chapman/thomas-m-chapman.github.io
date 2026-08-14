@@ -36,11 +36,15 @@ All in all, the KM ontology consists of:
   - 227 annotation assertions, which provide names and definitions for each entity
 
 The following diagram illustrates the class hierarchy of the KM ontology and provides a good high-level depiction of its contents.
+
 &nbsp;![View of the KM class hierarchy](images/KM-class-hierarchy.png)
 
+<br>
 The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are impossible to read). 
+
 &nbsp;![View of the KM ontology in WebVOWL](images/KM-ontology-WebVOWL.png)
 
+<br>
 To [explore the ontology in full](https://thomas-m-chapman.github.io/Ontology-Practice.html#Explore), download the ontology (KM-ontology.ttl) and open it in either Protégé or WebVOWL. 
 
 <a name="Ontology-details"></a> 
@@ -88,8 +92,10 @@ With “Deleted” removed, the lifecycle stage “Archived” becomes the sole 
 Removing “Deleted” from the list of valid lifecycle stages yielded a clean, linear progression of a knowledge asset, from Draft through Archived status. With that established, I wanted to model the logical progression—and any allowed regression—that typically occurs during the content development process. 
 
 To do this, I created Lifecycle Stage as a class, and then defined *precedes* and *transitionsTo* object properties to enforce valid transitions from one state to another. While the ideal flow looks like this:
+
 &nbsp;![Image of the lifecycle stages](images/km-lifecycle-stages.png)
 
+<br>
 The model allows for state changes from InReview to Draft, as well as InReview to Published, allowing for both routes during iterative content development.
 
 In Turtle, this is represented as: 
@@ -139,6 +145,7 @@ ORDER BY ?order ?toStage
 ```
 
 **Query results:**
+
 &nbsp;![Image of Query Results 1](images/km-query-results-1.png)
 
 #### Test 2: Lifecycle stages after Draft
@@ -158,8 +165,10 @@ ORDER BY ?reachableStage
 ```
 
 **Query results:**
+
 &nbsp;![Image of Query Results 2](images/km-query-results-2.png)
 
+<br>
 The query results show that the model has been designed as intended. Archived is indeed a reachable state even though it isn’t a direct *transitionsTo* descendent of Draft, which confirms that transitivity inference is working as expected.
 
 ### Governance & retention policies
@@ -224,8 +233,10 @@ ORDER BY ?individual ?inferredType
 ```
 
 **Query results:**
+
 &nbsp;![Image of Query Results 3](images/km-query-results-3.png)
 
+<br>
 The query results show that each audience type is not only an instance of its directly asserted class, but also an instance of every class above it in the hierarchy.
 
 <a name="Undone"></a> 
