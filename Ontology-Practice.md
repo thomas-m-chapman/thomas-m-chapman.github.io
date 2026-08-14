@@ -53,7 +53,7 @@ For the Wuthering Heights ontology, I extended the exercise by re-creating in Da
 
 The following screenshots illustrate some of the work I did in Databricks.
 
-The following image shows the CharacterAttributes table, which captures many of the data properties that I modeled against each character in the novel, along with a corresponding set of annotations. 
+This image shows the CharacterAttributes table, which captures many of the data properties that I modeled against each character in the novel, along with a corresponding set of annotations. 
 &nbsp;![View of the CharacterAttributes table in Databricks showing a SQL query and columns for character data properties and annotations](images/Intro-WH-CharacterAttributes-table-databricks.png)
 
 
