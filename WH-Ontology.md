@@ -1,7 +1,7 @@
 # Ontology Practice 2: Wuthering Heights
 ## Contents
 - [About](#About) <br>
-- [My Wuthering Heights] ontology(#My-WH-ontology) <br>
+- [My Wuthering Heights ontology](#My-WH-ontology) <br>
 - [Ontology details](#Details) <br>
 - [Challenges & key decisions](#Challenges) <br>
 - [Left undone](#Undone) <br>
@@ -9,6 +9,7 @@
 - [Discoveries in the Moors](#Discoveries) <br>
 - [Acknowledgements](#Acknowledgements) <br>
 
+<a name="About"></a> 
 ## About
 As mentioned in the [Introduction](https://thomas-m-chapman.github.io/Ontology-Practice.html#Introduction), I first conceived of the idea of creating this ontology when I was in the middle of creating the Knowledge Management ontology. 
 
@@ -20,6 +21,7 @@ Here is the genealogy that I created. I referenced it often while reading the bo
 
 [WH-genealogy.png]
 
+<a name="My-WH-ontology"></a> 
 ## My Wuthering Heights ontology
 The complexity of the Wuthering Heights ontology is derived from the novel’s 18 characters, the many interweaving family relationships, and the social class dynamics that defined the characters’ fates. From those elements come a variety of ontology constructs, including symmetric properties, functional properties, and the annotations that I authored to explain both narrative context and the modeling decisions that I made.
 
@@ -50,7 +52,7 @@ The visualization below, from WebVOWL, provides a more exploded view of the onto
 To explore the ontology in full, download the ontology (Wuthering-Heights-ontology.ttl) and open it in either Protégé or WebVOWL 
 [link to Explore the ontologies in full section].
 
-
+<a name="Details"></a> 
 ## Ontology details
 The Wuthering Heights ontology includes rich **annotations** that help explain character relationships and the novel’s complex themes, such as this one: 
     *Isabella runs away from Heathcliff to raise their son, Linton, free from the darkness of Heathcliff and the shadows he casts on Wuthering Heights. Her departure severs her connection to the Earnshaw household entirely.*
@@ -73,6 +75,7 @@ The three Generation subclasses (ThePatriarchsGeneration, ThePassionGeneration, 
 
 For similar reasons, I used the data type **xsd:gYear** instead of a generic string for date values, as recommended by OWL, so that the Reasoner treats the value as temporal data rather than as plain text.
 
+<a name="Challenges"></a> 
 ## Challenges & key decisions
 ### Social class
 Social class is one of the most prominent themes in *Wuthering Heights* and one that deserves a commensurate degree of focus in my ontology. At the turn of the 19th century in England, social class was evident in all phases of life, and one knew quite easily which social class they belonged to. The fortunate few stood at the top of British society in the royal family, while those slightly less fortunate fell into the aristocracy or, lower yet, the gentry. The overwhelming majority, however, resided in the middle class and the working class. 
@@ -169,6 +172,7 @@ The following selection from the ontology, in Turtle output, shows how these mod
 
 ```
 
+<a name="Undone"></a> 
 ## Left undone
 I chose not to model the following:
 - **Cardinality constraints**, such as an *exactly 2* restriction on *hasParent* to formally assert that every character has precisely two parents. To me, this would have contradicted yet another social construct that the novel might be challenging, particularly through Heathcliff.
@@ -178,6 +182,7 @@ I’m also now questioning my decision to model Outsider as a social class rathe
 
 Upon further reflection, modeling Outsider as a data property might have better captured the transitory state of Outsider status and one’s ability to shed that designation (or not) over time. This would also be more consistent with the novel’s other barrier-breaking themes.
 
+<a name="Validating"></a> 
 ## Validating the ontology
 To validate that I had modeled everything correctly, I created a handful of SPARQL queries and ran them against the ontology to verify that the results were accurate.
 
@@ -238,6 +243,7 @@ The query returned five rows, naming the expected five characters.
 [WH-query-results-3.png]
 
 
+<a name="Discoveries"></a> 
 ## Discoveries in the Moors
 Creating this ontology was much like navigating the moors, a constant struggle to tame my thoughts in an attempt to define the world of *Wuthering Heights* and its many ambiguities. 
 
@@ -253,6 +259,7 @@ What began as a practice exercise became an absorbing subject. I came to underst
 
 And that, after all, is what good knowledge modeling requires of us.
 
+<a name="Acknowledgements"></a> 
 ## Acknowledgements
 *This work was conducted using Protégé.*
 
