@@ -52,8 +52,7 @@ The visualization below, from WebVOWL, provides a more exploded view of the onto
 &nbsp;![Image depicting the Wuthering Heights ontology in WebVOWL](images/WH-ontology-WebVOWL.png)
 
 <br>
-To explore the ontology in full, download the ontology (Wuthering-Heights-ontology.ttl) and open it in either Protégé or WebVOWL 
-[link to Explore the ontologies in full section].
+To [explore the ontology in full](https://thomas-m-chapman.github.io/Ontology-Practice.html#Explore), download the ontology (Wuthering-Heights-ontology.ttl) and open it in either Protégé or WebVOWL.
 
 <a name="Details"></a> 
 ## Ontology details
