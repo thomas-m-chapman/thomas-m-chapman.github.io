@@ -51,6 +51,7 @@ All in all, the WH ontology consists of:
 - 59 annotation assertions, which provide names and meaningful descriptions for each entity
 
 The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are difficult to read even if opened in a separate tab). 
+
 &nbsp;![Image depicting the Wuthering Heights ontology in WebVOWL](images/WH-ontology-WebVOWL.png)
 
 <br>
