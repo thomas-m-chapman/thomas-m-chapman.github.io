@@ -19,7 +19,7 @@ It was then that I thought it would be a fun challenge to create an ontology for
 
 Here is the genealogy that I created. I referenced it often while reading the book, and I found it just as useful when I created the ontology.
 
-[WH-genealogy.png]
+&nbsp;![Image of the Wuthering Heights genealogy](images/WH-genealogy.png)
 
 <a name="My-WH-ontology"></a> 
 ## My Wuthering Heights ontology
@@ -29,7 +29,8 @@ For this ontology I chose those elements that I believe contribute most to the n
 
 The following diagram illustrates the class hierarchy of the ontology:
 
-[WH-class-hierarchy.png]
+&nbsp;![Image depicting the Wuthering Heights class hierarchy](images/WH-class-hierarchy.png)
+<br>
 
   - **Character** includes Heathcliff and each member of the Linton and Earnshaw families, the three servants, and the two narrators (Lockwood and Nelly Dean) whose perspectives shape the story.
   - **Family** describes the two primary families, the Earnshaws and the Lintons, and the introduction of the Heathcliff family.
@@ -47,8 +48,10 @@ All in all, the WH ontology consists of:
 - 59 annotation assertions, which provide names and meaningful descriptions for each entity
 
 The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are difficult to read). 
-[WH-ontology-WebVOWL]
 
+&nbsp;![Image depicting the Wuthering Heights ontology in WebVOWL](images/WH-ontology-WebVOWL.png)
+
+<br>
 To explore the ontology in full, download the ontology (Wuthering-Heights-ontology.ttl) and open it in either Protégé or WebVOWL 
 [link to Explore the ontologies in full section].
 
@@ -200,7 +203,9 @@ WHERE { ?character wh:hasOccupation wh:Servant . }
 
 **Query results:**
 The query returned three rows, naming the three expected characters.
-[WH-query-results-1.png]
+
+&nbsp;![Image depicting Query Results 1](images/WH-query-results-1.png)
+
 
 ### Query 2: Which characters belong to multiple generations?
 This query verifies that no one was accidentally modeled as a member of more than one Generation. 
@@ -220,7 +225,9 @@ HAVING (COUNT(?generation) > 1)
 
 **Query results:**
 The query returned no data, verifying that no characters were assigned to more than one Generation.
-[WH-query-results-2.png]
+
+&nbsp;![Image depicting Query Results 2](images/WH-query-results-2.png)
+
 
 ### Query 3: Query 3: Which characters belong to multiple families?
 This query verifies that Heathcliff, Linton, Isabella, Catherine, and Cathy were modeled as intended, as the characters who appropriately belong to multiple families via birth, marriage, or arrangement.
@@ -240,7 +247,8 @@ HAVING (COUNT(?family) > 1)
 
 **Query results:**
 The query returned five rows, naming the expected five characters.
-[WH-query-results-3.png]
+
+&nbsp;![Image depicting Query Results 3](images/WH-query-results-3.png)
 
 
 <a name="Discoveries"></a> 
