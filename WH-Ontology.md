@@ -1,13 +1,13 @@
 # Ontology Practice 2: Wuthering Heights
 ## Contents
-- About
-- My Wuthering Heights ontology
-- Ontology details
-- Challenges & key decisions
-- Left undone
-- Validating the ontology
-- Discoveries in the Moors
-- Acknowledgements
+- [About](#About) <br>
+- [My Wuthering Heights] ontology(#My-WH-ontology) <br>
+- [Ontology details](#Details) <br>
+- [Challenges & key decisions](#Challenges) <br>
+- [Left undone](#Undone) <br>
+- [Validating](#Validating) <br>
+- [Discoveries in the Moors](#Discoveries) <br>
+- [Acknowledgements](#Acknowledgements) <br>
 
 ## About
 As mentioned in the [Introduction](https://thomas-m-chapman.github.io/Ontology-Practice.html#Introduction), I first conceived of the idea of creating this ontology when I was in the middle of creating the Knowledge Management ontology. 
