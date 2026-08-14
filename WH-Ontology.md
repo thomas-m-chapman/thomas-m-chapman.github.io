@@ -179,6 +179,63 @@ I’m also now questioning my decision to model Outsider as a social class rathe
 Upon further reflection, modeling Outsider as a data property might have better captured the transitory state of Outsider status and one’s ability to shed that designation (or not) over time. This would also be more consistent with the novel’s other barrier-breaking themes.
 
 ## Validating the ontology
+To validate that I had modeled everything correctly, I created a handful of SPARQL queries and ran them against the ontology to verify that the results were accurate.
+
+### Query 1: Which characters are servants? 
+This query verifies that Joseph, Nelly Dean, and Zillah are correctly modeled as servants, and that no one else was incorrectly modeled as a servant.
+
+**Query text:**
+```
+PREFIX wh: <http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/> 
+
+SELECT ?character 
+WHERE { ?character wh:hasOccupation wh:Servant . }
+
+```
+
+**Query results:**
+The query returned three rows, naming the three expected characters.
+[WH-query-results-1.png]
+
+### Query 2: Which characters belong to multiple generations?
+This query verifies that no one was accidentally modeled as a member of more than one Generation. 
+
+**Query text:**
+```
+PREFIX wh: <http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/>
+
+SELECT ?character (COUNT(?generation) AS ?genCount)
+WHERE {
+  ?character wh:belongsToGeneration ?generation .
+}
+GROUP BY ?character
+HAVING (COUNT(?generation) > 1)
+
+```
+
+**Query results:**
+The query returned no data, verifying that no characters were assigned to more than one Generation.
+[WH-query-results-2.png]
+
+### Query 3: Query 3: Which characters belong to multiple families?
+This query verifies that Heathcliff, Linton, Isabella, Catherine, and Cathy were modeled as intended, as the characters who appropriately belong to multiple families via birth, marriage, or arrangement.
+
+**Query text:**
+```
+PREFIX wh: <http://www.semanticweb.org/thoma/ontologies/2026/3/WutheringHeights/>
+
+SELECT ?character (COUNT(?family) AS ?familyCount)
+WHERE {
+  ?character wh:belongsToFamily ?family .
+}
+GROUP BY ?character
+HAVING (COUNT(?family) > 1)
+
+```
+
+**Query results:**
+The query returned five rows, naming the expected five characters.
+[WH-query-results-3.png]
 
 
 ## Discoveries in the Moors
