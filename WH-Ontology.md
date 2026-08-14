@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Ontology Practice 2: Wuthering Heights
 ## Contents
 - [About](#About) <br>
