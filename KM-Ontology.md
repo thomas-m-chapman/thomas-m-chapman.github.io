@@ -41,7 +41,6 @@ The following diagram illustrates the class hierarchy of the KM ontology and pro
 
 <br>
 The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are impossible to read). 
-
 &nbsp;![View of the KM ontology in WebVOWL](images/KM-ontology-WebVOWL.png)
 
 <br>
@@ -94,7 +93,6 @@ Removing “Deleted” from the list of valid lifecycle stages yielded a clean, 
 To do this, I created Lifecycle Stage as a class, and then defined *precedes* and *transitionsTo* object properties to enforce valid transitions from one state to another. While the ideal flow looks like this:
 
 &nbsp;![Image of the lifecycle stages](images/KM-lifecycle-stages.png)
-
 <br>
 The model allows for state changes from InReview to Draft, as well as InReview to Published, allowing for both routes that are so common to iterative content development.
 
