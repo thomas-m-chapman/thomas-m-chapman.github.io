@@ -10,16 +10,38 @@ layout: default
 - [Left undone](#Undone) <br>
 - [Acknowledgements](#Acknowledgements) <br>
 
-As mentioned in the [Introduction](https://thomas-m-chapman.github.io/Ontology-Practice.html#Introduction), the Knowledge Management (KM) ontology that I created is a sample conceptualization of the knowledge management domain based on my experience leading KM programs at Dell EMC and BECU. There is no ISO standard for a KM ontology. If you were to create a KM ontology based on your experience in knowledge management, it might differ considerably from what you see here.
-
 <a name="My-KM-ontology"></a> 
 ## My KM ontology
+As mentioned in the [Introduction](https://thomas-m-chapman.github.io/Ontology-Practice.html#Introduction), the Knowledge Management (KM) ontology that I created is a sample conceptualization of the knowledge management domain based on my experience leading KM programs at Dell EMC and BECU. There is no ISO standard for a KM ontology. If you were to create a KM ontology based on your experience in knowledge management, it might differ considerably from what you see here.
+
 For this ontology, I chose to define eight facets (as classes) that are common to many knowledge management programs, including the roles that KM team members might play, the many different kinds of knowledge assets that might populate your knowledge base, the content types that might best describe each of your knowledge assets, standard stages of the KM lifecycle, a handful of audience types, various processes common to the KM function, a governance retention policy, and several professional disciplines that often overlap with the KM practice.
 
+Examples for each of the facets include:
 
+| **Facet**        | **# Defined classes**       | **Examples**                          |
+|:----------------:|:---------------------------:|:--------------------------------------|        
+| **Knowledge Roles**  | 14                          | knowledge manager, knowledge analyst, knowledge champion |
+| **Knowledge Assets** | 31                          | knowledge article, job aid, enterprise glossary, user guide |
+| **Content Types**    | 7                           | conceptual, procedural, reference, experiential |
+| **Lifecycle Stages** | 7                           | draft, in review, published, archived |
+| **Audience Type**    | 18                          | public, partner, member, staff |
+| **Knowledge Process** | 31                         | enablement, governance, feedback management, reporting |
+| **Adjacent Discipline** | 10                       | Technical Writing, Learning and Development, Change Management |
+| **Retention Policy** | 1                           | Legal 6-Year Retention policy |
 
+All in all, the KM ontology consists of:
+  - 8 super classes and 111 subclasses, spanning the facets listed above
+  - 10 object properties modeling relationships such as *hasRetentionPolicy* and *validatedBy*
+  - 39 individuals, or instances, of audience type, content type, lifecycle stage, retention policy, and a handful of select knowledge assets
+  - 227 annotation assertions, which provide names and definitions for each entity
 
+The following diagram illustrates the class hierarchy of the KM ontology and provides a good high-level depiction of its contents.
+[KM-class-hierarchy.png]
 
+The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are impossible to read). 
+[KM-ontology-WebVOWL.png]
+
+To [explore the ontology in full](), download the ontology (KM-ontology.ttl) and open it in either Protégé or WebVOWL. 
 
 <a name="Ontology-details"></a> 
 ## Ontology details
