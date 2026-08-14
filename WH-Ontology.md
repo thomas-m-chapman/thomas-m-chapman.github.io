@@ -17,11 +17,11 @@ layout: default
 ## About
 As mentioned in the [Introduction](https://thomas-m-chapman.github.io/Ontology-Practice.html#Introduction), I first conceived of the idea of creating this ontology when I was in the middle of creating the Knowledge Management ontology. 
 
-I was reading *Wuthering Heights* at the time, rather spottily, and before long I’d become lost in the swirl of filial relationships, the status implicit in the houses of the Lintons and the Earnshaws, the significance of social class at the turn of the 19th century, and the disruption caused by a mysterious outsider named Heathcliff who had been taken in by Mr. Earnshaw for unstated reasons and raised as his own child. I had to read and reread various sections to get my bearings, and at some point sketched out a simple genealogy to help make sense of who was who. 
+I was reading *Wuthering Heights* at the time, rather spottily, and before long I’d become lost in the swirl of filial relationships, the status implicit in the houses of the Lintons and the Earnshaws, the significance of social class at the turn of the 19th century, and the disruption caused by a mysterious outsider named Heathcliff who had been taken in by Mr. Earnshaw (for unstated reasons) and raised as his own child. I had to read and reread various sections to get my bearings, and at some point sketched out a simple genealogy to help make sense of who was who. 
 
-It was then that I thought it would be a fun challenge to create an ontology for *Wuthering Heights*. Doing so would require a close read of the novel (which to that point I had not been doing) which in turn would give me a deeper appreciation for the novel and the complex themes Emily Bronte was weaving.
+It was then that I thought it would be a fun challenge to create an ontology for *Wuthering Heights*. Doing so would require a close read of the novel (which to that point I had not been doing) which in turn would give me a deeper appreciation for the novel and the complex themes Emily Brontë was weaving.
 
-Here is the genealogy that I created. I referenced it often while reading the book, and I found it just as useful when I created the ontology.
+The following image depicts the genealogy that I created (after refining it from the original pencil-and-paper sketch). I referenced it often while reading the book, and I found it just as useful when I created the ontology. To view the image more clearly, right-click the image and select **Open image in new tab**.  
 
 &nbsp;![Image of the Wuthering Heights genealogy](images/WH-genealogy.png)
 
@@ -32,17 +32,15 @@ The complexity of the Wuthering Heights ontology is derived from the novel’s 1
 For this ontology I chose those elements that I believe contribute most to the novel’s central themes: family, social class, relationships between families of different social classes, subjective truth, and generational change. I also wanted my ontology to capture the novel’s complexities and ambiguities, many of which, of course, surrounded the character Heathcliff.
 
 The following diagram illustrates the class hierarchy of the ontology:
-
 &nbsp;![Image depicting the Wuthering Heights class hierarchy](images/WH-class-hierarchy.png)
 <br>
 
-  - **Character** includes Heathcliff and each member of the Linton and Earnshaw families, the three servants, and the two narrators (Lockwood and Nelly Dean) whose perspectives shape the story.
-  - **Family** describes the two primary families, the Earnshaws and the Lintons, and the introduction of the Heathcliff family.
-  - **Generation** describes three generations of the families, from the patriarchs to the few surviving family members who could revitalize their family lineage.
-  - **Location** and **Location Type** include Wuthering Heights and Thrushcross Grange, as well as a few lesser places that are thematically important. Location Type identifies each location as a residence, village, or natural landscape. 
-  - **Occupation** includes the three known occupations of landowner, family lawyer, and servant. 
-  - **Social Class** includes several 19th-century social classes suggested but never named in the novel: Minor Gentry, Yeoman Farmer, Laborer, and the derided Outsider class.
-
+  - The **Character** class includes Heathcliff and each member of the Linton and Earnshaw families, the three servants, and the two narrators (Lockwood and Nelly Dean) whose perspectives shape the story.
+  - The **Family** class describes the two primary families, the Earnshaws and the Lintons, and the inception of the Heathcliff family.
+  - The **Generation** class describes three generations of the families, from the patriarchs to the few surviving family members who could, if fate proves favorable, revitalize their family lineage.
+  - The **Location** and **Location Type** classes include Wuthering Heights and Thrushcross Grange, as well as a few lesser places that are thematically important. Location Type identifies each location as a residence, village, or natural landscape. 
+  - The **Occupation** class includes the three known occupations of landowner, family lawyer, and servant. 
+  - The **Social Class** class includes several 19th-century social classes suggested but never named in the novel: Minor Gentry, Yeoman Farmer, Laborer, and the derided Outsider class.
 <br>
 All in all, the WH ontology consists of:
 - 7 classes and 3 subclasses
@@ -51,8 +49,7 @@ All in all, the WH ontology consists of:
 - 8 data properties including dates of significance (*hasBirthDate*, *hasDeathDate*, *hasWeddingDate*) and social status (*isGentleman*, *hasCharacterSubclass*)
 - 59 annotation assertions, which provide names and meaningful descriptions for each entity
 
-The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are difficult to read). 
-
+The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are difficult to read even if opened in a separate tab). 
 &nbsp;![Image depicting the Wuthering Heights ontology in WebVOWL](images/WH-ontology-WebVOWL.png)
 
 <br>
@@ -60,13 +57,16 @@ To [explore the ontology in full](https://thomas-m-chapman.github.io/Ontology-Pr
 
 <a name="Details"></a> 
 ## Ontology details
-The Wuthering Heights ontology includes rich **annotations** that help explain character relationships and the novel’s complex themes, such as this one: 
+The Wuthering Heights ontology includes rich **annotations** that help explain character relationships and the novel’s complex themes, such as this annotation: 
+
     *Isabella runs away from Heathcliff to raise their son, Linton, free from the darkness of Heathcliff and the shadows he casts on Wuthering Heights. Her departure severs her connection to the Earnshaw household entirely.*
 
 Other annotations capture modeling decisions that I made, such as this annotation for the Generation class:
+
     *The Passion generation is comprised of the progeny of the Patriarchs generation — Hindley, Catherine, Edgar, and Isabella — and the orphan Heathcliff. This generation sows the seeds of the novel's central conflicts of passion, retribution, and social disruption.*
 
 Similarly rich annotations help convey temporality, as done here to explain the evolving nature of Heathcliff’s social status: 
+
     *Heathcliff is introduced to us as an orphan, an outsider to the two families. Later in the novel, as he matures to a young adult, he leaves the area for several months and returns, as he himself asserts, a gentleman. His background, like his demeanor, is mysterious.*
 
 Other annotations reveal implications that might not be apparent to the casual reader, such as *“Frances gains Yeoman Farmer status upon her marriage to Hindley if not already so by birth.”* The few axiomatic annotations, such as *“Mr. Earnshaw is the patriarch of the Earnshaw family,”* are provided for those perusing the ontology who aren’t familiar with the novel. **Same As** annotations make clear that individuals with different names are the same person, such as those that clarify that Nelly is also known as Ellen (her birth name), and that Catherine Earnshaw becomes Catherine Linton after marrying Edgar. And, finally, a select few provide details that might otherwise be perceived as a data gap, such as this bland annotation: *“Joseph's last name is not mentioned in the novel.”*
@@ -84,11 +84,11 @@ For similar reasons, I used the data type **xsd:gYear** instead of a generic str
 <a name="Challenges"></a> 
 ## Challenges & key decisions
 ### Social class
-Social class is one of the most prominent themes in *Wuthering Heights* and one that deserves a commensurate degree of focus in my ontology. At the turn of the 19th century in England, social class was evident in all phases of life, and one knew quite easily which social class they belonged to. The fortunate few stood at the top of British society in the royal family, while those slightly less fortunate fell into the aristocracy or, lower yet, the gentry. The overwhelming majority, however, resided in the middle class and the working class. 
+Social class is one of the most prominent themes in *Wuthering Heights* and one that deserved a commensurate degree of focus in my ontology. At the turn of the 19th century in England, social class was evident in all phases of life, and one knew quite well which social class they belonged to. The fortunate few stood at the top of British society in the royal family, while those slightly less fortunate fell into the aristocracy or, lower yet, the gentry. The overwhelming majority, however, resided in the middle class and the working class. 
 
-You knew you were a member of the aristocracy if your name included a title conveying social rank, such as duke/duchess, baron/baroness, or earl/countess and, moreover, if you didn’t need to work for a living. You knew you were in the gentry if you owned land, and the more land you owned, the better. You knew you were in the vast majority if you didn’t own land and worked for a living, though some professions earned more prestige than others. You knew you were in the lowest of classes if you served others and had no home of your own.
+You knew you were a member of the aristocracy if your name included a title conveying social rank, such as duke/duchess, baron/baroness, or earl/countess and, moreover, if you didn’t need to work for a living. You knew you were in the gentry if you owned land, and the more land you owned, the better. You knew you were in the majority if you didn’t own land and worked for a living, though some professions earned more prestige than others. You knew you were in the lowest of classes if you served others and had no home of your own.
 
-This is the social world of *Wuthering Heights*, whose characters span the social classes from minor gentry (the Lintons) to the laboring class (Nelly Dean, Joseph, and Zillah). Several of the novel’s characters are carefully situated between the classes, such as the Earnshaws, who are effectively yeoman farmers, not quite elevated to the status of the Lintons, but not quite reduced to the working class. Another such character is Mr. Green, the Linton family’s attorney, who must work for a living but is esteemed in high regard nonetheless. 
+This is the social world of *Wuthering Heights*, whose characters span the social classes from minor gentry (the Lintons) to the laboring class (Nelly Dean, Joseph, and Zillah). Several of the novel’s characters are carefully situated between the classes, such as the Earnshaws, who are effectively yeoman farmers, not quite elevated to the status of the Lintons, but not quite reduced to the working class, either. Another such character is Mr. Green, the Linton family’s attorney, who must work for a living but is esteemed in high regard, nonetheless. 
 
 #### Gentleman status
 The trait that enables one to rise to a higher social class or sink to a lower one, is that of being a gentleman. It was often land ownership that conveyed gentleman status, but it was just as often how one carried oneself, one’s perceived stature, mannerisms, and money. Heathcliff and the narrator Lockwood are self-proclaimed gentlemen, though one perhaps more demonstrably than the other.
@@ -109,7 +109,7 @@ In Protégé, I declared the three Generation subclasses as Disjoint, ensuring t
 I modeled Orphan and Narrator as data property values (via the *hasCharacterSubclass* property) rather than as distinct OWL subclasses. Modeling them as subclasses would have implied that Orphan and Narrator are discrete categories of being—innate human characteristics—and would have invited unintended inferences about characters like Frances, Lockwood, and Nelly Dean, whose lineage and role is either ambiguous or peripheral to the family structure. As data properties, these attributes remain descriptive without generating structural implications.
 
 ### Location Type
-Conversely, I modeled LocationType as a class of its own, rather than a subclass of Location, simply because location types describe locations and are not locations themselves. A subclass relationship would imply that Residence is a kind of Location, but Wuthering Heights is a Location of *type* Residence. The *hasLocationType* object property, associating Location with LocationType, captures this relationship correctly.
+Conversely, I modeled LocationType as a class of its own, rather than a subclass of Location, simply because location types describe locations and are not locations themselves. A subclass relationship would imply that Residence is a kind of Location, but Wuthering Heights is a Location of *type* Residence. The *hasLocationType* object property, associating Location with LocationType, captures this relationship appropriately.
 
 ### Sample Turtle output
 The following selection from the ontology, in Turtle output, shows how these modeling decisions were built into the Wuthering Heights ontology. The annotations attempt to provide insight beyond which might be inferred directly from the model itself. 
@@ -205,7 +205,7 @@ WHERE { ?character wh:hasOccupation wh:Servant . }
 ```
 
 **Query results:**
-The query returned three rows, naming the three expected characters.
+The query returns three rows, naming the three expected characters.
 
 &nbsp;![Image depicting Query Results 1](images/WH-query-results-1.png)
 
@@ -227,7 +227,7 @@ HAVING (COUNT(?generation) > 1)
 ```
 
 **Query results:**
-The query returned no data, verifying that no characters were assigned to more than one Generation.
+The query returns no data, verifying that no characters were assigned to more than one Generation.
 
 &nbsp;![Image depicting Query Results 2](images/WH-query-results-2.png)
 
@@ -249,7 +249,7 @@ HAVING (COUNT(?family) > 1)
 ```
 
 **Query results:**
-The query returned five rows, naming the expected five characters.
+The query returns five rows, naming the expected five characters.
 
 &nbsp;![Image depicting Query Results 3](images/WH-query-results-3.png)
 
