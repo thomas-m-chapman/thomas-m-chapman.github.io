@@ -32,7 +32,6 @@ The complexity of the Wuthering Heights ontology is derived from the novel’s 1
 For this ontology I chose those elements that I believe contribute most to the novel’s central themes: family, social class, relationships between families of different social classes, subjective truth, and generational change. I also wanted my ontology to capture the novel’s complexities and ambiguities, many of which, of course, surrounded the character Heathcliff.
 
 The following diagram illustrates the class hierarchy of the ontology:
-
 &nbsp;![Image depicting the Wuthering Heights class hierarchy](images/WH-class-hierarchy.png)
 <br>
 
