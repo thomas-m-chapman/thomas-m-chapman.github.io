@@ -102,12 +102,12 @@ Creating a second ontology revealed how little I internalized when creating the 
 ### Protégé 
 **To view the full ontology in Protégé:** 
 1.	Download [Protégé](https://protege.stanford.edu/) if you don’t already have it.
-2.	Download the ontology that you want to view: KM-ontology or Wuthering-Heights-ontology.
+2.	Download the ontology that you want to view: <a href="assets/Knowledge-Management-ontology.ttl" download>KM ontology</a> or <a href="assets/Wuthering-Heights-ontology.ttl" download>Wuthering Heights ontology</a>.
 3.	Open Protégé. From the **File** menu, select **Open** and browse your device for the ontology that you downloaded in Step 2.
 
 ### WebVOWL
 **To view the full ontology in WebVOWL:**
-1.	Download the ontology that you want to view: [KM ontology](Knowledge-Management-ontology.ttl) or [Wuthering Heights ontology](Wuthering-Heights-ontology.ttl).
+1.	Download the ontology that you want to view: <a href="assets/Knowledge-Management-ontology.ttl" download>KM ontology</a> or <a href="assets/Wuthering-Heights-ontology.ttl" download>Wuthering Heights ontology</a>.
 2.	Navigate to [WebVOWL](https://service.tib.eu/webvowl/).
 3.	From the menu located at the bottom of the WebVOWL window, hover your cursor over **Ontology** and click **Select ontology file**.
 4.	Browse your device for the ontology that you downloaded in Step 1.
