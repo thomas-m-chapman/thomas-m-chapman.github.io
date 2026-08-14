@@ -41,7 +41,7 @@ The following diagram illustrates the class hierarchy of the KM ontology and pro
 The visualization below, from WebVOWL, provides a more exploded view of the ontology (though the details are impossible to read). 
 [KM-ontology-WebVOWL.png]
 
-To [explore the ontology in full](), download the ontology (KM-ontology.ttl) and open it in either Protégé or WebVOWL. 
+To [explore the ontology in full](https://thomas-m-chapman.github.io/Ontology-Practice.html#Explore), download the ontology (KM-ontology.ttl) and open it in either Protégé or WebVOWL. 
 
 <a name="Ontology-details"></a> 
 ## Ontology details
