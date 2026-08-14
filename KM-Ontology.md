@@ -29,6 +29,7 @@ Examples for each of the facets include:
 | **Adjacent Discipline** | 10                       | Technical Writing, Learning and Development, Change Management |
 | **Retention Policy** | 1                           | Legal 6-Year Retention policy |
 
+<br>
 All in all, the KM ontology consists of:
   - 8 super classes and 111 subclasses, spanning the facets listed above
   - 10 object properties modeling relationships such as *hasRetentionPolicy* and *validatedBy*
@@ -36,7 +37,6 @@ All in all, the KM ontology consists of:
   - 227 annotation assertions, which provide names and definitions for each entity
 
 The following diagram illustrates the class hierarchy of the KM ontology and provides a good high-level depiction of its contents.
-
 &nbsp;![View of the KM class hierarchy](images/KM-class-hierarchy.png)
 
 <br>
@@ -93,10 +93,10 @@ Removing “Deleted” from the list of valid lifecycle stages yielded a clean, 
 
 To do this, I created Lifecycle Stage as a class, and then defined *precedes* and *transitionsTo* object properties to enforce valid transitions from one state to another. While the ideal flow looks like this:
 
-&nbsp;![Image of the lifecycle stages](images/km-lifecycle-stages.png)
+&nbsp;![Image of the lifecycle stages](images/KM-lifecycle-stages.png)
 
 <br>
-The model allows for state changes from InReview to Draft, as well as InReview to Published, allowing for both routes during iterative content development.
+The model allows for state changes from InReview to Draft, as well as InReview to Published, allowing for both routes that are so common to iterative content development.
 
 In Turtle, this is represented as: 
 ```
@@ -117,7 +117,7 @@ rdfs:comment "An explicit permitted transition between two lifecycle stages. Non
 ```
 
 #### Test 1: Progression of lifecycle stages 
-To make sure that I had modeled the lifecycle stages correctly, I uploaded the ontology to SPARQL Playground and ran a couple of SPARQL queries against it.
+To verify that I had modeled the lifecycle stages correctly, I uploaded the ontology to SPARQL Playground and ran a couple of SPARQL queries against it.
 
 The first query asks which lifecycle stages are permitted from one stage to the next, beginning with the Draft stage.
 
@@ -148,8 +148,12 @@ ORDER BY ?order ?toStage
 
 &nbsp;![Image of Query Results 1](images/km-query-results-1.png)
 
+The query results show that the model has been designed as intended, allowing for the possibility that a knowledge asset may progress from In Review to Approved, or may regress from In Review to Draft status. 
+
+Just so, a Published knowledge asset may progress to either Deprecated or Expired, and a knowledge asset may be Archived only after it has been either Deprecated or Expired.
+
 #### Test 2: Lifecycle stages after Draft
-I then wanted to make sure that transitivity inference is working as expected. I wanted to confirm what I believe the Reasoner had validated already. This SPARQL query asks for all stages that can be reached following the Draft stage. 
+I then wanted to make sure that transitivity inference is working as expected (which I believe the Reasoner had validated already). This SPARQL query asks for all stages that can be reached following the Draft stage. 
 
 **Query text:**
 ```
@@ -167,14 +171,13 @@ ORDER BY ?reachableStage
 **Query results:**
 
 &nbsp;![Image of Query Results 2](images/km-query-results-2.png)
-
 <br>
 The query results show that the model has been designed as intended. Archived is indeed a reachable state even though it isn’t a direct *transitionsTo* descendent of Draft, which confirms that transitivity inference is working as expected.
 
 ### Governance & retention policies
 In an established KM practice, all knowledge assets are governed to some degree. It’s not uncommon, however, for organizations to govern some knowledge assets with more scrutiny than others. I captured this in my ontology by defining two data properties:
-  -*isGoverned*: Indicates whether a knowledge asset is subject to formal authority governance.
-  -*hasGovernanceBody*: Indicates whether board, committee, or other designated authority holds explicit oversight responsibility over a knowledge asset.
+- *isGoverned*: Indicates whether a knowledge asset is subject to formal authority governance.
+- *hasGovernanceBody*: Indicates whether board, committee, or other designated authority holds explicit oversight responsibility over a knowledge asset.
 
 I also modeled a retention policy that governs how long a knowledge asset must be retained once archived (*retentionPeriod* and *retentionUnit*), whether the retention period is necessitated by Legal, Compliance, or Operations (*retentionType*), and the action to be taken when the retention period ends (*dispositionActivity*).
 
@@ -200,7 +203,7 @@ rdfs:label "Legal 6-Year Retention" .
 
 ### Access rights hierarchy
 Many knowledge platforms enable you to define graduated levels of access privileges, and I wanted my ontology to do the same. I modeled access rights in a hierarchy, leveraging the group of audience relationships, as follows:
-[km-audienceRelationship-hierarchy.png]
+&nbsp;![Image of the Audience Relationship hierarchy](images/km-audienceRelationship-hierarchy.png)
 
 #### Test: Access rights inferences
 To make sure that I modeled Access Rights correctly, I wrote the following SPARQL query to validate that the Reasoner can correctly infer the full privilege hierarchy, from Staff to Public. 
@@ -241,15 +244,15 @@ The query results show that each audience type is not only an instance of its di
 
 <a name="Undone"></a> 
 ## Left undone
-Upon reflection, I realize that even this relatively lightweight ontology could be made much more robust. If I return to this exercise, I might take on the following work.
+Upon reflection, I realize that even this relatively lightweight ontology could be made much more robust. If I return to this exercise, I’ll begin by doing the following.
 
-1.	Model content types more completely to account for outputs compiled from modular components. This might include, for instance, a new subclass of knowledge assets to distinguish between Atomic Asset and Compiled Asset. **Atomic Asset** would be supported with a *hasContentType* object property, while **Compiled Asset** would be supported with an *aggregates* property that points to one more Atomic Assets. 
+1.	Model content types more completely to account for outputs compiled from modular components. This might include, for instance, a new subclass of knowledge assets to distinguish between Atomic Asset and Compiled Asset. **Atomic Asset** would be supported with a *hasContentType* object property, while **Compiled Asset** would be supported with an *aggregates* property that points to one or more Atomic Assets. 
 
-2.	Model resolution outcomes for Feedback (Accepted, Rejected, Updated, Retired) as controlled vocabulary on the Resolve activity, or as a separate Feedback Disposition class.
+2.	Model resolution outcomes for Feedback (Accepted, Rejected, Updated, Retired) as a controlled vocabulary on the Resolve activity, or as a separate Feedback Disposition class.
 
 3.	Add more object properties for Legal documents, including: *hasSignatory*, *requiresWetSignature*, *hasParty*, *isLegallyEnforceable*, *hasEffectiveDate*, *hasExpirationDate*, *requiresNotary*, *requiresOath*, and so on.
 
-4.	Define explicit audience types to account for onboarding, such as *AllPractitioners* and *NewPractitioner*, as well as various stages of the learning journey: *Novice, Intermediate, Advanced*.
+4.	Define explicit audience types to account for onboarding, such as *AllPractitioners* and *NewPractitioner*, as well as various stages of the learning journey: *Novice, Intermediate,* and *Advanced*.
 
 <a name="Acknowledgements"></a> 
 ## Acknowledgements
