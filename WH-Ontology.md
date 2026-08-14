@@ -197,4 +197,8 @@ What began as a practice exercise became an absorbing subject. I came to underst
 And that, after all, is what good knowledge modeling requires of us.
 
 ## Acknowledgements
+*This work was conducted using Protégé.*
 
+Ontology editing and reasoning were performed using Protégé Desktop, an open-source ontology editor developed and maintained by the Stanford Center for Biomedical Informatics Research.
+
+Musen, M.A. [The Protégé project: A look back and a look forward. AI Matters](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4883684/). Association of Computing Machinery Specific Interest Group in Artificial Intelligence, 1(4), June 2015. DOI: 10.1145/2757001.2757003.
