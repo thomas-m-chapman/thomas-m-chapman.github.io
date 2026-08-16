@@ -103,7 +103,7 @@ In any case, in my ontology, social class is represented as Minor Gentry, Yeoman
 I modeled Gentleman not as an individual of social class, but instead as a Boolean data property called *isGentleman*. Unlike the SocialClass class—which includes the statuses of *MinorGentry* and *YeomanFarmer* that characters belong to—*isGentleman* is a characteristic of an individual character (true or false), not a category with its own members. This distinction matters for this ontology just as it does thematically for the novel because it is through the fluid, contested status of Gentleman that Heathcliff disrupts both the generational order and the social class hierarchy of the novel.
 
 ### Generation
-When contemplating Generation, I considered dividing it into just two subclasses, mirroring the novel’s two-volume structure (the novel is divided into two main sections, separated by a roughly 17-year gap). I decided instead to model three generations defined by familial lineage, which better captures the effects of Heathcliff’s arrival on successive generations of both families. This division also highlights the passage of time and the allowances that each generation grants members of society to navigate between social classes.
+When contemplating Generation, I considered dividing it into just two subclasses, mirroring the novel’s two-volume structure (the novel is divided into two main sections, separated by a roughly 17-year gap). I decided instead to model three generations defined by familial lineage, which I believe better captures the effects of Heathcliff’s arrival on successive generations of both families. This division also highlights the passage of time and the allowances that each generation grants members of society to navigate between social classes.
 
 In Protégé, I declared the three Generation subclasses as Disjoint, ensuring that the Reasoner would flag any character incorrectly assigned to more than one generation. I asserted Generation membership only for family members, including Heathcliff, and not for minor characters. 
 
@@ -182,7 +182,7 @@ The following selection from the ontology, in Turtle output, shows how these mod
 
 <a name="Undone"></a> 
 ## Left undone
-I chose not to model the following:
+I chose not to model the following in this edition of the ontology, though I may implement these enhancements at a later time:
 - **Cardinality constraints**, such as an *exactly 2* restriction on *hasParent* to formally assert that every character has precisely two parents. To me, this would have contradicted yet another social construct that the novel might be challenging, particularly through Heathcliff.
 - **Property chains**, such as modeling extended family relationships “aunt” and “uncle,” and so on, primarily in the interest of time.
 
