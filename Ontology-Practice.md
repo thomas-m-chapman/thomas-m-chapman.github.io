@@ -116,7 +116,7 @@ Creating a second ontology revealed how little I internalized when creating the 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot of filter options in WebVOWL](images/Intro-WebVOWL-filters.png)
   	
-7.	Zoom in and out to explore the details.
+    Zoom in and out to explore the details.
 
 <a name="Acknowledgements"></a>
 ## Acknowledgements
