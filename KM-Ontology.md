@@ -260,4 +260,5 @@ Ontology editing and reasoning were performed using Protégé Desktop, an open-s
 
 Musen, M.A. [The Protégé project: A look back and a look forward. AI Matters](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4883684/). Association of Computing Machinery Specific Interest Group in Artificial Intelligence, 1(4), June 2015. DOI: 10.1145/2757001.2757003.
 
-
+## Next
+Go to the next page: [Ontology Practice 2: Wuthering Heights](https://thomas-m-chapman.github.io/WH-Ontology.html)
