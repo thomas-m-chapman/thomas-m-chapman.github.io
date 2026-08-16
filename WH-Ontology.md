@@ -42,6 +42,7 @@ The following diagram illustrates the class hierarchy of the ontology:
   - The **Occupation** class includes the three known occupations of landowner, family lawyer, and servant. 
   - The **Social Class** class includes several 19th-century social classes suggested but never named in the novel: Minor Gentry, Yeoman Farmer, Laborer, and the derided Outsider class.
 <br>
+
 All in all, the WH ontology consists of:
 - 7 classes and 3 subclasses
 - 15 object properties modeling character relationships such as *hasFather*, *hasDaughter*, *hasSocialClass*, and *belongsToGeneration*
