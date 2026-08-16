@@ -116,7 +116,7 @@ Creating a second ontology revealed how little I internalized when creating the 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot of filter options in WebVOWL](images/Intro-WebVOWL-filters.png)
   	
-    Zoom in and out to explore the details.
+  Zoom in and out to explore the details.
 
 <a name="Acknowledgements"></a>
 ## Acknowledgements
@@ -128,3 +128,5 @@ The keen insights and writings of Jessica Talisman and Michael Iantosca inspired
 
 And finally, I’d like to thank Stanford University for allowing free use of Protégé, an open-source ontology editor developed and maintained by the Stanford Center for Biomedical Informatics Research.  
 
+## Next
+Go to the next page: [Ontology Practice 1: Knowledge Management](https://thomas-m-chapman.github.io/KM-Ontology.html)
