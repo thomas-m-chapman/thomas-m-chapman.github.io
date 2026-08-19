@@ -9,8 +9,8 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 
 ## Recent highlights
 - **Directed a sustained, multi-year KB improvement program** that spanned platform upgrades, content modeling, search optimization, and UX enhancements, increasing internal user CSAT by 25%.
-Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing program.
-- **Improved quarterly Knowledge Validation Rate (KVR)** — a measure of content accuracy, trustworthiness, and currency — from 67% to 98%.
+- **Reduced Time to Publish (TTP) by 60%** by implementing a distributed publishing program.
+- **Improved quarterly Knowledge Validation Rate (KVR)** from 67% to 98%.
 - **Advanced KM maturity from CMMI Level 1 to Level 3** by transforming an ad hoc, FIFO-based process into a governed, metrics-informed function with standardized intake, review, and publishing workflows.
 - **Partnered with Engineering to pilot BECU’s first AI-assisted knowledge solution**, evaluated results with pilot teams, identified source content quality as the critical driver of AI accuracy, and positioned the KM program for future AI integrations.
 
@@ -28,7 +28,6 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 - HTML, CSS, Markdown
 - Information Architecture
 - Minimalism
-- Taxonomy & Ontology governance
 - Team management/leadership
 - Technical Editing 
 
@@ -58,7 +57,7 @@ Reduced Time to Publish (TTP) by 60% by implementing a distributed publishing pr
 ---  
 
 ### Manager, Knowledge Management | Dell EMC, Isilon Storage Division <br>
-*Seattle, WA*  <br>
+*Seattle, WA* <br>
 *April 2012 – November 2016* <br>
 
 - Managed the Knowledge Management team within Dell EMC Service & Supportability, growing the team from 6 to 12 technical writers and knowledge managers.
