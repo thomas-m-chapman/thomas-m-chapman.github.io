@@ -1,18 +1,11 @@
 # Thomas M. Chapman
-### Certified Knowledge Manager | Technical Writing Manager | Content PM | Family Guy <br>
+### Certified Knowledge Manager | Technical Writing Manager | Content PM | CKM <br>
 Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&nbsp;&nbsp;     | &nbsp;&nbsp;&nbsp; [Email me](thomasmchapman@hotmail.com) &nbsp;&nbsp;&nbsp;      | &nbsp;&nbsp;&nbsp; [View my LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)  <br>
 
 <hr>
 
 ## Profile summary
-Knowledge Management manager and Technical Writing manager with 20+ years of experience managing high-performing teams and delivering content that helps customers work more efficiently, confidently, and accurately. Recognized for establishing a compelling vision, setting clear expectations, emphasizing teamwork, and investing in the team's growth. Deep expertise in structured authoring, content strategy, and cross-functional collaboration. Experienced in implementing AI/ML solutions that improve content production, quality, and usability. <br>
-
-## Recent highlights
-- **Directed a sustained, multi-year KB improvement program** that spanned platform upgrades, content modeling, search optimization, and UX enhancements, increasing internal user CSAT by 25%.
-- **Reduced Time to Publish (TTP) by 60%** by implementing a distributed publishing program.
-- **Improved quarterly Knowledge Validation Rate (KVR)** from 67% to 98%.
-- **Advanced KM maturity from CMMI Level 1 to Level 3** by transforming an ad hoc, FIFO-based process into a governed, metrics-informed function with standardized intake, review, and publishing workflows.
-- **Partnered with Engineering to pilot BECU’s first AI-assisted knowledge solution**, evaluated results with pilot teams, identified source content quality as the critical driver of AI accuracy, and positioned the KM program for future AI integrations.
+Knowledge Management (KM) and Technical Writing (TW) leader with 20+ years of experience transforming ad hoc content operations into mature, governed programs. As Senior Manager and product owner of BECU’s enterprise knowledge base, evolved KM from a transactional team to a strategic partner, reduced average time to publish from about 25 days to 7, and increased KB user satisfaction from 62% to 77%. Piloted BECU’s first AI-assisted knowledge solution (RAG-based search), whose results confirmed the content work needed to make knowledge reliable for both people and AI. <br>
 
 ## Technical skills
 **Leadership & Methodology**
@@ -23,12 +16,13 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 - Lean Six Sigma
 
 **Content & Standards**
-- Content strategy
+- Content Strategy
 - DITA
 - HTML, CSS, Markdown
 - Information Architecture
 - Minimalism
-- Team management/leadership
+- Taxonomy Governance
+- Team Management & Team Leadership
 - Technical Editing 
 
 **Tools**
@@ -44,15 +38,25 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 - ServiceNow
 - Smartsheet
 
+## Professional development (October 2025 - Present)
+- Earned Certified Knowledge Manager (CKM) certification (KM Institute, January 2026).
+- Built and published this GitHub Pages portfolio containing writing samples, case studies, and ontology write-ups.
+- Developed two ontologies in Protégé (SKOS, OWL, RDF) using semantic web standards to better understand how to structure knowledge for retrieval by LLMs.
+
+---  
+
 ## Professional experience
 ### Senior Manager, Knowledge Management | BECU <br>
 *Tukwila, WA* <br>
 *January 2017 – September 2025* <br>
 
-- Established the strategic direction of KM, collaborating with executive leadership to align strategy with organizational priorities and business objectives.
-- Managed a 12-person KM team and a 300-person SME community, fostering a culture of innovation, collaboration, and continuous improvement.
-- Owned the operation and continuous evolution of BECU's enterprise knowledge base, the authoritative source for all business-critical information.
-- Evolved a nascent KM function into a mature program spanning content development, knowledge governance and SME enablement, and platform administration, transforming the team from reactive support to strategic partner.
+- **Set enterprise KM strategy with executive leadership.** Led a 12-person KM team and a 300-person SME community. Owned BECU’s enterprise knowledge base, the authoritative source for business-critical information.
+- **Advanced KM maturity from CMMI Level 1 to Level 3 in one year** by replacing an ad hoc, FIFO process with standardized, priority-based, metrics-driven intake, QA, and publishing workflows.
+- **Improved quarterly Knowledge Validation Rate (KVR) from 67% to 98%** by auditing the validation process, closing a gap that had excluded some content, standardizing the validation schedule, expanding SME communications and training, and routing overdue items to Compliance.
+- **Directed a multi-year KB improvement program** (system upgrades, content modeling, search optimization, and UX) that **increased user CSAT from 62% to 77%**.
+- **Reduced average Time to Publish (TTP) from about 25 days to 7 (72%)** by launching a distributed publishing program that authorized 65 manager-nominated, KM-certified SMEs to publish directly to the KB.
+- **Maintained SME-authored content quality** via tiered approvals (peer, supervisor, Compliance as warranted) and checklists enforcing templates, content models, audience fit, and writing standards.
+- **Piloted BECU’s first AI-assisted knowledge solution (RAG-based search)** with Engineering and Contact Center. Results (approximately 70% user-rated accuracy, below the bar for broad release) confirmed the need to prioritize content quality by closing content gaps, refining taxonomy and terminology, and resolving conflicting information.
 
 ---  
 
@@ -60,9 +64,9 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 *Seattle, WA* <br>
 *April 2012 – November 2016* <br>
 
-- Managed the Knowledge Management team within Dell EMC Service & Supportability, growing the team from 6 to 12 technical writers and knowledge managers.
-- Embedded Knowledge-Centered Service (KCS) methodologies into KM and Customer Support workflows.
-- Led three knowledge base migrations to promote customer self-service and reduce calls to Support.
+- Led Isilon’s first KM team, grew the team from 6 to 12 knowledge specialists, and expanded the function to include video and social media for Service and Supportability.
+- Co-designed troubleshooting guides with Support that cut Time to Resolve (TTR) by 44%.
+- Embedded KCS into KM and Support workflows and led three knowledge base migrations to promote self-service and reduce calls to Support.
 - Cultivated a customers-first culture grounded in teamwork, quality, and continuous improvement.
 
 ---  
@@ -71,20 +75,18 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 *Seattle, WA* <br>
 *March 2011 – April 2012* <br>
 
-- Led the Knowledge Management team within Isilon Global Services while serving as technical writer and knowledge analyst.
-- Established Isilon’s first professional-grade customer-facing knowledge base, increasing customer self-service and reducing calls to Support.
-- Transformed the Isilon Knowledge Base from 36% to 72% customer-facing articles, significantly expanding the reach of customer self-service.
+- Increased the share of Isilon KB articles available to customers from 36% to 72% in 10 months to expand self-service and reduce calls to Support.
+- Grew the team from 2 to 6 dedicated knowledge developers.
 
 ---  
 
-### Technical Writing Manager | Aptean <br>
+### Technical Writing Manager | Aptean (formerly Consona) <br>
 *Kirkland, WA* <br>
 *August 2006 – March 2011* <br>
 
 (Aptean, formerly known as Consona, acquired Onyx Software in August 2006.) <br>
-- Managed globally distributed content-development teams for 4 distinct product lines.
-- Established the Documentation Center of Excellence, whose mission was to standardize content-development processes, increase quality, and promote best practices in information development across Consona.
-- Built and managed a 24-person globally distributed team across the U.S., Belarus, China, and India.
+- Built and managed a 24-person globally distributed content team (10 direct reports) across the U.S., Belarus, China, and India, supporting 4 product lines.
+- Established Aptean’s Documentation Center of Excellence to standardize content-development processes and improve quality across product lines.
 
 ---
 
@@ -92,7 +94,7 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 *Bellevue, WA* <br>
 *September 2005 - August 2006* <br>
 
-- Managed a team of 8 local technical writers and programmer writers before Onyx Software was acquired by Aptean (formerly known as Consona) in 2006.
+- Managed a team of 8 local technical writers and programmer writers before Onyx Software was acquired by Consona (now known as Aptean) in 2006.
 
 ---  
 
@@ -136,9 +138,9 @@ Knowledge Management manager and Technical Writing manager with 20+ years of exp
 *January 2016 - December 2017 (2 years)* <br>
 
 - Enhanced youth safety via equipment upgrades & practice guidelines.
-- Established new program for annual equipment upgrades.
+- Established a new program for annual equipment upgrades.
 - Revised and edited the WCJFA Bylaws for clarity & consistency.
-- Improved website communications and club how-to documentation.
+- Improved website communications and club operational documentation.
   
 **Board of Directors - Vice President** <br>
 *January 2015 - December 2015 (1 year)* <br>
