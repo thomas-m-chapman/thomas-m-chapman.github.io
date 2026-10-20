@@ -155,8 +155,8 @@ Knowledge Management (KM) and Technical Writing (TW) leader with 20+ years of ex
 ---
 
 ## Education 
-**Texas A&M University**  &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; M.A., English  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; September 1994 - December 1996  
-**Seattle University**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; B.A., English  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; September 1986 - June 1990  
+**Texas A&M University** | M.A., English | September 1994 - December 1996  
+**Seattle University** | B.A., English | September 1986 - June 1990  
 
 ---
 
@@ -169,12 +169,8 @@ Knowledge Management (KM) and Technical Writing (TW) leader with 20+ years of ex
 ---
 
 ## Honors & Awards
-**BECU Excellence: Agile Leadership** (November 2023): Nominated for excellence in serving as Agile Product Owner in the implementation of a new knowledge platform. 
-
-**EMC Customer Experience Award** (August 2016): Awarded for leading collaborative troubleshooting guide efforts aimed at reducing TTR. 
-
-**EMC Excellence Award: Isilon Security Response Team**(June 2015): Awarded for significant contributions to the Security Response Team's success in managing and responding to security vulnerabilities. 
-
-**EMC Excellence Award: Global Services** (April 2013): Awarded for going "above and beyond" in enabling customer self-help. 
-
-**Onyx Leadership Recognition** (July 2013): Honored for being a “leader and driver” who contributes beyond the role of a technical writer. 
+- **BECU Excellence: Agile Leadership** (November 2023): Nominated for excellence in serving as Agile Product Owner in the implementation of a new knowledge platform. 
+- **EMC Customer Experience Award** (August 2016): Awarded for leading collaborative troubleshooting guide efforts aimed at reducing TTR. 
+- **EMC Excellence Award: Isilon Security Response Team**(June 2015): Awarded for significant contributions to the Security Response Team's success in managing and responding to security vulnerabilities. 
+- **EMC Excellence Award: Global Services** (April 2013): Awarded for going "above and beyond" in enabling customer self-help. 
+- **Onyx Leadership Recognition** (July 2013): Honored for being a “leader and driver” who contributes beyond the role of a technical writer. 
