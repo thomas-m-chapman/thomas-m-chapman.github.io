@@ -3,13 +3,13 @@ layout: default
 ---
 # Tom Chapman
 
-### Content Manager & Transformation Leader | AI/ML & CX Advocate 
+### Knowledge Management Leader  |  Technical Writing Manager  |  Content PM  |  CKM
 
 Welcome to my portfolio. 
 
-I’m currently exploring new opportunities in Technical Writing and Knowledge Management. If you’re looking for someone who blends strategic thinking with execution, I'd love to chat. I’m passionate about delivering content that helps people get things done.
+I’m currently exploring new opportunities in Knowledge Management and Technical Writing. If you’re looking for someone who blends strategic thinking with execution, I'd love to chat. I’m passionate about delivering content that helps people get things done.
 
-In my leadership roles at BECU and Dell, I've been recognized for developing high-performing teams that excel at delivering compelling, strategically effective content at scale. I'm a proven people leader, knowledge professional, and technical writer/editor with 20+ years of experience driving enterprise content strategy and customer experience initiatives. 
+In my leadership roles at BECU and Dell EMC, I've been recognized for developing high-performing teams that excel at delivering compelling, strategically effective content at scale. I'm a proven people leader, knowledge professional, and technical writer/editor with 20+ years of experience driving enterprise content strategy and customer experience initiatives. 
   
 Whether building high-performing teams, optimizing content management systems and knowledge bases, or coaching/mentoring writers, I bring a deep understanding of content strategy, knowledge management, structured authoring, and cross-functional collaboration. I’ve led teams, served as product owner of enterprise content platforms, and delivered measurable improvements in operational efficiency, content quality, and usability.
   
