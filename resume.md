@@ -1,5 +1,5 @@
 # Thomas M. Chapman
-### Certified Knowledge Manager | Technical Writing Manager | Content PM | CKM <br>
+### KM Leader | TW Manager | Content PM | CKM <br>
 Snoqualmie, WA &nbsp;&nbsp;&nbsp;    | &nbsp;&nbsp;&nbsp; (425) 681-6032 &nbsp;&nbsp;&nbsp;     | &nbsp;&nbsp;&nbsp; [Email me](thomasmchapman@hotmail.com) &nbsp;&nbsp;&nbsp;      | &nbsp;&nbsp;&nbsp; [View my LinkedIn profile](https://www.linkedin.com/in/thomasmchapman)  <br>
 
 <hr>
