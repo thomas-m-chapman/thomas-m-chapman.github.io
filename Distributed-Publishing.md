@@ -7,13 +7,13 @@ layout: default
 
 ## Executive Summary
 
-BECU's Knowledge Management (KM) team was being overwhelmed by publishing requests. The backlog of requests had grown to approximately 300, the average time-to-publish (TTP) had climbed to two months, compliance escalations were becoming a recurring problem, and SME satisfaction was in decline.
+When I joined BECU, its Knowledge Management (KM) team was buried in publishing requests. The backlog of requests had grown to nearly 300, the average time-to-publish (TTP) was at about 25 days and climbing, compliance escalations were becoming a recurring problem, and SME satisfaction was in decline.
 
 To address these issues, I designed and led an initiative called Distributed Publishing. The objective was to enable a select group of manager-approved, KM-trained subject matter experts — called Advanced SMEs — to publish content directly to the knowledge base without KM intervention. 
 
-The results were immediate and measurable: The backlog diminished from 300 to ~25, the average TTP dropped from 60 days to 7, compliance escalations dropped to 0, and SME satisfaction climbed from 1.9 to 4.2 (on a 5-point scale).
+The results were impressive: The backlog diminished from approximately 300 requests to ~25, average TTP fell from 25 days to 7 days, compliance escalations dropped to 0, and SME satisfaction increased from 1.9 to 4.2 on a 5-point scale. Prior to the initiative, TTP had peaked at nearly 60 days.
 
-The most significant impact was cultural. Distributed Publishing gave SMEs a stronger sense of independence and trust, and increased their sense of ownership, motivation, and engagement in the knowledge-sharing mission. Distributed Publishing continues to be an integral component of KM at BECU today.
+The most significant impact, however, was cultural. The success of the Distributed Publishing program gave SMEs a renewed sense of independence and trust, and increased their sense of ownership, motivation, and engagement in the knowledge-sharing mission. Distributed Publishing continues to be an integral component of KM at BECU today.
 
 ---
 
@@ -37,9 +37,9 @@ Getting everyone to see the Distributed Publishing initiative as an opportunity 
 
 ## Approach
 
-Although it was my responsibility, as the leader of KM, to solve this problem, I wanted to work through the solution collaboratively with those closest to the work. They were intimately familiar with the process and its pain points, and their buy-in would be essential for the initiative to be a success.
+Although it was my responsibility, as the leader of KM, to solve this problem, I wanted to work through the solution collaboratively with those closest to the work. After all, they were intimately familiar with the process and its pain points, and their buy-in would be essential for the initiative to be a success.
 
-I initiated a series of collaborative workshops with a hypothesis grounded in my experience with Knowledge-Centered Service (KCS) and the benefits of empowering knowledge producers. The hypothesis was that enabling select, trained SMEs to publish directly to the KB without routing every request through KM would be key to breaking the publishing bottleneck. But I'd learned from experience that announcing a pre-defined solution from the start rarely works. Instead, I structured the workshops as discovery sessions framed by the Lean Six Sigma DMAIC model, working with leadership from three of BECU's core lending divisions (Mortgage, Loan Production, and Loan Servicing) to analyze the problem before converging on a solution. Together we:
+I therefore initiated a series of collaborative workshops with a hypothesis grounded in my experience with Knowledge-Centered Service (KCS) and the benefits of empowering knowledge producers. The hypothesis was that enabling select, trained SMEs to publish directly to the KB without routing every request through KM would be key to breaking the publishing bottleneck. But I'd learned from experience that announcing a pre-defined solution from the start rarely works. Instead, I structured the workshops as discovery sessions framed by the Lean Six Sigma DMAIC model, working with leadership from three of BECU's core lending divisions (Mortgage, Loan Production, and Loan Servicing) to analyze the problem before converging on a solution. Together we:
 
   -	Analyzed the problem in detail
   -	Created, refined, and validated a succinct problem statement
@@ -78,28 +78,27 @@ We deployed Distributed Publishing in three consecutive waves (one for each stak
 The results of the Distributed Publishing initiative demonstrated a sustainable, repeatable process for publishing accurate, consistent, compliant knowledge in a timely manner. The collaboration with cross-functional stakeholders, particularly the inclusion of those who were skeptical about the initiative, ensured that we addressed identified risks in both our governance design and the Advanced SME training. 
 
 **Key results:**
-  -	Time-to-publish (TTP) decreased from up to 60 days to 7 days — an 88% reduction 
+  -	Reduced average time-to-publish (TTP) from 25 days to 7 days - a 72% reduction (prior to the initiative, TTP had peaked at nearly 60 days)
   -	Compliance escalations fell from 3 per week to 0
   -	The publishing backlog was reduced from 300 requests to a manageable ~25 
   -	SME satisfaction increased from 1.9 to 4.2 (out of 5.0)
   -	On-time publishing improved from 38% to 96% 
-  -	The 4 contractors hired as a temporary measure were no longer needed, saving a considerable amount of money 
+  -	The 4 contractors hired as a temporary measure were no longer needed 
   -	3 permanent KM staff who previously supported publishing work were redeployed to focus on higher-value knowledge strategy activities 
 
-Beyond the metrics, the initiative strengthened KM's relationship with the SME community, as they became more active participants in the knowledge-sharing mission rather than passive contributors to it.  
+Moreover, the initiative strengthened KM's relationship with the SME community, as they became more active participants in the knowledge-sharing mission rather than passive contributors to it.  
 
 ## Lessons Learned
 
 Looking back on the initiative, a few lessons stand out: Several we’d do again, and a few we’d do differently.
 
 **What we'd do differently:**
-  -	**Listen to detractors sooner — and more personally.** This was a management error on my part. When a member of my own team raised concerns about the initiative, I encouraged her to voice them in the group setting and assured her they would be addressed — and they were. But I later realized that I should’ve set aside dedicated 1:1 time to listen to her concerns privately first, rather than implying that she should route the concerns through the group. That conversation would have shown her how much I valued her perspective. Ensuring that someone’s concerns will be addressed isn’t the same as making them feel heard. This was a reminder that influenced my future interactions with my team.
+  -	**Listen to detractors sooner — and more personally.** This was a management error on my part. When a member of my own team raised concerns about the initiative, I encouraged her to voice them in the group setting and assured her they would be addressed — and they were. But I later realized that I should’ve set aside dedicated 1:1 time to listen to her concerns privately first, rather than implying that she should route the concerns through the group. That conversation would have shown her how much I valued her perspective. 
   -	**Communicate more broadly and more regularly.** We communicated well around key milestones and dependencies, but we probably should’ve sent more routine updates to sponsors and senior leadership. In retrospect, a brief weekly update, even when there was little to report, would have maintained visibility and reinforced confidence in the initiative's progress.
   -	**Train smaller groups.** Training 15 SMEs per training session was difficult, particularly when working on hands-on exercises in the authoring tool. In future training sessions, we limited the number of participants to five to ensure that we could give everyone the attention that they deserved.
 
 **What we'd do again:**
-  -	**Take the time to do it right.** The collaborative workshops were among the most valuable investments we made. Resisting the urge to move fast allowed the solution to form naturally. A prescriptive approach wouldn’t have worked nearly as well.
-  -	**Lead with a hypothesis, not a detailed plan.** Initiating the discovery process with an open question rather than a predetermined answer — even when I had a strong hypothesis — enabled others to contribute openly and freely. The workshops became as much about team building as problem solving.
+  -	**Take the time to do it right.** The collaborative workshops were among the most valuable investments we made. Rather than rushing to implement changes, we invested time upfront to build a shared understanding of the problem and align on priorities. That foundation made everything that followed easier.
+  -	**Lead with a hypothesis, not a detailed plan.** Although I began the process with a strong hypothesis, I resisted the urge to prescribe the solution. By allowing stakeholders to help design the future-state process, we created a strong sense of ownership that proved essential to successful adoption.
   -	**Frame the work in DMAIC.** The Lean Six Sigma framework forced us to understand the problem thoroughly before designing potential solutions. Without that discipline, I'm not sure that we would’ve identified the nuances that made the initiative successful.
   - **Embrace Agile.** Working within a lightweight Scrum framework increased transparency and kept everyone aligned. Taking a balanced approach was effective for a cross-functional initiative involving teams unfamiliar with Agile.
-
