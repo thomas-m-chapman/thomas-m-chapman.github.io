@@ -13,7 +13,7 @@ layout: default
 
 <a name="Introduction"></a> 
 ## Introduction
-I created this piece—and the two practice ontologies that accompany it—in response to the monumental shift that AI has brought to the domain of content operations. Like many in my field, I have years of experience building and maintaining controlled vocabularies and taxonomies, but I had never created an ontology before. So, I decided to create one. 
+I embarked on this ontology project in response to the monumental shift that AI has brought to the domain of content operations. Like many in my field, I have a good amount of experience building and maintaining controlled vocabularies and taxonomies, but I had never created an ontology before. So, I decided to create one. 
 
 In fact, I created two. 
 
@@ -21,7 +21,7 @@ The first ontology I created is what I’d call a practitioner’s conceptualiza
 
 While I was in the middle of that exercise, I realized that a novel I was reading—Emily Brontë’s *Wuthering Heights*—might provide good fodder for a second ontology, and one that is rich in complex relationships. As I made my way through the novel, I’d wished that it had included a family tree to help easily discombobulated readers like me keep track of who was related to whom. So, for fun, I decided to create a second ontology, this time based on *Wuthering Heights*.
 
-Completing these exercises gave me hands-on experience with the skills this tectonic shift requires: formally modeling entities and their relationships, making deliberate decisions about ambiguous or overlapping categories, and validating queries against a knowledge model. I'm now better equipped to help an organization elicit the tacit knowledge that lives in its content and in the heads of SMEs, and build it into the structured, machine-readable foundation that AI needs to produce trustworthy answers.
+Completing these exercises gave me hands-on experience with the skills this tectonic shift requires: formally modeling entities and their relationships, making deliberate decisions about ambiguous or overlapping categories, and validating queries against a knowledge model. I now feel better equipped to help an organization elicit the tacit knowledge that lives in its content and in the heads of SMEs, and build it into a structured, machine-readable foundation that AI needs to produce trustworthy answers.
 
 <a name="Background"></a> 
 ## Background
