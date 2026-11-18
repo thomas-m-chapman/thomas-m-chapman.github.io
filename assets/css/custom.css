@@ -10,3 +10,7 @@
 #site_nav a:hover {
   text-decoration: underline;
 }
+
+.inner {
+    max-width: 1200px;
+}
