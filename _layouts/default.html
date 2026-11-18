@@ -22,20 +22,16 @@
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           {% endif %}
 
-          <h1 id="project_title">
-            <a href="{{ '/' | relative_url }}">
-            {{ site.title | default: site.github.repository_name }}
-            </a>
-          </h1>
-
-          <nav id="site_nav">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/resume.html' | relative_url }}">Resume</a>
-  <a href="{{ '/becu-samples.html' | relative_url }}">Writing Samples</a>
-  <a href="{{ '/Distributed-Publishing.html' | relative_url }}">Case Study</a>
-  <a href="{{ '/Ontology-Practice.html' | relative_url }}">Ontology Practice</a>
-  <a href="https://www.linkedin.com/in/thomasmchapman/">LinkedIn</a>
-</nav>
+         <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+      
+         <nav id="site_nav">
+              <a href="{{ '/' | relative_url }}">Home</a>
+              <a href="{{ '/resume.html' | relative_url }}">Resume</a>
+              <a href="{{ '/becu-samples.html' | relative_url }}">Writing Samples</a>
+              <a href="{{ '/Distributed-Publishing.html' | relative_url }}">Case Study</a>
+              <a href="{{ '/Ontology-Practice.html' | relative_url }}">Ontology Practice</a>
+              <a href="https://www.linkedin.com/in/thomasmchapman/">LinkedIn</a>
+         </nav>
 
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
