@@ -1,0 +1,12 @@
+#site_nav {
+  margin-top: 12px;
+}
+
+#site_nav a {
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+#site_nav a:hover {
+  text-decoration: underline;
+}
